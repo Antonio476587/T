@@ -1,19 +1,22 @@
-// Category A — 20 print-ready apparel graphics (designs 1–20).
-// Output per design:
-//   a-kittl/prints/NN-slug.svg            composite artwork, text outlined, mm units
-//   a-kittl/separations/NN-slug.<ink>.svg one film positive per spot ink (100% black)
-//   a-kittl/specs.json                    print spec for every design
+// Apparel prints: 50 t-shirt graphics (1–50) plus five extras (X1–X5: neck label,
+// hangtag, stickers, two posters).
+// Output per design and part:
+//   a-kittl/prints/NN-slug[-part][-on-dark].svg   composite artwork, text outlined, mm units
+//   a-kittl/separations/<same>.<ink>.svg          one film positive per spot ink (100% black)
+//   a-kittl/specs.json                            print spec + mockup placement for every file
 // Run: node tools/build-prints.mjs
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { text, measure } from './type.mjs';
+import { addTees, MOCK_CORE } from './designs-tees.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outPrints = path.join(root, 'a-kittl', 'prints');
 const outSeps = path.join(root, 'a-kittl', 'separations');
 fs.mkdirSync(outPrints, { recursive: true });
 fs.mkdirSync(outSeps, { recursive: true });
+for (const dir of [outPrints, outSeps]) for (const f of fs.readdirSync(dir)) fs.rmSync(path.join(dir, f));
 
 // ---- Brand tokens (design-system/tokens/colors.css) -------------------------
 const INKS = {
@@ -66,7 +69,8 @@ function wavePaths(x, y, w, h, n = 12) {
   return out;
 }
 
-const eyebrow = (s, o) => text(s, { font: 'sans500', tracking: 0.24, ...o });
+const eyebrow = (s, o) => text(s, { font: 'mono400', tracking: 0.24, ...o });
+const fitSize = (str, font, maxW, tracking = 0) => maxW / measure(str, { font, size: 1, tracking });
 const mono = (s, o) => text(s, { font: 'mono400', tracking: 0.04, ...o });
 
 // ---- The 20 designs -----------------------------------------------------------
@@ -104,25 +108,20 @@ add({
   note: 'Edition of twelve drawn as twelve lines of cloth; the last is brass.',
 });
 
-// 3 — Eligius colophon
+// 3 — Eligius of Noyon (left-aligned, serif + mono)
 add({
   n: 3, slug: 'eligius-colophon', title: 'Eligius of Noyon',
   group: 'Back print', placement: 'Centre back, top edge 100 mm below collar seam',
-  garments: ['bone', 'ink'], method: 'Screen, 2 spot · ink garment needs cream (not white) flash underbase under brass',
-  w: 240, h: 170, inkOnDark: true,
+  garments: ['bone', 'ink'], method: 'Screen, 2 spot · on ink the cream plate is the underbase, brass flashed last',
+  w: 250, h: 122, inkOnDark: true,
   build(fg) {
-    const a = eyebrow('PATRON OF GOLDSMITHS', { size: 4.4, x: 120, y: 12, anchor: 'middle', fill: fg });
-    const b = text('Eligius of Noyon', { font: 'serif300i', size: 34, x: 120, y: 62, anchor: 'middle', tracking: -0.015, fill: fg });
-    const r = rect(80, 76, 80, RULE, C.brass);
-    const c = mono('c. 588 — 660 · NOYON, PICARDIE', { size: 4.2, x: 120, y: 96, anchor: 'middle', tracking: 0.12, fill: fg });
-    const q1 = text('Gold as a single stroke,', { font: 'serif300', size: 11, x: 120, y: 124, anchor: 'middle', fill: fg });
-    const q2 = text('because everything else was withheld.', { font: 'serif300', size: 11, x: 120, y: 139, anchor: 'middle', fill: fg });
-    const wm = wordmark(120, 165, 5.2, fg, { rule: false });
-    return { fg: a + b + c + q1 + q2 + wm.t, brass: r };
+    let t = eyebrow('PATRON OF GOLDSMITHS', { size: 4.4, x: 2, y: 8, fill: fg });
+    t += text('Eligius', { font: 'serif300i', size: 60, x: 0, y: 62, tracking: -0.015, fill: fg });
+    t += text('of Noyon', { font: 'serif300i', size: 60, x: 0, y: 108, tracking: -0.015, fill: fg });
+    return { fg: t, brass: rect(2, 118, 70, RULE, C.brass) };
   },
-  note: 'The name’s origin, set as a museum colophon.',
+  note: 'The name’s origin as the whole message. One name, one brass line.',
 });
-
 // 4 — Pattern book index
 add({
   n: 4, slug: 'pattern-book', title: 'From the pattern book',
@@ -171,52 +170,37 @@ add({
   note: 'Pattern-maker’s grainline at 45°, the brand’s whole construction in one mark.',
 });
 
-// 6 — Care label, enlarged
+// 6 — Label, enlarged (facts from the system only)
 add({
-  n: 6, slug: 'care-label', title: 'Care label, enlarged',
+  n: 6, slug: 'care-label', title: 'Label, enlarged',
   group: 'Back print', placement: 'Centre back, top edge 90 mm below collar seam',
-  garments: ['limestone', 'bone'], method: 'Screen, 2 spot · frame is 2 mm ebony trim',
-  w: 200, h: 270,
+  garments: ['limestone', 'bone'], method: 'Screen, 2 spot · the 2 mm frame is the label edge',
+  w: 200, h: 250,
   build() {
-    let ink = frame(0, 0, 200, 270, C.ink, 2);
-    ink += `<path d="M10 22 H190" stroke="${C.ink}" stroke-width="${HAIR}" stroke-dasharray="3 2.4"/>`;
-    ink += mono('FOLD', { size: 3, x: 190, y: 16, anchor: 'end', tracking: 0.3, fill: C.ink });
-    const wm = wordmark(100, 62, 14, C.ink, { ruleW: 120 });
+    let ink = frame(0, 0, 200, 250, C.ink, 2);
+    ink += `<path d="M12 24 H188" stroke="${C.ink}" stroke-width="${HAIR}" stroke-dasharray="3 2.4"/>`;
+    const wm = wordmark(100, 118, 17, C.ink, { ruleW: 130 });
     ink += wm.t;
-    const rows = [
-      ['EDITION', 'No. 04 OF 12'], ['CLOTH', 'SILK-COTTON JERSEY'], ['MILL', 'COMO, 1974 BOOK'],
-      ['CUT', 'BIAS · 1974 PATTERN'], ['SIZE', 'EU 38'], ['MADE', 'PARIS, FRANCE'],
-    ];
-    rows.forEach(([k, v], i) => {
-      const y = 108 + i * 20;
-      ink += mono(k, { size: 4.6, x: 18, y, tracking: 0.14, fill: C.ink });
-      ink += mono(v, { size: 4.6, x: 182, y, anchor: 'end', tracking: 0.06, fill: C.ink });
-      ink += rect(18, y + 6, 164, HAIR, C.ink);
-    });
-    ink += mono('COOL HAND WASH · DRY FLAT', { size: 4, x: 100, y: 240, anchor: 'middle', tracking: 0.1, fill: C.ink });
-    ink += mono('PRESS UNDER CLOTH', { size: 4, x: 100, y: 252, anchor: 'middle', tracking: 0.1, fill: C.ink });
+    ink += mono('No. 04 OF 12', { size: 9, x: 100, y: 190, anchor: 'middle', tracking: 0.04, fill: C.ink });
+    ink += mono('PARIS', { size: 4.4, x: 100, y: 222, anchor: 'middle', tracking: 0.3, fill: C.ink });
     return { ink, brass: wm.r };
   },
-  note: 'The woven care label blown up to back-print scale; facts only.',
+  note: 'The woven label at back-print scale: the mark, the edition number, the city. Nothing invented.',
 });
-
-// 7 — Atelier coordinates (tonal on ink)
+// 7 — Paris, 8e (tonal on ink)
 add({
-  n: 7, slug: 'atelier-coordinates', title: 'Atelier coordinates',
-  group: 'Back print', placement: 'Centre back, top edge 110 mm below collar seam',
-  garments: ['ink'], method: 'Screen, 2 spot on ink · cream underbase printed as the cream plate, brass flashed over it',
-  w: 240, h: 150, dark: true,
+  n: 7, slug: 'atelier-coordinates', title: 'Paris, 8e.',
+  group: 'Back print', placement: 'Centre back, top edge 120 mm below collar seam',
+  garments: ['ink'], method: 'Screen, 2 spot on ink · cream is the underbase plate, brass flashed over it',
+  w: 270, h: 100, dark: true,
   build() {
-    let cream = eyebrow('ATELIER', { size: 4.4, x: 120, y: 10, anchor: 'middle', fill: C.cream });
-    cream += mono('48° 52′ N', { size: 26, x: 120, y: 52, anchor: 'middle', tracking: 0.02, fill: C.cream });
-    cream += mono('2° 18′ E', { size: 26, x: 120, y: 86, anchor: 'middle', tracking: 0.02, fill: C.cream });
-    cream += text('Paris, 8e.', { font: 'serif300i', size: 20, x: 120, y: 132, anchor: 'middle', fill: C.cream });
-    const brass = rect(90, 102, 60, RULE, C.brass);
-    return { cream, brass };
+    const size = fitSize('Paris, 8e.', 'serif300', 268, -0.015);
+    let cream = text('Paris, 8e.', { font: 'serif300', size, x: 0, y: size * 0.72, tracking: -0.015, fill: C.cream });
+    cream += eyebrow('THE ATELIER', { size: 4.4, x: 84, y: 97, fill: C.cream });
+    return { cream, brass: rect(2, 94, 70, RULE, C.brass) };
   },
-  note: 'Where the pieces are cut. Tonal, two inks, no white.',
+  note: 'One atelier, stated as an address. The city is the hero.',
 });
-
 // 8 — Edition registry
 add({
   n: 8, slug: 'edition-registry', title: 'Edition registry',
@@ -346,7 +330,7 @@ add({
 
 // 16 — Printed neck label (tagless)
 add({
-  n: 16, slug: 'neck-label', title: 'Printed neck label',
+  n: 'X1', slug: 'neck-label', title: 'Printed neck label',
   group: 'Label', placement: 'Inside back neck, top edge 18 mm below collar seam',
   garments: ['bone', 'limestone', 'ink'], method: 'Tagless screen transfer, 1 spot (ink on light, cream on dark) · 80% soft-hand',
   w: 50, h: 44, inkOnDark: true, oneInk: true,
@@ -355,9 +339,7 @@ add({
     t += rect(10, 7.4, 30, 0.4, fg);
     t += mono('EU 38', { size: 9, x: 25, y: 20, anchor: 'middle', tracking: 0.02, fill: fg });
     t += mono('No. 04 / 12', { size: 3.2, x: 25, y: 27, anchor: 'middle', tracking: 0.06, fill: fg });
-    t += mono('SILK-COTTON · 1974 CUT', { size: 2.6, x: 25, y: 33, anchor: 'middle', tracking: 0.06, fill: fg });
-    t += mono('MADE IN FRANCE', { size: 2.6, x: 25, y: 37.5, anchor: 'middle', tracking: 0.14, fill: fg });
-    t += mono('HAND WASH COOL · DRY FLAT', { size: 2.3, x: 25, y: 42, anchor: 'middle', tracking: 0.04, fill: fg });
+    t += mono('PARIS', { size: 2.6, x: 25, y: 36, anchor: 'middle', tracking: 0.3, fill: fg });
     return { fg: t };
   },
   note: 'One ink so it never shows through the cloth. Size and number are variable fields.',
@@ -365,7 +347,7 @@ add({
 
 // 17 — Hangtag (front + back)
 add({
-  n: 17, slug: 'hangtag', title: 'Hangtag, front and back',
+  n: 'X2', slug: 'hangtag', title: 'Hangtag, front and back',
   group: 'Hangtag', placement: '55 × 95 mm on 600 gsm cotton board, cream',
   garments: ['stock-cream'], method: 'Letterpress 1 spot (ink) + brass hot foil · dieline on its own layer',
   w: 120, h: 95,
@@ -383,17 +365,15 @@ add({
     ink += mono('PARIS', { size: 2.8, x: 27.5, y: 86, anchor: 'middle', tracking: 0.3, fill: C.ink });
     // back
     const bx = 65 + 6;
-    ink += text('Bias tee in', { font: 'serif300', size: 6.2, x: bx, y: 24, fill: C.ink });
-    ink += text('silk-cotton jersey', { font: 'serif300', size: 6.2, x: bx, y: 31, fill: C.ink });
-    const rows = [['CLOTH', 'COMO'], ['PATTERN', '1974'], ['EDITION', 'No. 04 / 12'], ['SIZE', 'EU 38']];
+    ink += text('Bias tee', { font: 'serif300', size: 7, x: bx, y: 28, fill: C.ink });
+    const rows = [['PATTERN', '1974'], ['EDITION', 'No. 04 / 12'], ['SIZE', 'EU 38']];
     rows.forEach(([k, v], i) => {
       const y = 44 + i * 8;
       ink += mono(k, { size: 2.5, x: bx, y, tracking: 0.14, fill: C.ink });
       ink += mono(v, { size: 2.5, x: 65 + 49, y, anchor: 'end', tracking: 0.04, fill: C.ink });
       ink += rect(bx, y + 2.2, 43, 0.25, C.ink);
     });
-    ink += mono('€ 280', { size: 5, x: bx, y: 84, tracking: 0.02, fill: C.ink });
-    brass += rect(bx, 87.5, 12, 0.6, C.brass);
+    brass += rect(bx, 76, 12, 0.6, C.brass);
     return { ink, brass, dieline: die };
   },
   note: 'Board, not plastic. Price in mono with a space after the currency.',
@@ -401,7 +381,7 @@ add({
 
 // 18 — Packaging stickers
 add({
-  n: 18, slug: 'packaging-stickers', title: 'Tissue seal and box band',
+  n: 'X3', slug: 'packaging-stickers', title: 'Tissue seal and box band',
   group: 'Sticker', placement: 'Seal 50 × 50 mm closes the tissue · band 110 × 26 mm wraps the box lid',
   garments: ['stock-cream'], method: 'Uncoated cream label stock · 1 spot + brass foil · kiss-cut dieline',
   w: 176, h: 50,
@@ -424,20 +404,19 @@ add({
 
 // 19 — Capsule poster
 add({
-  n: 19, slug: 'capsule-poster', title: 'Collection 04 poster',
+  n: 'X4', slug: 'capsule-poster', title: 'Collection 04 poster',
   group: 'Poster', placement: 'A2, 420 × 594 mm, uncoated bone 300 gsm',
   garments: ['stock-bone'], method: 'Offset or screen, 2 spot (ink + brass metallic)',
   w: 420, h: 594,
   build() {
     let ink = eyebrow('COLLECTION 04', { size: 6, x: 36, y: 50, fill: C.ink });
-    ink += mono('02.10.2026', { size: 6, x: 384, y: 50, anchor: 'end', tracking: 0.06, fill: C.ink });
     ink += text('Cut on', { font: 'serif300', size: 82, x: 30, y: 150, tracking: -0.02, fill: C.ink });
     ink += text('the bias.', { font: 'serif300', size: 82, x: 30, y: 226, tracking: -0.02, fill: C.ink });
     const ws = wavePaths(36, 270, 348, 190);
     ink += ws.slice(0, 11).map((d) => stroke(d, C.ink, 0.7)).join('');
     let brass = stroke(ws[11], C.brass, 0.9);
     ink += rect(36, 520, 348, HAIR, C.ink);
-    ink += mono('SILK-COTTON JERSEY · 1974 PATTERN · TWELVE MADE', { size: 5, x: 36, y: 540, tracking: 0.12, fill: C.ink });
+    ink += mono('1974 PATTERN · TWELVE MADE', { size: 5, x: 36, y: 540, tracking: 0.12, fill: C.ink });
     const wm = wordmark(330, 568, 9, C.ink, { ruleW: 100 });
     ink += wm.t; brass += wm.r;
     return { ink, brass };
@@ -447,7 +426,7 @@ add({
 
 // 20 — Archive poster (edition closed)
 add({
-  n: 20, slug: 'archive-poster', title: 'Archive — 1974 cut retired',
+  n: 'X5', slug: 'archive-poster', title: 'Archive — 1974 cut retired',
   group: 'Poster', placement: 'A2, 420 × 594 mm, oxblood-dyed 300 gsm stock (or printed flood)',
   garments: ['stock-oxblood'], method: 'Screen, 2 spot on dyed stock (cream + brass metallic)',
   w: 420, h: 594, dark: true,
@@ -471,41 +450,48 @@ add({
   note: 'Scarcity stated as fact after the event, never before it.',
 });
 
+addTees({ add, text, measure, fitSize, wordmark, wavePaths, rect, stroke, frame, eyebrow, mono, C, HAIR, RULE, f });
+for (const d of designs) if (MOCK_CORE[d.n]) d.mock = MOCK_CORE[d.n];
+
 // ---- Emit --------------------------------------------------------------------
 const INK_ORDER = ['cream', 'ink', 'oxblood', 'brass', 'dieline']; // print order: underbase/cream first, metallic last
+const DARK = ['ink', 'oxblood'];
 const specs = [];
+const idOf = (n) => (typeof n === 'number' ? String(n).padStart(2, '0') : n.toLowerCase());
 
 for (const d of designs) {
-  const variants = [];
-  if (d.inkOnDark) {
-    variants.push({ key: '', fg: 'ink' });
-    variants.push({ key: '-on-dark', fg: 'cream' });
-  } else variants.push({ key: '', fg: null });
-
+  const variants = d.inkOnDark ? [{ key: '', fg: 'ink' }, { key: '-on-dark', fg: 'cream' }] : [{ key: '', fg: null }];
+  const parts = d.parts || [{ key: '', w: d.w, h: d.h, build: d.build }];
   for (const v of variants) {
-    const built = d.build(v.fg ? C[v.fg] : undefined);
-    const layers = {};
-    for (const [k, val] of Object.entries(built)) layers[k === 'fg' ? v.fg : k] = val;
-    const inks = INK_ORDER.filter((k) => layers[k]);
-    const groups = inks.map((k) =>
-      `<g id="sep-${k}" data-ink="${k === 'dieline' ? 'Dieline — do not print' : `${INKS[k].hex} · ${INKS[k].ref}`}">${layers[k]}</g>`).join('\n');
-    const file = `${String(d.n).padStart(2, '0')}-${d.slug}${v.key}`;
-    const head = `<svg xmlns="http://www.w3.org/2000/svg" width="${d.w}mm" height="${d.h}mm" viewBox="0 0 ${d.w} ${d.h}">`;
-    const title = `<title>DE NOYON — Design ${d.n}: ${d.title}${v.key ? ' (dark garment)' : ''}</title>`;
-    fs.writeFileSync(path.join(outPrints, file + '.svg'), `${head}\n${title}\n${groups}\n</svg>\n`);
-    for (const k of inks) {
-      const film = layers[k].replaceAll(/#[0-9A-Fa-f]{6}/g, '#000000');
-      fs.writeFileSync(path.join(outSeps, `${file}.${k}.svg`), `${head}<title>Film positive — ${k}</title>${film}</svg>\n`);
+    for (const part of parts) {
+      const built = part.build(v.fg ? C[v.fg] : undefined);
+      const clip = built.clip; delete built.clip;
+      const layers = {};
+      for (const [k, val] of Object.entries(built)) if (val) layers[k === 'fg' ? v.fg : k] = val;
+      const inks = INK_ORDER.filter((k) => layers[k]);
+      const cp = clip ? ' clip-path="url(#artboard)"' : '';
+      const defs = clip ? `<defs><clipPath id="artboard"><rect width="${part.w}" height="${part.h}"/></clipPath></defs>\n` : '';
+      const groups = inks.map((k) =>
+        `<g id="sep-${k}"${cp} data-ink="${k === 'dieline' ? 'Dieline — do not print' : `${INKS[k].hex} · ${INKS[k].ref}`}">${layers[k]}</g>`).join('\n');
+      const file = `${idOf(d.n)}-${d.slug}${part.key ? '-' + part.key : ''}${v.key}`;
+      const head = `<svg xmlns="http://www.w3.org/2000/svg" width="${part.w}mm" height="${part.h}mm" viewBox="0 0 ${part.w} ${part.h}">`;
+      const title = `<title>DE NOYON — Design ${d.n}: ${d.title}${part.key ? ` (${part.key})` : ''}${v.key ? ' (dark garment)' : ''}</title>`;
+      fs.writeFileSync(path.join(outPrints, file + '.svg'), `${head}\n${title}\n${defs}${groups}\n</svg>\n`);
+      for (const k of inks) {
+        const film = layers[k].replaceAll(/#[0-9A-Fa-f]{6}/g, '#000000');
+        fs.writeFileSync(path.join(outSeps, `${file}.${k}.svg`), `${head}<title>Film positive — ${k}</title>${defs}<g${cp}>${film}</g></svg>\n`);
+      }
+      specs.push({
+        design: d.n, id: idOf(d.n), file: `prints/${file}.svg`, part: part.key || null, variant: v.key ? 'dark' : 'light',
+        title: d.title, group: d.group, artboard_mm: [part.w, part.h], placement: d.placement, method: d.method,
+        garments: (v.key ? DARK : d.inkOnDark ? d.garments.filter((g) => !DARK.includes(g)) : d.garments)
+          .map((g) => GARMENTS[g] ? { ...GARMENTS[g], id: g } : { id: g }),
+        inks: inks.filter((k) => k !== 'dieline').map((k) => ({ id: k, ...INKS[k] })),
+        separations: inks.map((k) => `separations/${file}.${k}.svg`),
+        min_line_mm: HAIR, text: 'outlined', note: d.note,
+        mock: d.mock || null,
+      });
     }
-    specs.push({
-      design: d.n, file: `prints/${file}.svg`, title: d.title, group: d.group,
-      artboard_mm: [d.w, d.h], placement: d.placement, method: d.method,
-      garments: (v.key ? ['ink', 'oxblood'] : d.inkOnDark ? d.garments.filter((g) => !['ink', 'oxblood'].includes(g)) : d.garments)
-        .map((g) => GARMENTS[g] ? { ...GARMENTS[g], id: g } : { id: g }),
-      inks: inks.filter((k) => k !== 'dieline').map((k) => ({ id: k, ...INKS[k] })),
-      separations: inks.map((k) => `separations/${file}.${k}.svg`),
-      min_line_mm: HAIR, text: 'outlined', note: d.note,
-    });
   }
 }
 

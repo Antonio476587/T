@@ -1,98 +1,103 @@
-# DE NOYON — 50 design deliverables
+# DE NOYON — 50 t-shirt designs
 
-Built strictly from the DE NOYON design system (`design-system/`, copied from the supplied zip): ink and paper for roughly 95% of every surface, square corners, gold only as a 1–2 px brass line, Cormorant Garamond / Jost / IBM Plex Mono, and museum-label copy.
+Fifty print-ready t-shirt graphics built from the DE NOYON design system (`design-system/`, copied from the supplied zip). Open `index.html` to browse them as front and back tee mockups.
 
-Open `index.html` for the gallery of all 50.
+## Rules every design follows
 
-| Range | Category | Where | Format |
+- **One idea per shirt.** Each design has one hero element: a word, a number, the wave, a pattern draft. Supporting text is one mono line at most.
+- **Two typefaces at most.** Cormorant Garamond as the display face and IBM Plex Mono as the supporting face. Jost appears only as the wordmark, which is treated as the logo.
+- **Gold only as a line.** Brass (`#B18A46`) is a rule, a grainline or a frame, never a fill.
+- **Asymmetric by default.** Layouts are left-aligned on a grid unless the idea itself is symmetrical, as with a label or a stamp.
+- **No invented facts.** Every word comes from the design system: Paris, 8e; one atelier, no wholesale; the 1948–1979 pattern books and the 1974 cut; twelve made; No. 04 of 12; Collection 04 and its piece names; cut on the bias; waving luxury; Eligius of Noyon, patron of goldsmiths; “When they are gone the pattern is retired.”
+
+## The 50
+
+| # | Design | Placement | Shown on |
 | --- | --- | --- | --- |
-| 1–20 | Apparel prints (Kittl) | `a-kittl/` | Outlined SVG (mm), one film per spot ink, 300 dpi PNG, print spec |
-| 21–35 | Social & marketing (Canvas) | `b-canvas/` | Canvas API renderers + exported PNGs |
-| 36–50 | Storefront components | `c-storefront/` | Standalone HTML/CSS on the system tokens |
+| 1 | Wordmark monument | Back | Bone |
+| 2 | Twelve lines | Back | Bone |
+| 3 | Eligius of Noyon | Back | Ink |
+| 4 | From the pattern book | Back | Limestone |
+| 5 | Cut on the bias (grainline) | Back | Bone |
+| 6 | Label, enlarged | Back | Limestone |
+| 7 | Paris, 8e. | Back | Ink |
+| 8 | Edition registry | Back | Oxblood |
+| 9 | Stacked pocket mark | Left chest | Bone |
+| 10 | Edition mark | Left chest | Ink |
+| 11 | *waving luxury* | Centre front | Bone |
+| 12 | Square plate | Left chest | Limestone |
+| 13 | Sleeve run | Long sleeve | Bone |
+| 14 | Hood and back-neck mark | Back neck | Limestone |
+| 15 | Hem inlay | Front hem | Bone |
+| 16 | The pattern, drafted | Back | Bone |
+| 17 | 12 | Back | Limestone |
+| 18 | Wave field | Back | Ink |
+| 19 | Wordmark, full width | Back | Oxblood |
+| 20 | Hallmarks | Back | Bone |
+| 21 | Pattern book spine | Back, down the spine | Bone |
+| 22 | Warp, weft, bias | Back | Limestone |
+| 23 | When they are gone | Back | Bone |
+| 24 | Gold, by proportion | Back | Ink |
+| 25 | One atelier. | Back | Limestone |
+| 26 | Archive. | Back | Oxblood |
+| 27 | Tailor’s tape | Back | Bone |
+| 28 | Wave, cropped | Back | Limestone |
+| 29 | The twelve | Back | Ink |
+| 30 | Cut on the bias, diagonal | Back | Bone |
+| 31 | *waving luxury*, oversized | Front | Oxblood |
+| 32 | Selvedge | Back, across the shoulders | Bone |
+| 33 | Cutting marker | Back | Bone |
+| 34 | No. 04 | Back | Bone |
+| 35 | Chest wordmark | Front | Ink |
+| 36 | Twelve made, with wave | Front | Bone |
+| 37 | Cut on the bias, front | Front | Bone |
+| 38 | Hallmark strip | Left chest | Limestone |
+| 39 | Side wordmark | Front side | Ink |
+| 40 | 1974 | Front | Limestone |
+| 41 | 45° | Front | Ink |
+| 42 | Pocket wave | Left chest | Bone |
+| 43 | Grainline | Front | Bone |
+| 44 | Sleeve tape | Sleeve | Bone |
+| 45 | Back yoke | Back yoke | Limestone |
+| 46 | Hem band | Front hem | Bone |
+| 47 | DE, NOYON | Front and back | Bone |
+| 48 | Cut on, the bias | Front and back | Ink |
+| 49 | Atelier stamp | Back, lower right | Bone |
+| 50 | Collection 04 | Back | Bone |
 
-## A · Prints 1–20
+Designs with a light and a dark version (ink print for bone and limestone, cream print for ink and oxblood) have both files. The version shown in the mockup is the one uploaded to Kittl.
 
-| # | Design | Placement | Garments |
-| --- | --- | --- | --- |
-| 1 | Wordmark monument | Centre back | Bone, Limestone |
-| 2 | Twelve lines (the wave, one brass line) | Centre back | Bone, Limestone |
-| 3 | Eligius of Noyon colophon | Centre back | Bone · Ink variant |
-| 4 | From the pattern book (1948–1979) | Centre back | Limestone, Bone |
-| 5 | Cut on the bias (45° grainline) | Centre back | Bone, Limestone |
-| 6 | Care label, enlarged | Centre back | Limestone, Bone |
-| 7 | Atelier coordinates, Paris 8e | Centre back | Ink |
-| 8 | Edition registry, No. 01–12 | Centre back | Ink, Oxblood |
-| 9 | Stacked pocket mark | Left chest | All · dark variant |
-| 10 | Edition mark, No. 04 of 12 | Left chest | All · dark variant |
-| 11 | *waving luxury* | Centre front | Bone, Limestone |
-| 12 | Square plate | Left chest | All · dark variant |
-| 13 | Sleeve run | Left sleeve | Bone · dark variant |
-| 14 | Hood & back-neck mark | Hood / back neck | Limestone · dark variant |
-| 15 | Hem inlay | Front left hem | All · dark variant |
-| 16 | Printed neck label (tagless) | Inside back neck | All · dark variant |
-| 17 | Hangtag, front and back | 55 × 95 mm board | — |
-| 18 | Tissue seal and box band | Stickers | — |
-| 19 | Collection 04 poster | A2 | Bone stock |
-| 20 | Archive poster, 1974 cut retired | A2 | Oxblood stock |
+## Files
 
-- `prints/*.svg`: composite artwork. Every glyph is converted to a path, so no fonts are needed at the printer. Units are millimetres. Each spot ink is a `<g id="sep-…">` layer.
-- `separations/*.svg`: one 100% black film positive per ink, plus the dieline for 17 and 18.
-- `specs.json`: artboard, placement, method, garment and ink tokens, and the separation list for every file.
-- **Print constraints:** thinnest line is 0.4 mm. Inks are Ink (Pantone Black 6 C), Cream (custom mix to `#F2EBDF`), Brass (Pantone 871 C metallic for screen, flat `#B18A46` for DTG) and Oxblood (custom mix to `#5E1B22`). Confirm each custom mix with a drawdown. On dark garments the cream plate is the underbase and brass prints last.
-- **Kittl:** the 20 primary prints are saved as 300 dpi transparent PNGs (`png-300dpi/`) in the Kittl upload folder **DE NOYON — Prints 01–20**. Upload IDs are in `kittl-manifest.json`. No AI generation was run and no Kittl tokens were spent. Kittl's upload API accepts only raster files, so the SVGs remain the master artwork.
+| Path | What it is |
+| --- | --- |
+| `a-kittl/mockups/NN-slug.png` / `.svg` | Front and back tee mockup, print at real size and position |
+| `a-kittl/prints/NN-slug[-front\|-back][-on-dark].svg` | Print master: every glyph outlined, units in mm, one `<g id="sep-…">` layer per spot ink |
+| `a-kittl/separations/…<ink>.svg` | One 100% black film positive per ink |
+| `a-kittl/png-300dpi/*.png` | Transparent 300 dpi PNGs (long edge capped at 4800 px), the files uploaded to Kittl |
+| `a-kittl/specs.json` | Artboard, placement, method, garments, inks, separations and mockup placement for every file |
+| `a-kittl/kittl-manifest.json` | Kittl upload IDs and folders |
 
-## B · Canvas 21–35
+**Print constraints.** The thinnest line is 0.4 mm, except the pocket wave (42) at 0.3 mm, which is screen only. Inks are Ink (Pantone Black 6 C), Cream (custom mix to `#F2EBDF`), Brass (Pantone 871 C metallic for screen, flat `#B18A46` for DTG) and Oxblood (custom mix to `#5E1B22`); confirm the custom mixes with a drawdown. On ink and oxblood garments the cream plate is the underbase and brass prints last. The largest artboard is 300 × 420 mm.
 
-`b-canvas/designs.js` holds one `render(ctx, data)` per design. Open `b-canvas/index.html`, expand **Data** under any frame and edit the JSON; the frame redraws live. Exports are in `b-canvas/png/`.
+**Kittl.** All 50 are in the Kittl upload folder **DE NOYON — T-shirts 01–50**: 52 files, because 47 and 48 each have a front and a back. The first-round versions of 3, 4, 6, 7 and 8 are in **DE NOYON — Superseded**. The label, hangtag, stickers and posters are in **DE NOYON — Extras**. No AI generation was run and no Kittl tokens were spent.
 
-| # | Design | Size |
-| --- | --- | --- |
-| 21 / 22 | Drop announcement, feed / story | 1080² / 1080 × 1920 |
-| 23 / 24 | Piece introduction feed · edition registry story | 1080² / 1080 × 1920 |
-| 25 / 26 | Edition closed, feed / story | 1080² / 1080 × 1920 |
-| 27 / 28 | Available again · size availability banner (stock-driven) | 1080² / 1200 × 628 |
-| 29 / 30 / 31 | Complimentary alteration · Archive card · Fitting days | 1080 × 1350 / 1080² / 1080 × 1350 |
-| 32 / 33 | Bias twill seamless tile · proof watermark (transparent) | 2048² |
-| 34 / 35 | Hero overlay 21:9 (transparent) · collection header band | 2560 × 1097 / 2560 × 800 |
+## Also in the repository
 
-## C · Storefront 36–50
-
-Each page links `components.css`, which imports the design-system tokens and self-hosts the three font families. No component hard-codes a colour.
-
-36 full-bleed hero · 37 split hero · 38 noir hero with notice form · 39 product tiles with garment swatches · 40 product decision card · 41 compact product rows · 42 lookbook grid · 43 editorial story · 44 lookbook rail · 45 size-guide modal (cm/in) · 46 fit predictor · 47 measurements and fitting booking · 48 bag drawer · 49 bag drawer, edition held · 50 checkout service banners.
-
-## Where the brief was adapted to the brand
-
-The system forbids discount codes, countdowns, urgency badges and emoji, so the brief's streetwear slots were translated:
-
-- **"Flash sale / discount" (29–31)** became a complimentary alteration, an Archive card (the system's only reduced price, shown as a struck-through was-price) and atelier fitting days.
-- **"Sold out / back in stock" (25–28)** became *Edition closed* (the pattern is retired) and *Available again* (returned pieces).
-- **"Checkout promo banners" (50)** became service banners. The only code field accepts a gift card, not a promo code.
-
-No photography exists, so every image well is a captioned placeholder that names the shot it needs, as the system requires.
-
-The product facts and story copy are sample content to replace with real data: weights, finishing times, measurements, the return window and the story in 43.
+- **Extras (X1–X5):** neck label, hangtag, packaging stickers and two posters, built with the same inks. They're not counted among the 50.
+- **`b-canvas/` and `c-storefront/`:** social frames and storefront components from the first round. They're kept but not part of the t-shirt set, and some of their copy (dates, prices, cloth details) is sample content to replace.
 
 ## Rebuild
 
-Needs Node 18 or newer. Run from the repository root:
+Needs Node 18 or newer. From the repository root:
 
 ```sh
 cd denoyon/tools
 npm install          # opentype.js + Playwright
 npm run setup        # one-time: downloads the Chromium build Playwright uses
-npm run build        # everything below, in order
+npm run build        # prints → mockups → previews → Kittl PNGs → gallery
 ```
 
-Or one step at a time, still inside `denoyon/tools`:
-
-```sh
-npm run prints       # 1–20: SVG, separations, specs.json
-npm run previews     # print previews, canvas PNGs, storefront screenshots
-npm run kittl        # 300 dpi PNGs for Kittl
-npm run gallery      # index.html + thumbnails
-```
-
-The scripts resolve every path from their own location, so `node denoyon/tools/build-prints.mjs` also works from the repository root.
+Single steps, still inside `denoyon/tools`: `npm run prints`, `npm run mockups`, `npm run previews`, `npm run kittl`, `npm run gallery`. The t-shirt designs live in `tools/designs-tees.mjs` (16–50) and `tools/build-prints.mjs` (1–15 and the extras).
 
 Fonts in `fonts/` are Cormorant Garamond, Jost and IBM Plex Mono from Google Fonts, all under the SIL Open Font License.

@@ -1,27 +1,335 @@
 {
-  "workspace": { "id": "cmuhhuecy323b0jay5phydpiv", "name": "Felix's Team" },
-  "upload_folder": { "id": "cmui0q6rv52u50jculaqbmg58", "name": "DE NOYON — Prints 01–20" },
-  "method": "kittl-upload-image (presigned PUT of png-300dpi/*.png) → kittl-save-image-to-library. No AI generation used; no tokens spent.",
-  "uploads": [
-    { "design": 1,  "file": "png-300dpi/01-wordmark-monument.png",   "uploadId": "cmui0q7cb4ohg0jbg9rdpgdy9", "name": "DN 01 · Wordmark monument (back)" },
-    { "design": 2,  "file": "png-300dpi/02-twelve-lines.png",        "uploadId": "cmui0qt1o4oy60jaycxnwak6w", "name": "DN 02 · Twelve lines (back)" },
-    { "design": 3,  "file": "png-300dpi/03-eligius-colophon.png",    "uploadId": "cmui0qtdx4o650jaecaqy1tia", "name": "DN 03 · Eligius of Noyon (back)" },
-    { "design": 4,  "file": "png-300dpi/04-pattern-book.png",        "uploadId": "cmui0qtpl4p2r0jby1md017s9", "name": "DN 04 · From the pattern book (back)" },
-    { "design": 5,  "file": "png-300dpi/05-bias-grainline.png",      "uploadId": "cmui0qu2d4oro0jbs13fy1j1p", "name": "DN 05 · Cut on the bias (back)" },
-    { "design": 6,  "file": "png-300dpi/06-care-label.png",          "uploadId": "cmui0que14p2t0jby7hux3o6y", "name": "DN 06 · Care label, enlarged (back)" },
-    { "design": 7,  "file": "png-300dpi/07-atelier-coordinates.png", "uploadId": "cmui0skor4p7b0jby4g9y24em", "name": "DN 07 · Atelier coordinates (back, ink tee)" },
-    { "design": 8,  "file": "png-300dpi/08-edition-registry.png",    "uploadId": "cmui0sl0z4oa20jaeaw04ab7s", "name": "DN 08 · Edition registry (back, ink tee)" },
-    { "design": 9,  "file": "png-300dpi/09-pocket-stacked.png",      "uploadId": "cmui0slgt4omz0jbghj6dbzf8", "name": "DN 09 · Stacked pocket mark (chest)" },
-    { "design": 10, "file": "png-300dpi/10-edition-mark.png",        "uploadId": "cmui0slti4out0jcud9ls05uv", "name": "DN 10 · Edition mark (chest)" },
-    { "design": 11, "file": "png-300dpi/11-waving-luxury.png",       "uploadId": "cmui0sm644p1w0jay3hxhd00v", "name": "DN 11 · waving luxury (chest)" },
-    { "design": 12, "file": "png-300dpi/12-square-plate.png",        "uploadId": "cmui0smj24p7e0jbyfc4v4a55", "name": "DN 12 · Square plate (chest)" },
-    { "design": 13, "file": "png-300dpi/13-sleeve-run.png",          "uploadId": "cmui0smuq4on10jbgdhzw52qa", "name": "DN 13 · Sleeve run" },
-    { "design": 14, "file": "png-300dpi/14-back-neck-yoke.png",      "uploadId": "cmui0us384ozs0jcu7mz8fkjw", "name": "DN 14 · Hood & back-neck mark" },
-    { "design": 15, "file": "png-300dpi/15-hem-inlay.png",           "uploadId": "cmui0usf04ozv0jcu5cfadw10", "name": "DN 15 · Hem inlay" },
-    { "design": 16, "file": "png-300dpi/16-neck-label.png",          "uploadId": "cmui0usr44orh0jbg6adxfxfl", "name": "DN 16 · Printed neck label" },
-    { "design": 17, "file": "png-300dpi/17-hangtag.png",             "uploadId": "cmui0ut334p110jbs3ar1aofo", "name": "DN 17 · Hangtag, front and back" },
-    { "design": 18, "file": "png-300dpi/18-packaging-stickers.png",  "uploadId": "cmui0ute84of00jae0gr1abks", "name": "DN 18 · Tissue seal and box band" },
-    { "design": 19, "file": "png-300dpi/19-capsule-poster.png",      "uploadId": "cmui0utu44pbt0jbydwvgc31m", "name": "DN 19 · Collection 04 poster (A2)" },
-    { "design": 20, "file": "png-300dpi/20-archive-poster.png",      "uploadId": "cmui0uucz4p000jcu82wv7wa2", "name": "DN 20 · Archive poster (A2)" }
+  "workspace": {
+    "id": "cmuhhuecy323b0jay5phydpiv",
+    "name": "Felix's Team"
+  },
+  "method": "kittl-upload-image (presigned PUT of png-300dpi/*.png) → kittl-save-image-to-library. No AI generation used; no Kittl tokens spent.",
+  "folders": {
+    "tees": {
+      "id": "cmui2lylz57950jbykcg9amb5",
+      "name": "DE NOYON — T-shirts 01–50",
+      "count": 52
+    },
+    "extras": {
+      "id": "cmui2lyyb57960jbycn844iil",
+      "name": "DE NOYON — Extras",
+      "note": "First-round neck label, hangtag, stickers and posters (X1–X5). Uploaded before invented facts were removed; re-export from png-300dpi/x*.png if needed."
+    },
+    "superseded": {
+      "id": "cmui2lzcr57oi0jayo9vkyi6y",
+      "name": "DE NOYON — Superseded",
+      "note": "First-round versions of designs 3, 4, 6, 7 and 8, replaced in the tees folder."
+    },
+    "empty": {
+      "id": "cmui0q6rv52u50jculaqbmg58",
+      "name": "DE NOYON — Prints 01–20",
+      "note": "First-round folder, now empty."
+    }
+  },
+  "tees": [
+    {
+      "design": 1,
+      "file": "png-300dpi/01-wordmark-monument.png",
+      "uploadId": "cmui0q7cb4ohg0jbg9rdpgdy9"
+    },
+    {
+      "design": 2,
+      "file": "png-300dpi/02-twelve-lines.png",
+      "uploadId": "cmui0qt1o4oy60jaycxnwak6w"
+    },
+    {
+      "design": 3,
+      "file": "png-300dpi/03-eligius-colophon-on-dark.png",
+      "uploadId": "cmui2mds84sx70jay3pgb1o7d"
+    },
+    {
+      "design": 4,
+      "file": "png-300dpi/04-pattern-book.png",
+      "uploadId": "cmui2me454sk60jbgd9nic1eb"
+    },
+    {
+      "design": 5,
+      "file": "png-300dpi/05-bias-grainline.png",
+      "uploadId": "cmui0qu2d4oro0jbs13fy1j1p"
+    },
+    {
+      "design": 6,
+      "file": "png-300dpi/06-care-label.png",
+      "uploadId": "cmui2mehr4t6y0jbyby6m2qwh"
+    },
+    {
+      "design": 7,
+      "file": "png-300dpi/07-atelier-coordinates.png",
+      "uploadId": "cmui2meyi4s7u0jaec5un5pjc"
+    },
+    {
+      "design": 8,
+      "file": "png-300dpi/08-edition-registry.png",
+      "uploadId": "cmui2mfhj4st50jcu5lzc0isk"
+    },
+    {
+      "design": 9,
+      "file": "png-300dpi/09-pocket-stacked.png",
+      "uploadId": "cmui0slgt4omz0jbghj6dbzf8"
+    },
+    {
+      "design": 10,
+      "file": "png-300dpi/10-edition-mark.png (not rebuilt: Kittl holds the ink-on-light version; the mockup shows prints/10-edition-mark-on-dark.svg)",
+      "uploadId": "cmui0slti4out0jcud9ls05uv"
+    },
+    {
+      "design": 11,
+      "file": "png-300dpi/11-waving-luxury.png",
+      "uploadId": "cmui0sm644p1w0jay3hxhd00v"
+    },
+    {
+      "design": 12,
+      "file": "png-300dpi/12-square-plate.png",
+      "uploadId": "cmui0smj24p7e0jbyfc4v4a55"
+    },
+    {
+      "design": 13,
+      "file": "png-300dpi/13-sleeve-run.png",
+      "uploadId": "cmui0smuq4on10jbgdhzw52qa"
+    },
+    {
+      "design": 14,
+      "file": "png-300dpi/14-back-neck-yoke.png",
+      "uploadId": "cmui0us384ozs0jcu7mz8fkjw"
+    },
+    {
+      "design": 15,
+      "file": "png-300dpi/15-hem-inlay.png",
+      "uploadId": "cmui0usf04ozv0jcu5cfadw10"
+    },
+    {
+      "design": 16,
+      "file": "png-300dpi/16-pattern-draft.png",
+      "uploadId": "cmui2mftp4s7w0jae2db261ge"
+    },
+    {
+      "design": 17,
+      "file": "png-300dpi/17-twelve-numeral.png",
+      "uploadId": "cmui2mg5i4st80jcu3i96bak5"
+    },
+    {
+      "design": 18,
+      "file": "png-300dpi/18-wave-field-on-dark.png",
+      "uploadId": "cmui2nb044sm90jbg8nwk208j"
+    },
+    {
+      "design": 19,
+      "file": "png-300dpi/19-wordmark-full-width-on-dark.png",
+      "uploadId": "cmui2nbc24szm0jay9ejvgaxv"
+    },
+    {
+      "design": 20,
+      "file": "png-300dpi/20-hallmarks.png",
+      "uploadId": "cmui2nbox4t970jby648ed8i0"
+    },
+    {
+      "design": 21,
+      "file": "png-300dpi/21-spine.png",
+      "uploadId": "cmui2nc2c4t990jby8fwy2fht"
+    },
+    {
+      "design": 22,
+      "file": "png-300dpi/22-bias-grid.png",
+      "uploadId": "cmui2ncf94swg0jbsetfwe7bu"
+    },
+    {
+      "design": 23,
+      "file": "png-300dpi/23-pattern-retired.png",
+      "uploadId": "cmui2ncsb4swi0jbs93n31qzw"
+    },
+    {
+      "design": 24,
+      "file": "png-300dpi/24-gold-by-proportion-on-dark.png",
+      "uploadId": "cmui2nd7b4t9b0jby5ik2gelj"
+    },
+    {
+      "design": 25,
+      "file": "png-300dpi/25-one-atelier.png",
+      "uploadId": "cmui2on964sc80jaeduhf316k"
+    },
+    {
+      "design": 26,
+      "file": "png-300dpi/26-archive.png",
+      "uploadId": "cmui2onks4t2e0jayf2875qen"
+    },
+    {
+      "design": 27,
+      "file": "png-300dpi/27-tailors-tape.png",
+      "uploadId": "cmui2onwa4tc80jby8ehm1fzv"
+    },
+    {
+      "design": 28,
+      "file": "png-300dpi/28-wave-cropped.png",
+      "uploadId": "cmui2oo8v4t2g0jaycfko932y"
+    },
+    {
+      "design": 29,
+      "file": "png-300dpi/29-twelve-grid-on-dark.png",
+      "uploadId": "cmui2ookx4sza0jbs9lgh07ck"
+    },
+    {
+      "design": 30,
+      "file": "png-300dpi/30-bias-diagonal.png",
+      "uploadId": "cmui2op9f4tca0jbydldt69u9"
+    },
+    {
+      "design": 31,
+      "file": "png-300dpi/31-waving-luxury-oversized.png",
+      "uploadId": "cmui2opl14szd0jbs15yn4qex"
+    },
+    {
+      "design": 32,
+      "file": "png-300dpi/32-selvedge.png",
+      "uploadId": "cmui2pluk4t4n0jayc4tc8eej"
+    },
+    {
+      "design": 33,
+      "file": "png-300dpi/33-cutting-marker.png",
+      "uploadId": "cmui2pm6p4srt0jbg9d5yb27y"
+    },
+    {
+      "design": 34,
+      "file": "png-300dpi/34-number-04.png",
+      "uploadId": "cmui2pmlr4t4p0jayhh3nbcur"
+    },
+    {
+      "design": 35,
+      "file": "png-300dpi/35-chest-wordmark-on-dark.png",
+      "uploadId": "cmui2pmxx4sex0jae57cr9yfj"
+    },
+    {
+      "design": 36,
+      "file": "png-300dpi/36-twelve-made-wave.png",
+      "uploadId": "cmui2pnj44sf00jaebu8v2eiv"
+    },
+    {
+      "design": 37,
+      "file": "png-300dpi/37-cut-on-the-bias-front.png",
+      "uploadId": "cmui2pnwl4szm0jcu8ms111sr"
+    },
+    {
+      "design": 38,
+      "file": "png-300dpi/38-hallmark-strip.png",
+      "uploadId": "cmui2po8l4szn0jcueuns9uva"
+    },
+    {
+      "design": 39,
+      "file": "png-300dpi/39-side-wordmark-on-dark.png",
+      "uploadId": "cmui2qijt4t2j0jbsdyn8bo9z"
+    },
+    {
+      "design": 40,
+      "file": "png-300dpi/40-nineteen-seventy-four.png",
+      "uploadId": "cmui2qivk4sh10jae3zo1he3d"
+    },
+    {
+      "design": 41,
+      "file": "png-300dpi/41-forty-five-degrees-on-dark.png",
+      "uploadId": "cmui2qjej4t2l0jbsdzs3cw1j"
+    },
+    {
+      "design": 42,
+      "file": "png-300dpi/42-pocket-wave.png",
+      "uploadId": "cmui2qjqz4t6b0jay90xwdx4t"
+    },
+    {
+      "design": 43,
+      "file": "png-300dpi/43-grainline-front.png",
+      "uploadId": "cmui2qk1f4ste0jbgeaufhe70"
+    },
+    {
+      "design": 44,
+      "file": "png-300dpi/44-sleeve-tape.png",
+      "uploadId": "cmui2qkdt4sh40jaebuhbbafg"
+    },
+    {
+      "design": 45,
+      "file": "png-300dpi/45-back-yoke.png",
+      "uploadId": "cmui2qkq84t6e0jay3zfk12i4"
+    },
+    {
+      "design": 46,
+      "file": "png-300dpi/46-hem-band.png",
+      "uploadId": "cmui2rew74t4h0jbs59n5gz35"
+    },
+    {
+      "design": 47,
+      "file": "png-300dpi/47-split-wordmark-back.png",
+      "uploadId": "cmui2rfl94t390jcu59r40u4b"
+    },
+    {
+      "design": 47,
+      "file": "png-300dpi/47-split-wordmark-front.png",
+      "uploadId": "cmui2rf9n4thm0jby1mcnd5l8"
+    },
+    {
+      "design": 48,
+      "file": "png-300dpi/48-split-sentence-back-on-dark.png",
+      "uploadId": "cmui2rgan4sj40jaeh3whfv5z"
+    },
+    {
+      "design": 48,
+      "file": "png-300dpi/48-split-sentence-front-on-dark.png",
+      "uploadId": "cmui2rfyd4t7p0jayhwd1aizr"
+    },
+    {
+      "design": 49,
+      "file": "png-300dpi/49-atelier-stamp.png",
+      "uploadId": "cmui2rgm54t3d0jcuewfs22mn"
+    },
+    {
+      "design": 50,
+      "file": "png-300dpi/50-collection-04.png",
+      "uploadId": "cmui2rh1v4sv10jbg4llibfu9"
+    }
+  ],
+  "extras": [
+    {
+      "id": "X1",
+      "uploadId": "cmui0usr44orh0jbg6adxfxfl"
+    },
+    {
+      "id": "X2",
+      "uploadId": "cmui0ut334p110jbs3ar1aofo"
+    },
+    {
+      "id": "X3",
+      "uploadId": "cmui0ute84of00jae0gr1abks"
+    },
+    {
+      "id": "X4",
+      "uploadId": "cmui0utu44pbt0jbydwvgc31m"
+    },
+    {
+      "id": "X5",
+      "uploadId": "cmui0uucz4p000jcu82wv7wa2"
+    }
+  ],
+  "superseded": [
+    {
+      "design": 3,
+      "uploadId": "cmui0qtdx4o650jaecaqy1tia"
+    },
+    {
+      "design": 4,
+      "uploadId": "cmui0qtpl4p2r0jby1md017s9"
+    },
+    {
+      "design": 6,
+      "uploadId": "cmui0que14p2t0jby7hux3o6y"
+    },
+    {
+      "design": 7,
+      "uploadId": "cmui0skor4p7b0jby4g9y24em"
+    },
+    {
+      "design": 8,
+      "uploadId": "cmui0sl0z4oa20jaeaw04ab7s"
+    }
   ]
 }

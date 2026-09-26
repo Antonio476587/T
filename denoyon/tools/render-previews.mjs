@@ -1,6 +1,6 @@
 // Renders PNG previews of every print on its garment colour (a-kittl/previews/)
 // and exports every Canvas design to PNG (b-canvas/png/).
-// Run: node tools/render-previews.mjs [prints|canvas]
+// Run: node tools/render-previews.mjs [prints|canvas|storefront|kittl]
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -71,9 +71,16 @@ if (which === 'kittl') {
   const { prints } = JSON.parse(fs.readFileSync(path.join(root, 'a-kittl/specs.json'), 'utf8'));
   const out = path.join(root, 'a-kittl/png-300dpi');
   fs.mkdirSync(out, { recursive: true });
-  const seen = new Set();
-  for (const p of prints) {
-    if (seen.has(p.design)) continue; seen.add(p.design);
+  for (const f of fs.readdirSync(out)) fs.rmSync(path.join(out, f));
+  // one PNG per design and part, in the colour version the mockup shows
+  const want = (p) => (p.mock && ['ink', 'oxblood'].includes(p.mock.g) ? 'dark' : 'light');
+  const chosen = prints.filter((p) => {
+    const siblings = prints.filter((q) => q.design === p.design && q.part === p.part);
+    const target = siblings.some((q) => q.variant === want(p)) ? want(p) : siblings[0].variant;
+    return p.variant === target;
+  });
+  const seen = { size: chosen.length };
+  for (const p of chosen) {
     const [w, h] = p.artboard_mm;
     const px = 300 / 25.4, scale = Math.min(1, 4800 / Math.max(w * px, h * px)); // cap long edge at 4800 px
     const W = Math.round(w * px * scale), H = Math.round(h * px * scale);

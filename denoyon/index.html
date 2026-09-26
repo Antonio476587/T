@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DE NOYON Design Engine</title>
+<title>DE NOYON T-shirts</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@300;500&family=IBM+Plex+Mono:wght@400&display=swap">
 
 <style>
@@ -41,9 +41,13 @@ nav.filter button:focus-visible,a:focus-visible{outline:1px solid var(--brass);o
 .cat__head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:32px}
 .cat__head h2{margin:8px 0 0;font:300 clamp(30px,3.4vw,44px)/1.1 var(--serif);letter-spacing:-.015em}
 .cat__head p{margin:0;max-width:44ch;color:var(--ink-2);font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:48px 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:40px 24px}
+.grid--tee{grid-template-columns:repeat(auto-fill,minmax(min(100%,400px),1fr));gap:56px 24px}
+.card--tee .card__img{aspect-ratio:5/3}
+.card__note{margin:2px 0 6px;font-size:14px;color:var(--ink-2);max-width:52ch}
+.cat--quiet h2{font-size:clamp(24px,2.6vw,32px)}
 .card h3{margin:6px 0 2px;font:300 21px/1.2 var(--serif);text-wrap:balance}
-.card__img{display:block;aspect-ratio:1;background:var(--paper-2);overflow:hidden;border:1px solid var(--line)}
+.card__img{display:block;aspect-ratio:1;max-width:100%;background:var(--paper-2);overflow:hidden;border:1px solid var(--line)}
 .card__img img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .52s cubic-bezier(.19,1,.22,1)}
 .card__img:hover img{transform:scale(1.03)}
 .card__meta{display:flex;justify-content:space-between;gap:8px;margin-top:12px;font:400 12px/1.4 var(--mono);color:var(--muted)}
@@ -61,551 +65,992 @@ nav.filter button:focus-visible,a:focus-visible{outline:1px solid var(--brass);o
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><span class="wm">De Noyon</span><span class="mono">Design engine · 50 pieces</span></div>
+  <div class="top"><span class="wm">De Noyon</span><span class="mono">T-shirt designs · 50</span></div>
   <section class="hero">
-    <div><span class="eyebrow">Collection 04 · the bias tee</span><h1>Fifty pieces, one brass line.</h1></div>
-    <p>Prints, social frames and storefront components built strictly from the DE NOYON system: ink and paper, square corners, gold only as a hairline, scarcity stated as fact.</p>
+    <div><span class="eyebrow">Collection 04 · the bias tee</span><h1>Fifty tees, one brass line.</h1></div>
+    <p>Print-ready t-shirt graphics built from the DE NOYON system. Each design has one idea, at most two typefaces, and gold only as a line.</p>
   </section>
   <div class="facts">
-    <div><b>20</b><span>Print files · SVG + films</span></div>
-    <div><b>15</b><span>Canvas frames · PNG</span></div>
-    <div><b>15</b><span>Storefront components</span></div>
+    <div><b>50</b><span>T-shirt designs</span></div>
+    <div><b>4</b><span>Garments · bone, limestone, ink, oxblood</span></div>
+    <div><b>4</b><span>Spot inks · ink, cream, brass, oxblood</span></div>
   </div>
-  <nav class="filter" aria-label="Filter by category">
+  <nav class="filter" aria-label="Filter the t-shirt designs by placement">
     <button type="button" data-f="all" aria-pressed="true">All 50</button>
-    <button type="button" data-f="A" aria-pressed="false">Prints · 20</button>
-    <button type="button" data-f="B" aria-pressed="false">Canvas · 15</button>
-    <button type="button" data-f="C" aria-pressed="false">Storefront · 15</button>
+    <button type="button" data-f="back" aria-pressed="false">Back · 29</button>
+    <button type="button" data-f="front" aria-pressed="false">Front · 10</button>
+    <button type="button" data-f="both" aria-pressed="false">Front &amp; back · 2</button>
+    <button type="button" data-f="detail" aria-pressed="false">Sleeve, hem, neck · 9</button>
   </nav>
   
-    <section class="cat" id="cat-A" data-cat="A">
-      <header class="cat__head"><div><span class="eyebrow">Print</span><h2>Apparel prints · 1–20</h2></div><p>Outlined vector artwork with spot-ink separations. Uploaded to Kittl as 300 dpi PNGs.</p></header>
-      <div class="grid">
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/01-wordmark-monument.svg"><img src="gallery/thumbs/01.jpg" alt="Wordmark monument" loading="lazy" width="900" height="900"></a>
+    <section class="cat" id="tees">
+      <header class="cat__head"><div><span class="eyebrow">T-shirts</span><h2>Fifty designs</h2></div><p>Each tee shown front and back in its garment colour, the print at real size and position. Every design has print-ready SVG and one film per ink.</p></header>
+      <div class="grid grid--tee">
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/01-wordmark-monument.png"><img src="gallery/thumbs/t01.jpg" alt="Wordmark monument" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">01</span>
           <span class="card__group">Back print</span>
         </div>
         <h3>Wordmark monument</h3>
-        <p class="card__spec">280 × 70 mm · 2 inks · Bone, Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/01-wordmark-monument.svg">SVG</a><a href="a-kittl/separations/01-wordmark-monument.ink.svg">Films</a></p>
+        <p class="card__note">The mark at architectural scale. Nothing else on the back.</p>
+        <p class="card__spec">280 × 70 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/01-wordmark-monument.png">Mockup</a><a href="a-kittl/prints/01-wordmark-monument.svg">Print SVG</a><a href="a-kittl/separations/01-wordmark-monument.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/02-twelve-lines.svg"><img src="gallery/thumbs/02.jpg" alt="Twelve lines" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/02-twelve-lines.png"><img src="gallery/thumbs/t02.jpg" alt="Twelve lines" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">02</span>
           <span class="card__group">Back print</span>
         </div>
         <h3>Twelve lines</h3>
-        <p class="card__spec">260 × 320 mm · 2 inks · Bone, Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/02-twelve-lines.svg">SVG</a><a href="a-kittl/separations/02-twelve-lines.ink.svg">Films</a></p>
+        <p class="card__note">Edition of twelve drawn as twelve lines of cloth; the last is brass.</p>
+        <p class="card__spec">260 × 320 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/02-twelve-lines.png">Mockup</a><a href="a-kittl/prints/02-twelve-lines.svg">Print SVG</a><a href="a-kittl/separations/02-twelve-lines.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/03-eligius-colophon.svg"><img src="gallery/thumbs/03.jpg" alt="Eligius of Noyon" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/03-eligius-colophon.png"><img src="gallery/thumbs/t03.jpg" alt="Eligius of Noyon" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">03</span>
           <span class="card__group">Back print</span>
         </div>
         <h3>Eligius of Noyon</h3>
-        <p class="card__spec">240 × 170 mm · 2 inks · Bone</p>
-        <p class="card__links"><a href="a-kittl/prints/03-eligius-colophon.svg">SVG</a><a href="a-kittl/separations/03-eligius-colophon.ink.svg">Films</a></p>
+        <p class="card__note">The name’s origin as the whole message. One name, one brass line.</p>
+        <p class="card__spec">250 × 122 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/03-eligius-colophon.png">Mockup</a><a href="a-kittl/prints/03-eligius-colophon.svg">Print SVG</a><a href="a-kittl/separations/03-eligius-colophon.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/04-pattern-book.svg"><img src="gallery/thumbs/04.jpg" alt="From the pattern book" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/04-pattern-book.png"><img src="gallery/thumbs/t04.jpg" alt="From the pattern book" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">04</span>
           <span class="card__group">Back print</span>
         </div>
         <h3>From the pattern book</h3>
-        <p class="card__spec">240 × 300 mm · 2 inks · Limestone, Bone</p>
-        <p class="card__links"><a href="a-kittl/prints/04-pattern-book.svg">SVG</a><a href="a-kittl/separations/04-pattern-book.ink.svg">Films</a></p>
+        <p class="card__note">Thirty-two archive years; the cut used is underlined in brass.</p>
+        <p class="card__spec">240 × 300 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/04-pattern-book.png">Mockup</a><a href="a-kittl/prints/04-pattern-book.svg">Print SVG</a><a href="a-kittl/separations/04-pattern-book.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/05-bias-grainline.svg"><img src="gallery/thumbs/05.jpg" alt="Cut on the bias" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/05-bias-grainline.png"><img src="gallery/thumbs/t05.jpg" alt="Cut on the bias" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">05</span>
           <span class="card__group">Back print</span>
         </div>
         <h3>Cut on the bias</h3>
-        <p class="card__spec">280 × 280 mm · 2 inks · Bone, Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/05-bias-grainline.svg">SVG</a><a href="a-kittl/separations/05-bias-grainline.ink.svg">Films</a></p>
+        <p class="card__note">Pattern-maker’s grainline at 45°, the brand’s whole construction in one mark.</p>
+        <p class="card__spec">280 × 280 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/05-bias-grainline.png">Mockup</a><a href="a-kittl/prints/05-bias-grainline.svg">Print SVG</a><a href="a-kittl/separations/05-bias-grainline.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/06-care-label.svg"><img src="gallery/thumbs/06.jpg" alt="Care label, enlarged" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/06-care-label.png"><img src="gallery/thumbs/t06.jpg" alt="Label, enlarged" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">06</span>
           <span class="card__group">Back print</span>
         </div>
-        <h3>Care label, enlarged</h3>
-        <p class="card__spec">200 × 270 mm · 2 inks · Limestone, Bone</p>
-        <p class="card__links"><a href="a-kittl/prints/06-care-label.svg">SVG</a><a href="a-kittl/separations/06-care-label.ink.svg">Films</a></p>
+        <h3>Label, enlarged</h3>
+        <p class="card__note">The woven label at back-print scale: the mark, the edition number, the city. Nothing invented.</p>
+        <p class="card__spec">200 × 250 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/06-care-label.png">Mockup</a><a href="a-kittl/prints/06-care-label.svg">Print SVG</a><a href="a-kittl/separations/06-care-label.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/07-atelier-coordinates.svg"><img src="gallery/thumbs/07.jpg" alt="Atelier coordinates" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/07-atelier-coordinates.png"><img src="gallery/thumbs/t07.jpg" alt="Paris, 8e." loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">07</span>
           <span class="card__group">Back print</span>
         </div>
-        <h3>Atelier coordinates</h3>
-        <p class="card__spec">240 × 150 mm · 2 inks · Ink</p>
-        <p class="card__links"><a href="a-kittl/prints/07-atelier-coordinates.svg">SVG</a><a href="a-kittl/separations/07-atelier-coordinates.cream.svg">Films</a></p>
+        <h3>Paris, 8e.</h3>
+        <p class="card__note">One atelier, stated as an address. The city is the hero.</p>
+        <p class="card__spec">270 × 100 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/07-atelier-coordinates.png">Mockup</a><a href="a-kittl/prints/07-atelier-coordinates.svg">Print SVG</a><a href="a-kittl/separations/07-atelier-coordinates.cream.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/08-edition-registry.svg"><img src="gallery/thumbs/08.jpg" alt="Edition registry" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/08-edition-registry.png"><img src="gallery/thumbs/t08.jpg" alt="Edition registry" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">08</span>
           <span class="card__group">Back print</span>
         </div>
         <h3>Edition registry</h3>
-        <p class="card__spec">200 × 290 mm · 2 inks · Ink, Oxblood</p>
-        <p class="card__links"><a href="a-kittl/prints/08-edition-registry.svg">SVG</a><a href="a-kittl/separations/08-edition-registry.cream.svg">Films</a></p>
+        <p class="card__note">Twelve numbered rules; the wearer’s number is the brass one (variable per piece).</p>
+        <p class="card__spec">200 × 290 mm · 2 inks · shown on oxblood</p>
+        <p class="card__links"><a href="a-kittl/mockups/08-edition-registry.png">Mockup</a><a href="a-kittl/prints/08-edition-registry.svg">Print SVG</a><a href="a-kittl/separations/08-edition-registry.cream.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/09-pocket-stacked.svg"><img src="gallery/thumbs/09.jpg" alt="Stacked pocket mark" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/09-pocket-stacked.png"><img src="gallery/thumbs/t09.jpg" alt="Stacked pocket mark" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">09</span>
           <span class="card__group">Front chest</span>
         </div>
         <h3>Stacked pocket mark</h3>
-        <p class="card__spec">70 × 40 mm · 2 inks · Bone, Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/09-pocket-stacked.svg">SVG</a><a href="a-kittl/separations/09-pocket-stacked.ink.svg">Films</a></p>
+        <p class="card__note">The stacked lockup at minimum-plus size (≥ 72 px rule applies on screen; 50 mm wide here).</p>
+        <p class="card__spec">70 × 40 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/09-pocket-stacked.png">Mockup</a><a href="a-kittl/prints/09-pocket-stacked.svg">Print SVG</a><a href="a-kittl/separations/09-pocket-stacked.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/10-edition-mark.svg"><img src="gallery/thumbs/10.jpg" alt="Edition mark" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/10-edition-mark.png"><img src="gallery/thumbs/t10.jpg" alt="Edition mark" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">10</span>
           <span class="card__group">Front chest</span>
         </div>
         <h3>Edition mark</h3>
-        <p class="card__spec">70 × 26 mm · 2 inks · Bone</p>
-        <p class="card__links"><a href="a-kittl/prints/10-edition-mark.svg">SVG</a><a href="a-kittl/separations/10-edition-mark.ink.svg">Films</a></p>
+        <p class="card__note">Edition number as the only chest graphic. Numeral swapped per piece.</p>
+        <p class="card__spec">70 × 26 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/10-edition-mark.png">Mockup</a><a href="a-kittl/prints/10-edition-mark.svg">Print SVG</a><a href="a-kittl/separations/10-edition-mark.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/11-waving-luxury.svg"><img src="gallery/thumbs/11.jpg" alt="waving luxury" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/11-waving-luxury.png"><img src="gallery/thumbs/t11.jpg" alt="waving luxury" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">11</span>
           <span class="card__group">Front chest</span>
         </div>
         <h3>waving luxury</h3>
-        <p class="card__spec">120 × 30 mm · 2 inks · Bone, Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/11-waving-luxury.svg">SVG</a><a href="a-kittl/separations/11-waving-luxury.ink.svg">Films</a></p>
+        <p class="card__note">The brand idea in italic serif, lowercase as a phrase, not a slogan.</p>
+        <p class="card__spec">120 × 30 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/11-waving-luxury.png">Mockup</a><a href="a-kittl/prints/11-waving-luxury.svg">Print SVG</a><a href="a-kittl/separations/11-waving-luxury.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/12-square-plate.svg"><img src="gallery/thumbs/12.jpg" alt="Square plate" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/12-square-plate.png"><img src="gallery/thumbs/t12.jpg" alt="Square plate" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">12</span>
           <span class="card__group">Front chest</span>
         </div>
         <h3>Square plate</h3>
-        <p class="card__spec">56 × 56 mm · 2 inks · Limestone, Bone</p>
-        <p class="card__links"><a href="a-kittl/prints/12-square-plate.svg">SVG</a><a href="a-kittl/separations/12-square-plate.ink.svg">Films</a></p>
+        <p class="card__note">A stone plate with an ebony frame and a brass seam. Square, never round.</p>
+        <p class="card__spec">56 × 56 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/12-square-plate.png">Mockup</a><a href="a-kittl/prints/12-square-plate.svg">Print SVG</a><a href="a-kittl/separations/12-square-plate.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/13-sleeve-run.svg"><img src="gallery/thumbs/13.jpg" alt="Sleeve run" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/13-sleeve-run.png"><img src="gallery/thumbs/t13.jpg" alt="Sleeve run" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">13</span>
           <span class="card__group">Sleeve</span>
         </div>
         <h3>Sleeve run</h3>
-        <p class="card__spec">14 × 260 mm · 2 inks · Bone</p>
-        <p class="card__links"><a href="a-kittl/prints/13-sleeve-run.svg">SVG</a><a href="a-kittl/separations/13-sleeve-run.ink.svg">Films</a></p>
+        <p class="card__note">Type runs down the arm, then continues as one brass line to the cuff.</p>
+        <p class="card__spec">14 × 260 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/13-sleeve-run.png">Mockup</a><a href="a-kittl/prints/13-sleeve-run.svg">Print SVG</a><a href="a-kittl/separations/13-sleeve-run.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/14-back-neck-yoke.svg"><img src="gallery/thumbs/14.jpg" alt="Hood &amp; back-neck mark" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/14-back-neck-yoke.png"><img src="gallery/thumbs/t14.jpg" alt="Hood &amp; back-neck mark" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">14</span>
           <span class="card__group">Hood</span>
         </div>
         <h3>Hood &amp; back-neck mark</h3>
-        <p class="card__spec">80 × 20 mm · 2 inks · Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/14-back-neck-yoke.svg">SVG</a><a href="a-kittl/separations/14-back-neck-yoke.ink.svg">Films</a></p>
+        <p class="card__note">Seen only when the hood is down or the hair is up.</p>
+        <p class="card__spec">80 × 20 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/14-back-neck-yoke.png">Mockup</a><a href="a-kittl/prints/14-back-neck-yoke.svg">Print SVG</a><a href="a-kittl/separations/14-back-neck-yoke.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/15-hem-inlay.svg"><img src="gallery/thumbs/15.jpg" alt="Hem inlay" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/15-hem-inlay.png"><img src="gallery/thumbs/t15.jpg" alt="Hem inlay" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">15</span>
           <span class="card__group">Hem</span>
         </div>
         <h3>Hem inlay</h3>
-        <p class="card__spec">150 × 8 mm · 2 inks · Bone, Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/15-hem-inlay.svg">SVG</a><a href="a-kittl/separations/15-hem-inlay.ink.svg">Films</a></p>
+        <p class="card__note">A brass seam in the stone — Dirand’s inlay, set at the hem.</p>
+        <p class="card__spec">150 × 8 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/15-hem-inlay.png">Mockup</a><a href="a-kittl/prints/15-hem-inlay.svg">Print SVG</a><a href="a-kittl/separations/15-hem-inlay.ink.svg">Films</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/16-neck-label.svg"><img src="gallery/thumbs/16.jpg" alt="Printed neck label" loading="lazy" width="900" height="900"></a>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/16-pattern-draft.png"><img src="gallery/thumbs/t16.jpg" alt="The pattern, drafted" loading="lazy"></a>
         <div class="card__meta">
           <span class="card__n">16</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>The pattern, drafted</h3>
+        <p class="card__note">The garment’s own pattern is the graphic. Every grainline sits at 45°: that is the bias.</p>
+        <p class="card__spec">300 × 380 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/16-pattern-draft.png">Mockup</a><a href="a-kittl/prints/16-pattern-draft.svg">Print SVG</a><a href="a-kittl/separations/16-pattern-draft.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/17-twelve-numeral.png"><img src="gallery/thumbs/t17.jpg" alt="12" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">17</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>12</h3>
+        <p class="card__note">The edition size at full scale. Scale is the whole idea.</p>
+        <p class="card__spec">280 × 330 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/17-twelve-numeral.png">Mockup</a><a href="a-kittl/prints/17-twelve-numeral.svg">Print SVG</a><a href="a-kittl/separations/17-twelve-numeral.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/18-wave-field.png"><img src="gallery/thumbs/t18.jpg" alt="Wave field" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">18</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Wave field</h3>
+        <p class="card__note">Thirty-six lines of cloth falling as one wave. The last line is brass.</p>
+        <p class="card__spec">300 × 400 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/18-wave-field.png">Mockup</a><a href="a-kittl/prints/18-wave-field.svg">Print SVG</a><a href="a-kittl/separations/18-wave-field.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/19-wordmark-full-width.png"><img src="gallery/thumbs/t19.jpg" alt="Wordmark, full width" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">19</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Wordmark, full width</h3>
+        <p class="card__note">The mark at the width of the back, left-aligned, the brass rule under it at full length.</p>
+        <p class="card__spec">300 × 92 mm · 2 inks · shown on oxblood</p>
+        <p class="card__links"><a href="a-kittl/mockups/19-wordmark-full-width.png">Mockup</a><a href="a-kittl/prints/19-wordmark-full-width.svg">Print SVG</a><a href="a-kittl/separations/19-wordmark-full-width.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/20-hallmarks.png"><img src="gallery/thumbs/t20.jpg" alt="Hallmarks" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">20</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Hallmarks</h3>
+        <p class="card__note">Assay punches, the goldsmith’s signature. The edition punch is struck in brass.</p>
+        <p class="card__spec">290 × 88 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/20-hallmarks.png">Mockup</a><a href="a-kittl/prints/20-hallmarks.svg">Print SVG</a><a href="a-kittl/separations/20-hallmarks.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/21-spine.png"><img src="gallery/thumbs/t21.jpg" alt="Pattern book spine" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">21</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Pattern book spine</h3>
+        <p class="card__note">Thirty-one years of patterns set down the spine like the back of a book.</p>
+        <p class="card__spec">60 × 420 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/21-spine.png">Mockup</a><a href="a-kittl/prints/21-spine.svg">Print SVG</a><a href="a-kittl/separations/21-spine.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/22-bias-grid.png"><img src="gallery/thumbs/t22.jpg" alt="Warp, weft, bias" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">22</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Warp, weft, bias</h3>
+        <p class="card__note">A swatch of cloth drawn as a diagram: the true bias runs corner to corner in brass.</p>
+        <p class="card__spec">270 × 290 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/22-bias-grid.png">Mockup</a><a href="a-kittl/prints/22-bias-grid.svg">Print SVG</a><a href="a-kittl/separations/22-bias-grid.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/23-pattern-retired.png"><img src="gallery/thumbs/t23.jpg" alt="When they are gone" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">23</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>When they are gone</h3>
+        <p class="card__note">The house rule on scarcity, stated once, at the size of the back.</p>
+        <p class="card__spec">280 × 200 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/23-pattern-retired.png">Mockup</a><a href="a-kittl/prints/23-pattern-retired.svg">Print SVG</a><a href="a-kittl/separations/23-pattern-retired.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/24-gold-by-proportion.png"><img src="gallery/thumbs/t24.jpg" alt="Gold, by proportion" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">24</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Gold, by proportion</h3>
+        <p class="card__note">Eligius made thrones by proportion, not jewels. The brand thesis in three words.</p>
+        <p class="card__spec">280 × 150 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/24-gold-by-proportion.png">Mockup</a><a href="a-kittl/prints/24-gold-by-proportion.svg">Print SVG</a><a href="a-kittl/separations/24-gold-by-proportion.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/25-one-atelier.png"><img src="gallery/thumbs/t25.jpg" alt="One atelier." loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">25</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>One atelier.</h3>
+        <p class="card__note">Direct to client, one storefront, one atelier.</p>
+        <p class="card__spec">270 × 120 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/25-one-atelier.png">Mockup</a><a href="a-kittl/prints/25-one-atelier.svg">Print SVG</a><a href="a-kittl/separations/25-one-atelier.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/26-archive.png"><img src="gallery/thumbs/t26.jpg" alt="Archive." loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">26</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Archive.</h3>
+        <p class="card__note">Oxblood means archive in this system. The word and the colour say the same thing.</p>
+        <p class="card__spec">280 × 110 mm · 2 inks · shown on oxblood</p>
+        <p class="card__links"><a href="a-kittl/mockups/26-archive.png">Mockup</a><a href="a-kittl/prints/26-archive.svg">Print SVG</a><a href="a-kittl/separations/26-archive.cream.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/27-tailors-tape.png"><img src="gallery/thumbs/t27.jpg" alt="Tailor’s tape" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">27</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Tailor’s tape</h3>
+        <p class="card__note">A cutter’s tape down the back, with one brass mark at twelve.</p>
+        <p class="card__spec">70 × 410 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/27-tailors-tape.png">Mockup</a><a href="a-kittl/prints/27-tailors-tape.svg">Print SVG</a><a href="a-kittl/separations/27-tailors-tape.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/28-wave-cropped.png"><img src="gallery/thumbs/t28.jpg" alt="Wave, cropped" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">28</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Wave, cropped</h3>
+        <p class="card__note">The twelve lines at a scale the back cannot hold. The crop is the idea.</p>
+        <p class="card__spec">300 × 400 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/28-wave-cropped.png">Mockup</a><a href="a-kittl/prints/28-wave-cropped.svg">Print SVG</a><a href="a-kittl/separations/28-wave-cropped.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/29-twelve-grid.png"><img src="gallery/thumbs/t29.jpg" alt="The twelve" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">29</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>The twelve</h3>
+        <p class="card__note">Twelve squares, one per piece. The wearer’s is framed in brass (variable).</p>
+        <p class="card__spec">270 × 363 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/29-twelve-grid.png">Mockup</a><a href="a-kittl/prints/29-twelve-grid.svg">Print SVG</a><a href="a-kittl/separations/29-twelve-grid.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/30-bias-diagonal.png"><img src="gallery/thumbs/t30.jpg" alt="Cut on the bias, diagonal" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">30</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Cut on the bias, diagonal</h3>
+        <p class="card__note">The sentence runs the diagonal of the print area, the way the cut runs the cloth.</p>
+        <p class="card__spec">300 × 400 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/30-bias-diagonal.png">Mockup</a><a href="a-kittl/prints/30-bias-diagonal.svg">Print SVG</a><a href="a-kittl/separations/30-bias-diagonal.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/31-waving-luxury-oversized.png"><img src="gallery/thumbs/t31.jpg" alt="waving luxury, oversized" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">31</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>waving luxury, oversized</h3>
+        <p class="card__note">The two words at chest-wide scale, offset like cloth folding over.</p>
+        <p class="card__spec">280 × 190 mm · 2 inks · shown on oxblood</p>
+        <p class="card__links"><a href="a-kittl/mockups/31-waving-luxury-oversized.png">Mockup</a><a href="a-kittl/prints/31-waving-luxury-oversized.svg">Print SVG</a><a href="a-kittl/separations/31-waving-luxury-oversized.cream.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/32-selvedge.png"><img src="gallery/thumbs/t32.jpg" alt="Selvedge" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">32</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Selvedge</h3>
+        <p class="card__note">The finished edge of the cloth, printed where a yoke would sit.</p>
+        <p class="card__spec">300 × 24 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/32-selvedge.png">Mockup</a><a href="a-kittl/prints/32-selvedge.svg">Print SVG</a><a href="a-kittl/separations/32-selvedge.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/33-cutting-marker.png"><img src="gallery/thumbs/t33.jpg" alt="Cutting marker" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">33</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Cutting marker</h3>
+        <p class="card__note">The cutting layout: every piece turned 45° to the warp, marked in brass.</p>
+        <p class="card__spec">290 × 400 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/33-cutting-marker.png">Mockup</a><a href="a-kittl/prints/33-cutting-marker.svg">Print SVG</a><a href="a-kittl/separations/33-cutting-marker.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/34-number-04.png"><img src="gallery/thumbs/t34.jpg" alt="No. 04" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">34</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>No. 04</h3>
+        <p class="card__note">Each back carries its own number. Printed per piece, 01 to 12.</p>
+        <p class="card__spec">280 × 130 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/34-number-04.png">Mockup</a><a href="a-kittl/prints/34-number-04.svg">Print SVG</a><a href="a-kittl/separations/34-number-04.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/35-chest-wordmark.png"><img src="gallery/thumbs/t35.jpg" alt="Chest wordmark" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">35</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>Chest wordmark</h3>
+        <p class="card__note">The logo across the chest at the width of the print area, nothing else.</p>
+        <p class="card__spec">250 × 30 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/35-chest-wordmark.png">Mockup</a><a href="a-kittl/prints/35-chest-wordmark.svg">Print SVG</a><a href="a-kittl/separations/35-chest-wordmark.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/36-twelve-made-wave.png"><img src="gallery/thumbs/t36.jpg" alt="Twelve made, with wave" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">36</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>Twelve made, with wave</h3>
+        <p class="card__note">The wave with its caption, set right to balance the fall of the lines.</p>
+        <p class="card__spec">200 × 150 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/36-twelve-made-wave.png">Mockup</a><a href="a-kittl/prints/36-twelve-made-wave.svg">Print SVG</a><a href="a-kittl/separations/36-twelve-made-wave.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/37-cut-on-the-bias.png"><img src="gallery/thumbs/t37.jpg" alt="Cut on the bias, front" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">37</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>Cut on the bias, front</h3>
+        <p class="card__note">The construction, stated. Two lines, left-aligned.</p>
+        <p class="card__spec">230 × 110 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/37-cut-on-the-bias.png">Mockup</a><a href="a-kittl/prints/37-cut-on-the-bias-front.svg">Print SVG</a><a href="a-kittl/separations/37-cut-on-the-bias-front.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/38-hallmark-strip.png"><img src="gallery/thumbs/t38.jpg" alt="Hallmark strip" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">38</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>Hallmark strip</h3>
+        <p class="card__note">The five punches at chest size, read like a maker’s mark.</p>
+        <p class="card__spec">96 × 18 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/38-hallmark-strip.png">Mockup</a><a href="a-kittl/prints/38-hallmark-strip.svg">Print SVG</a><a href="a-kittl/separations/38-hallmark-strip.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/39-side-wordmark.png"><img src="gallery/thumbs/t39.jpg" alt="Side wordmark" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">39</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>Side wordmark</h3>
+        <p class="card__note">The mark runs down the side seam and hands over to one brass line at the hem.</p>
+        <p class="card__spec">30 × 420 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/39-side-wordmark.png">Mockup</a><a href="a-kittl/prints/39-side-wordmark.svg">Print SVG</a><a href="a-kittl/separations/39-side-wordmark.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/40-nineteen-seventy-four.png"><img src="gallery/thumbs/t40.jpg" alt="1974" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">40</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>1974</h3>
+        <p class="card__note">The year of the pattern, set as the only thing on the chest.</p>
+        <p class="card__spec">230 × 104 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/40-nineteen-seventy-four.png">Mockup</a><a href="a-kittl/prints/40-nineteen-seventy-four.svg">Print SVG</a><a href="a-kittl/separations/40-nineteen-seventy-four.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/41-forty-five-degrees.png"><img src="gallery/thumbs/t41.jpg" alt="45°" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">41</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>45°</h3>
+        <p class="card__note">The angle of the cut as a number, crossed by the line it describes.</p>
+        <p class="card__spec">200 × 130 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/41-forty-five-degrees.png">Mockup</a><a href="a-kittl/prints/41-forty-five-degrees.svg">Print SVG</a><a href="a-kittl/separations/41-forty-five-degrees.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/42-pocket-wave.png"><img src="gallery/thumbs/t42.jpg" alt="Pocket wave" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">42</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>Pocket wave</h3>
+        <p class="card__note">The twelve lines at pocket scale, no words.</p>
+        <p class="card__spec">60 × 60 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/42-pocket-wave.png">Mockup</a><a href="a-kittl/prints/42-pocket-wave.svg">Print SVG</a><a href="a-kittl/separations/42-pocket-wave.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="front">
+        <a class="card__img" href="a-kittl/mockups/43-grainline.png"><img src="gallery/thumbs/t43.jpg" alt="Grainline" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">43</span>
+          <span class="card__group">Front print</span>
+        </div>
+        <h3>Grainline</h3>
+        <p class="card__note">One brass line, hem to shoulder, marked as a pattern grainline. The thesis, literally.</p>
+        <p class="card__spec">300 × 400 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/43-grainline.png">Mockup</a><a href="a-kittl/prints/43-grainline-front.svg">Print SVG</a><a href="a-kittl/separations/43-grainline-front.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/44-sleeve-tape.png"><img src="gallery/thumbs/t44.jpg" alt="Sleeve tape" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">44</span>
+          <span class="card__group">Sleeve</span>
+        </div>
+        <h3>Sleeve tape</h3>
+        <p class="card__note">Seven centimetres of tape on the sleeve, brass at the fourth. No. 04.</p>
+        <p class="card__spec">76 × 22 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/44-sleeve-tape.png">Mockup</a><a href="a-kittl/prints/44-sleeve-tape.svg">Print SVG</a><a href="a-kittl/separations/44-sleeve-tape.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/45-back-yoke.png"><img src="gallery/thumbs/t45.jpg" alt="Back yoke" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">45</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Back yoke</h3>
+        <p class="card__note">The mark at the yoke, then the brass seam running to the shoulder.</p>
+        <p class="card__spec">300 × 14 mm · 2 inks · shown on limestone</p>
+        <p class="card__links"><a href="a-kittl/mockups/45-back-yoke.png">Mockup</a><a href="a-kittl/prints/45-back-yoke.svg">Print SVG</a><a href="a-kittl/separations/45-back-yoke.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="detail">
+        <a class="card__img" href="a-kittl/mockups/46-hem-band.png"><img src="gallery/thumbs/t46.jpg" alt="Hem band" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">46</span>
+          <span class="card__group">Hem</span>
+        </div>
+        <h3>Hem band</h3>
+        <p class="card__note">The edition size repeated along the hem, under a brass seam.</p>
+        <p class="card__spec">300 × 12 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/46-hem-band.png">Mockup</a><a href="a-kittl/prints/46-hem-band.svg">Print SVG</a><a href="a-kittl/separations/46-hem-band.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="both">
+        <a class="card__img" href="a-kittl/mockups/47-split-wordmark.png"><img src="gallery/thumbs/t47.jpg" alt="DE, NOYON" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">47</span>
+          <span class="card__group">Front &amp; back</span>
+        </div>
+        <h3>DE, NOYON</h3>
+        <p class="card__note">The name split by the body: read the front, turn, read the back.</p>
+        <p class="card__spec">120 × 50 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/47-split-wordmark.png">Mockup</a><a href="a-kittl/prints/47-split-wordmark-front.svg">Print SVG</a><a href="a-kittl/separations/47-split-wordmark-front.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="both">
+        <a class="card__img" href="a-kittl/mockups/48-split-sentence.png"><img src="gallery/thumbs/t48.jpg" alt="Cut on, the bias" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">48</span>
+          <span class="card__group">Front &amp; back</span>
+        </div>
+        <h3>Cut on, the bias</h3>
+        <p class="card__note">The sentence starts on the chest and ends on the back.</p>
+        <p class="card__spec">240 × 80 mm · 2 inks · shown on ink</p>
+        <p class="card__links"><a href="a-kittl/mockups/48-split-sentence.png">Mockup</a><a href="a-kittl/prints/48-split-sentence-front.svg">Print SVG</a><a href="a-kittl/separations/48-split-sentence-front.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/49-atelier-stamp.png"><img src="gallery/thumbs/t49.jpg" alt="Atelier stamp" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">49</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Atelier stamp</h3>
+        <p class="card__note">The atelier’s stamp struck off-centre near the hem, the way a cutter marks cloth.</p>
+        <p class="card__spec">90 × 90 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/49-atelier-stamp.png">Mockup</a><a href="a-kittl/prints/49-atelier-stamp.svg">Print SVG</a><a href="a-kittl/separations/49-atelier-stamp.ink.svg">Films</a></p>
+      </article>
+      <article class="card card--tee" data-place="back">
+        <a class="card__img" href="a-kittl/mockups/50-collection-04.png"><img src="gallery/thumbs/t50.jpg" alt="Collection 04" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">50</span>
+          <span class="card__group">Back print</span>
+        </div>
+        <h3>Collection 04</h3>
+        <p class="card__note">The collection listed on the back, the way a tour shirt lists dates.</p>
+        <p class="card__spec">280 × 330 mm · 2 inks · shown on bone</p>
+        <p class="card__links"><a href="a-kittl/mockups/50-collection-04.png">Mockup</a><a href="a-kittl/prints/50-collection-04.svg">Print SVG</a><a href="a-kittl/separations/50-collection-04.ink.svg">Films</a></p>
+      </article>
+      </div>
+    </section>
+    <section class="cat cat--quiet" id="extras">
+      <header class="cat__head"><div><span class="eyebrow">Extras</span><h2>Labels, tags and posters</h2></div><p>Printed with the same inks. Not counted among the fifty.</p></header>
+      <div class="grid">
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="a-kittl/prints/x1-neck-label.svg"><img src="gallery/thumbs/x1.jpg" alt="Printed neck label" loading="lazy"></a>
+        <div class="card__meta">
+          <span class="card__n">X1</span>
           <span class="card__group">Label</span>
         </div>
         <h3>Printed neck label</h3>
-        <p class="card__spec">50 × 44 mm · 1 ink · Bone, Limestone</p>
-        <p class="card__links"><a href="a-kittl/prints/16-neck-label.svg">SVG</a><a href="a-kittl/separations/16-neck-label.ink.svg">Films</a></p>
+        
+        <p class="card__spec">50 × 44 mm · 1 ink</p>
+        <p class="card__links"><a href="a-kittl/prints/x1-neck-label.svg">SVG</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/17-hangtag.svg"><img src="gallery/thumbs/17.jpg" alt="Hangtag, front and back" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="a-kittl/prints/x2-hangtag.svg"><img src="gallery/thumbs/x2.jpg" alt="Hangtag, front and back" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">17</span>
+          <span class="card__n">X2</span>
           <span class="card__group">Hangtag</span>
         </div>
         <h3>Hangtag, front and back</h3>
-        <p class="card__spec">120 × 95 mm · 2 inks · cream stock</p>
-        <p class="card__links"><a href="a-kittl/prints/17-hangtag.svg">SVG</a><a href="a-kittl/separations/17-hangtag.ink.svg">Films</a></p>
+        
+        <p class="card__spec">120 × 95 mm · 2 inks</p>
+        <p class="card__links"><a href="a-kittl/prints/x2-hangtag.svg">SVG</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/18-packaging-stickers.svg"><img src="gallery/thumbs/18.jpg" alt="Tissue seal and box band" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="a-kittl/prints/x3-packaging-stickers.svg"><img src="gallery/thumbs/x3.jpg" alt="Tissue seal and box band" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">18</span>
+          <span class="card__n">X3</span>
           <span class="card__group">Sticker</span>
         </div>
         <h3>Tissue seal and box band</h3>
-        <p class="card__spec">176 × 50 mm · 2 inks · cream stock</p>
-        <p class="card__links"><a href="a-kittl/prints/18-packaging-stickers.svg">SVG</a><a href="a-kittl/separations/18-packaging-stickers.ink.svg">Films</a></p>
+        
+        <p class="card__spec">176 × 50 mm · 2 inks</p>
+        <p class="card__links"><a href="a-kittl/prints/x3-packaging-stickers.svg">SVG</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/19-capsule-poster.svg"><img src="gallery/thumbs/19.jpg" alt="Collection 04 poster" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="a-kittl/prints/x4-capsule-poster.svg"><img src="gallery/thumbs/x4.jpg" alt="Collection 04 poster" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">19</span>
+          <span class="card__n">X4</span>
           <span class="card__group">Poster</span>
         </div>
         <h3>Collection 04 poster</h3>
-        <p class="card__spec">420 × 594 mm · 2 inks · bone stock</p>
-        <p class="card__links"><a href="a-kittl/prints/19-capsule-poster.svg">SVG</a><a href="a-kittl/separations/19-capsule-poster.ink.svg">Films</a></p>
+        
+        <p class="card__spec">420 × 594 mm · 2 inks</p>
+        <p class="card__links"><a href="a-kittl/prints/x4-capsule-poster.svg">SVG</a></p>
       </article>
-      <article class="card" data-cat="A">
-        <a class="card__img" href="a-kittl/prints/20-archive-poster.svg"><img src="gallery/thumbs/20.jpg" alt="Archive — 1974 cut retired" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="a-kittl/prints/x5-archive-poster.svg"><img src="gallery/thumbs/x5.jpg" alt="Archive — 1974 cut retired" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">20</span>
+          <span class="card__n">X5</span>
           <span class="card__group">Poster</span>
         </div>
         <h3>Archive — 1974 cut retired</h3>
-        <p class="card__spec">420 × 594 mm · 2 inks · oxblood stock</p>
-        <p class="card__links"><a href="a-kittl/prints/20-archive-poster.svg">SVG</a><a href="a-kittl/separations/20-archive-poster.cream.svg">Films</a></p>
+        
+        <p class="card__spec">420 × 594 mm · 2 inks</p>
+        <p class="card__links"><a href="a-kittl/prints/x5-archive-poster.svg">SVG</a></p>
       </article>
       </div>
     </section>
-    <section class="cat" id="cat-B" data-cat="B">
-      <header class="cat__head"><div><span class="eyebrow">Canvas</span><h2>Social & marketing · 21–35</h2></div><p>Drawn with the Canvas API from brand tokens. Each frame is data-driven.</p></header>
+    <section class="cat cat--quiet" id="also">
+      <header class="cat__head"><div><span class="eyebrow">Also built</span><h2>Social frames and storefront</h2></div><p>From the first round. Kept in the repository; not part of the t-shirt set.</p></header>
       <div class="grid">
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/21-drop-feed.png"><img src="gallery/thumbs/21.jpg" alt="Drop announcement — feed" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/21-drop-feed.png"><img src="gallery/thumbs/b21.jpg" alt="Drop announcement — feed" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">21</span>
-          <span class="card__group">Drop announcement</span>
+          <span class="card__n">B1</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Drop announcement — feed</h3>
-        <p class="card__spec">1080 × 1080 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1080 px</p>
         <p class="card__links"><a href="b-canvas/png/21-drop-feed.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/22-drop-story.png"><img src="gallery/thumbs/22.jpg" alt="Drop announcement — story" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/22-drop-story.png"><img src="gallery/thumbs/b22.jpg" alt="Drop announcement — story" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">22</span>
-          <span class="card__group">Drop announcement</span>
+          <span class="card__n">B2</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Drop announcement — story</h3>
-        <p class="card__spec">1080 × 1920 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1920 px</p>
         <p class="card__links"><a href="b-canvas/png/22-drop-story.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/23-piece-feed.png"><img src="gallery/thumbs/23.jpg" alt="Piece introduction — feed" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/23-piece-feed.png"><img src="gallery/thumbs/b23.jpg" alt="Piece introduction — feed" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">23</span>
-          <span class="card__group">Drop announcement</span>
+          <span class="card__n">B3</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Piece introduction — feed</h3>
-        <p class="card__spec">1080 × 1080 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1080 px</p>
         <p class="card__links"><a href="b-canvas/png/23-piece-feed.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/24-registry-story.png"><img src="gallery/thumbs/24.jpg" alt="Edition registry — story" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/24-registry-story.png"><img src="gallery/thumbs/b24.jpg" alt="Edition registry — story" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">24</span>
-          <span class="card__group">Drop announcement</span>
+          <span class="card__n">B4</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Edition registry — story</h3>
-        <p class="card__spec">1080 × 1920 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1920 px</p>
         <p class="card__links"><a href="b-canvas/png/24-registry-story.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/25-edition-closed-feed.png"><img src="gallery/thumbs/25.jpg" alt="Edition closed — feed" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/25-edition-closed-feed.png"><img src="gallery/thumbs/b25.jpg" alt="Edition closed — feed" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">25</span>
-          <span class="card__group">Stock status</span>
+          <span class="card__n">B5</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Edition closed — feed</h3>
-        <p class="card__spec">1080 × 1080 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1080 px</p>
         <p class="card__links"><a href="b-canvas/png/25-edition-closed-feed.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/26-edition-closed-story.png"><img src="gallery/thumbs/26.jpg" alt="Edition closed — story" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/26-edition-closed-story.png"><img src="gallery/thumbs/b26.jpg" alt="Edition closed — story" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">26</span>
-          <span class="card__group">Stock status</span>
+          <span class="card__n">B6</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Edition closed — story</h3>
-        <p class="card__spec">1080 × 1920 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1920 px</p>
         <p class="card__links"><a href="b-canvas/png/26-edition-closed-story.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/27-available-again.png"><img src="gallery/thumbs/27.jpg" alt="Available again — feed" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/27-available-again.png"><img src="gallery/thumbs/b27.jpg" alt="Available again — feed" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">27</span>
-          <span class="card__group">Stock status</span>
+          <span class="card__n">B7</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Available again — feed</h3>
-        <p class="card__spec">1080 × 1080 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1080 px</p>
         <p class="card__links"><a href="b-canvas/png/27-available-again.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/28-size-availability-banner.png"><img src="gallery/thumbs/28.jpg" alt="Size availability — link banner" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/28-size-availability-banner.png"><img src="gallery/thumbs/b28.jpg" alt="Size availability — link banner" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">28</span>
-          <span class="card__group">Stock status</span>
+          <span class="card__n">B8</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Size availability — link banner</h3>
-        <p class="card__spec">1200 × 628 px · PNG</p>
+        
+        <p class="card__spec">1200 × 628 px</p>
         <p class="card__links"><a href="b-canvas/png/28-size-availability-banner.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/29-complimentary-alteration.png"><img src="gallery/thumbs/29.jpg" alt="Complimentary alteration" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/29-complimentary-alteration.png"><img src="gallery/thumbs/b29.jpg" alt="Complimentary alteration" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">29</span>
-          <span class="card__group">Service &amp; archive</span>
+          <span class="card__n">B9</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Complimentary alteration</h3>
-        <p class="card__spec">1080 × 1350 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1350 px</p>
         <p class="card__links"><a href="b-canvas/png/29-complimentary-alteration.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/30-archive-card.png"><img src="gallery/thumbs/30.jpg" alt="Archive — final pieces" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/30-archive-card.png"><img src="gallery/thumbs/b30.jpg" alt="Archive — final pieces" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">30</span>
-          <span class="card__group">Service &amp; archive</span>
+          <span class="card__n">B10</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Archive — final pieces</h3>
-        <p class="card__spec">1080 × 1080 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1080 px</p>
         <p class="card__links"><a href="b-canvas/png/30-archive-card.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/31-fitting-days.png"><img src="gallery/thumbs/31.jpg" alt="Atelier fitting days" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/31-fitting-days.png"><img src="gallery/thumbs/b31.jpg" alt="Atelier fitting days" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">31</span>
-          <span class="card__group">Service &amp; archive</span>
+          <span class="card__n">B11</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Atelier fitting days</h3>
-        <p class="card__spec">1080 × 1350 px · PNG</p>
+        
+        <p class="card__spec">1080 × 1350 px</p>
         <p class="card__links"><a href="b-canvas/png/31-fitting-days.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/32-bias-twill-tile.png"><img src="gallery/thumbs/32.jpg" alt="Bias twill texture — seamless tile" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/32-bias-twill-tile.png"><img src="gallery/thumbs/b32.jpg" alt="Bias twill texture — seamless tile" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">32</span>
-          <span class="card__group">Texture &amp; watermark</span>
+          <span class="card__n">B12</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Bias twill texture — seamless tile</h3>
-        <p class="card__spec">2048 × 2048 px · PNG</p>
+        
+        <p class="card__spec">2048 × 2048 px</p>
         <p class="card__links"><a href="b-canvas/png/32-bias-twill-tile.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/33-proof-watermark.png"><img src="gallery/thumbs/33.jpg" alt="Proof watermark — transparent overlay" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/33-proof-watermark.png"><img src="gallery/thumbs/b33.jpg" alt="Proof watermark — transparent overlay" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">33</span>
-          <span class="card__group">Texture &amp; watermark</span>
+          <span class="card__n">B13</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Proof watermark — transparent overlay</h3>
-        <p class="card__spec">2048 × 2048 px · PNG, transparent</p>
+        
+        <p class="card__spec">2048 × 2048 px</p>
         <p class="card__links"><a href="b-canvas/png/33-proof-watermark.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/34-hero-overlay.png"><img src="gallery/thumbs/34.jpg" alt="Hero overlay — 21:9, transparent" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/34-hero-overlay.png"><img src="gallery/thumbs/b34.jpg" alt="Hero overlay — 21:9, transparent" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">34</span>
-          <span class="card__group">Hero overlay</span>
+          <span class="card__n">B14</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Hero overlay — 21:9, transparent</h3>
-        <p class="card__spec">2560 × 1097 px · PNG, transparent</p>
+        
+        <p class="card__spec">2560 × 1097 px</p>
         <p class="card__links"><a href="b-canvas/png/34-hero-overlay.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      <article class="card" data-cat="B">
-        <a class="card__img" href="b-canvas/png/35-collection-header.png"><img src="gallery/thumbs/35.jpg" alt="Collection header band" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="b-canvas/png/35-collection-header.png"><img src="gallery/thumbs/b35.jpg" alt="Collection header band" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">35</span>
-          <span class="card__group">Hero overlay</span>
+          <span class="card__n">B15</span>
+          <span class="card__group">Social frame</span>
         </div>
         <h3>Collection header band</h3>
-        <p class="card__spec">2560 × 800 px · PNG</p>
+        
+        <p class="card__spec">2560 × 800 px</p>
         <p class="card__links"><a href="b-canvas/png/35-collection-header.png">PNG</a><a href="b-canvas/index.html">Live</a></p>
       </article>
-      </div>
-    </section>
-    <section class="cat" id="cat-C" data-cat="C">
-      <header class="cat__head"><div><span class="eyebrow">Storefront</span><h2>Web components · 36–50</h2></div><p>HTML and CSS on the design-system tokens. Responsive from 390 px.</p></header>
-      <div class="grid">
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/36-hero-full-bleed.html"><img src="gallery/thumbs/36.jpg" alt="Hero, full bleed" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/36-hero-full-bleed.html"><img src="gallery/thumbs/c36.jpg" alt="Hero, full bleed" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">36</span>
-          <span class="card__group">Hero</span>
+          <span class="card__n">C1</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Hero, full bleed</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/36-hero-full-bleed.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/37-hero-split.html"><img src="gallery/thumbs/37.jpg" alt="Hero, split" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/37-hero-split.html"><img src="gallery/thumbs/c37.jpg" alt="Hero, split" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">37</span>
-          <span class="card__group">Hero</span>
+          <span class="card__n">C2</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Hero, split</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/37-hero-split.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/38-hero-noir-waitlist.html"><img src="gallery/thumbs/38.jpg" alt="Hero, noir with notice form" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/38-hero-noir-waitlist.html"><img src="gallery/thumbs/c38.jpg" alt="Hero, noir with notice form" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">38</span>
-          <span class="card__group">Hero</span>
+          <span class="card__n">C3</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Hero, noir with notice form</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/38-hero-noir-waitlist.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/39-product-tile-swatches.html"><img src="gallery/thumbs/39.jpg" alt="Product tile with garment swatches" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/39-product-tile-swatches.html"><img src="gallery/thumbs/c39.jpg" alt="Product tile with garment swatches" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">39</span>
-          <span class="card__group">Product card</span>
+          <span class="card__n">C4</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Product tile with garment swatches</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/39-product-tile-swatches.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/40-product-decision-card.html"><img src="gallery/thumbs/40.jpg" alt="Product decision card" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/40-product-decision-card.html"><img src="gallery/thumbs/c40.jpg" alt="Product decision card" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">40</span>
-          <span class="card__group">Product card</span>
+          <span class="card__n">C5</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Product decision card</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/40-product-decision-card.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/41-product-row-compact.html"><img src="gallery/thumbs/41.jpg" alt="Compact product rows" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/41-product-row-compact.html"><img src="gallery/thumbs/c41.jpg" alt="Compact product rows" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">41</span>
-          <span class="card__group">Product card</span>
+          <span class="card__n">C6</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Compact product rows</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/41-product-row-compact.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/42-lookbook-grid.html"><img src="gallery/thumbs/42.jpg" alt="Lookbook grid" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/42-lookbook-grid.html"><img src="gallery/thumbs/c42.jpg" alt="Lookbook grid" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">42</span>
-          <span class="card__group">Lookbook</span>
+          <span class="card__n">C7</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Lookbook grid</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/42-lookbook-grid.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/43-editorial-story.html"><img src="gallery/thumbs/43.jpg" alt="Editorial story grid" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/43-editorial-story.html"><img src="gallery/thumbs/c43.jpg" alt="Editorial story grid" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">43</span>
-          <span class="card__group">Lookbook</span>
+          <span class="card__n">C8</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Editorial story grid</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/43-editorial-story.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/44-lookbook-scroll.html"><img src="gallery/thumbs/44.jpg" alt="Lookbook horizontal rail" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/44-lookbook-scroll.html"><img src="gallery/thumbs/c44.jpg" alt="Lookbook horizontal rail" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">44</span>
-          <span class="card__group">Lookbook</span>
+          <span class="card__n">C9</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Lookbook horizontal rail</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/44-lookbook-scroll.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/45-size-guide-modal.html"><img src="gallery/thumbs/45.jpg" alt="Size guide modal" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/45-size-guide-modal.html"><img src="gallery/thumbs/c45.jpg" alt="Size guide modal" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">45</span>
-          <span class="card__group">Size &amp; fit</span>
+          <span class="card__n">C10</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Size guide modal</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/45-size-guide-modal.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/46-fit-predictor.html"><img src="gallery/thumbs/46.jpg" alt="Fit predictor card" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/46-fit-predictor.html"><img src="gallery/thumbs/c46.jpg" alt="Fit predictor card" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">46</span>
-          <span class="card__group">Size &amp; fit</span>
+          <span class="card__n">C11</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Fit predictor card</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/46-fit-predictor.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/47-measure-and-fitting-card.html"><img src="gallery/thumbs/47.jpg" alt="Inline measurements and fitting card" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/47-measure-and-fitting-card.html"><img src="gallery/thumbs/c47.jpg" alt="Inline measurements and fitting card" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">47</span>
-          <span class="card__group">Size &amp; fit</span>
+          <span class="card__n">C12</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Inline measurements and fitting card</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/47-measure-and-fitting-card.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/48-cart-drawer.html"><img src="gallery/thumbs/48.jpg" alt="Bag drawer" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/48-cart-drawer.html"><img src="gallery/thumbs/c48.jpg" alt="Bag drawer" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">48</span>
-          <span class="card__group">Bag &amp; checkout</span>
+          <span class="card__n">C13</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Bag drawer</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/48-cart-drawer.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/49-bag-drawer-reserved.html"><img src="gallery/thumbs/49.jpg" alt="Bag drawer, edition reserved" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/49-bag-drawer-reserved.html"><img src="gallery/thumbs/c49.jpg" alt="Bag drawer, edition reserved" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">49</span>
-          <span class="card__group">Bag &amp; checkout</span>
+          <span class="card__n">C14</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Bag drawer, edition reserved</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/49-bag-drawer-reserved.html">Open</a></p>
       </article>
-      <article class="card" data-cat="C">
-        <a class="card__img" href="c-storefront/50-checkout-banners.html"><img src="gallery/thumbs/50.jpg" alt="Checkout banners" loading="lazy" width="900" height="900"></a>
+      <article class="card card--small" data-place="">
+        <a class="card__img" href="c-storefront/50-checkout-banners.html"><img src="gallery/thumbs/c50.jpg" alt="Checkout banners" loading="lazy"></a>
         <div class="card__meta">
-          <span class="card__n">50</span>
-          <span class="card__group">Bag &amp; checkout</span>
+          <span class="card__n">C15</span>
+          <span class="card__group">Storefront</span>
         </div>
         <h3>Checkout banners</h3>
-        <p class="card__spec">HTML + CSS · tokens only · 390–1440 px</p>
+        
+        <p class="card__spec">HTML + CSS · 390–1440 px</p>
         <p class="card__links"><a href="c-storefront/50-checkout-banners.html">Open</a></p>
       </article>
       </div>
     </section>
   <div class="notes">
-    <div><h4>Print constraints</h4><p>All text outlined. Thinnest line 0.4 mm. Spot inks: ink, cream, brass metallic, oxblood. Dark garments print cream as the underbase plate; brass is flashed last.</p></div>
-    <div><h4>Brand rules held</h4><p>No discount codes, countdowns or “only 2 left”. Sale is Archive. Promotions are services: alteration, fitting days, gift wrapping.</p></div>
-    <div><h4>Photography</h4><p>None exists yet. Every image well is a captioned placeholder naming the shot it needs, per the system.</p></div>
+    <div><h4>Print constraints</h4><p>All text outlined. Thinnest line 0.4 mm. On ink and oxblood garments the cream plate is the underbase and brass prints last.</p></div>
+    <div><h4>One idea per shirt</h4><p>One hero element, a display face plus IBM Plex Mono, and brass used only as a line. The wordmark is treated as the logo.</p></div>
+    <div><h4>Only supplied facts</h4><p>Every word comes from the design system: Paris 8e, the 1948–1979 pattern books, twelve made, Eligius of Noyon, the Collection 04 piece names.</p></div>
   </div>
 </div>
 <script>
   const btns = document.querySelectorAll('nav.filter button');
-  const secs = document.querySelectorAll('.cat');
-  function show(f){ btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.f === f)); secs.forEach(s => { s.hidden = !(f === 'all' || s.dataset.cat === f); }); }
+  const cards = document.querySelectorAll('#tees .card');
+  const quiet = document.querySelectorAll('.cat--quiet');
+  function show(f){
+    btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.f === f));
+    cards.forEach(c => { c.hidden = !(f === 'all' || c.dataset.place === f); });
+    quiet.forEach(s => { s.hidden = f !== 'all'; });
+  }
   btns.forEach(b => b.addEventListener('click', () => show(b.dataset.f)));
   const h = (location.hash || '').replace('#', '');
-  if (['A','B','C'].includes(h)) show(h);
+  if (['back','front','both','detail'].includes(h)) show(h);
 </script>
 </body>
 </html>
