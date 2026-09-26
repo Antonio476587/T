@@ -1,0 +1,38 @@
+:root{
+--font-display:"Cormorant Garamond",Didot,"Times New Roman",serif;
+--font-sans:"Jost","Helvetica Neue",Helvetica,sans-serif;
+--font-mono:"IBM Plex Mono",ui-monospace,monospace;
+
+--fs-hero:clamp(56px,7.5vw,124px); /* @kind font */
+--fs-display:clamp(40px,4.6vw,72px); /* @kind font */
+--fs-h1:44px; /* @kind font */
+--fs-h2:32px; /* @kind font */
+--fs-h3:24px; /* @kind font */
+--fs-h4:19px; /* @kind font */
+--fs-body-lg:18px;--fs-body:16px;--fs-body-sm:14px;--fs-caption:12px;--fs-micro:11px;
+
+--lh-tight:0.94; /* @kind other */
+--lh-display:1.06; /* @kind other */
+--lh-heading:1.2; /* @kind other */
+--lh-body:1.62; /* @kind other */
+--lh-caption:1.45; /* @kind other */
+
+--tr-wordmark:0.34em; /* @kind other */
+--tr-eyebrow:0.24em; /* @kind other */
+--tr-label:0.14em; /* @kind other */
+--tr-body:0.005em; /* @kind other */
+--tr-display:-0.015em; /* @kind other */
+
+--fw-light:300; /* @kind other */
+--fw-regular:400; /* @kind other */
+--fw-medium:500; /* @kind other */
+--fw-semi:600; /* @kind other */
+
+/* semantic roles */
+--type-wordmark:var(--fw-medium) var(--fs-h3)/1 var(--font-sans);
+--type-display:var(--fw-light) var(--fs-display)/var(--lh-display) var(--font-display);
+--type-heading:var(--fw-regular) var(--fs-h2)/var(--lh-heading) var(--font-display);
+--type-body:var(--fw-light) var(--fs-body)/var(--lh-body) var(--font-sans);
+--type-eyebrow:var(--fw-medium) var(--fs-micro)/1.2 var(--font-sans);
+--type-spec:var(--fw-regular) var(--fs-caption)/1.5 var(--font-mono);
+}

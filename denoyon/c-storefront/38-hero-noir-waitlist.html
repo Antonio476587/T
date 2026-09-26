@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" data-theme="noir">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>38 · Hero, noir with notice form — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  body { background: var(--surface-page); }
+  .noir { min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; gap: var(--sp-7); padding-top: var(--sp-7); padding-bottom: var(--sp-7); }
+  .noir .dn-wordmark { justify-self: center; color: var(--text-primary); box-shadow: var(--inlay-brass); padding-bottom: 6px; border: 0; }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-8); align-items: center; }
+  .stage svg { width: 100%; height: auto; }
+  .stage svg path { fill: none; stroke: var(--cream); stroke-width: 1.2; }
+  .stage svg path.brass { stroke: var(--brass); stroke-width: 1.5; }
+  h1 { margin: var(--sp-4) 0 var(--sp-5); color: var(--text-primary); }
+  .lede { color: var(--text-secondary); max-width: 40ch; }
+  form { display: grid; grid-template-columns: 1fr auto; gap: 0; margin-top: var(--sp-7); max-width: 460px; }
+  form .dn-input { background: transparent; border-color: var(--line-strong); color: var(--text-primary); border-right: 0; }
+  form .dn-input::placeholder { color: var(--text-muted); }
+  form .dn-input:focus { border-color: var(--focus-ring); }
+  .dn-help { grid-column: 1 / -1; margin-top: var(--sp-3); }
+  .foot { display: flex; justify-content: space-between; font: var(--type-spec); color: var(--text-muted); flex-wrap: wrap; gap: var(--sp-3); }
+  .status { font: var(--type-spec); color: var(--text-primary); margin-top: var(--sp-3); min-height: 1.5em; }
+  @media (max-width: 860px) { .stage { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main class="noir dn-container">
+  <a class="dn-wordmark" href="#" aria-label="DE NOYON — home">De Noyon</a>
+  <section class="stage" aria-labelledby="t">
+    <svg viewBox="0 0 520 460" aria-hidden="true" id="wave"></svg>
+    <div>
+      <div class="dn-eyebrow">Collection 04 · 02.10.2026</div>
+      <h1 id="t" class="dn-hero-type">Twelve made.</h1>
+      <p class="lede">The bias tee opens on 2 October at 10h00, Paris. Leave an address and one note is sent when it opens. Nothing else.</p>
+      <form id="notify" novalidate>
+        <label class="dn-label" for="email" style="grid-column:1/-1;margin-bottom:var(--sp-2)">Email</label>
+        <input class="dn-input" id="email" type="email" autocomplete="email" placeholder="name@domain.com" required>
+        <button class="dn-btn dn-btn--on-dark" type="submit">Join</button>
+        <p class="dn-help">One email on opening day. No newsletter.</p>
+      </form>
+      <p class="status" role="status" id="status"></p>
+    </div>
+  </section>
+  <div class="foot"><span>Paris, 8e</span><span>Silk-cotton jersey · 1974 pattern · € 280</span></div>
+</main>
+<script>
+  // The twelve-line wave, drawn from the same geometry as the print and canvas designs.
+  const svg = document.getElementById('wave');
+  const x = 10, y = 20, w = 500, h = 420;
+  svg.innerHTML = Array.from({ length: 12 }, (_, i) => {
+    const t = i / 11, sy = y + t * h * 0.08, ey = y + h * 0.55 + t * h * 0.45;
+    return `<path${i === 11 ? ' class="brass"' : ''} d="M${x} ${sy} C${x + w * 0.42} ${sy - h * 0.06 + t * h * 0.02} ${x + w * 0.38} ${ey + h * 0.18 - t * h * 0.1} ${x + w} ${ey}"/>`;
+  }).join('');
+
+  document.getElementById('notify').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const input = document.getElementById('email');
+    const status = document.getElementById('status');
+    status.textContent = input.checkValidity() ? 'Address saved.' : 'Enter a valid email address.';
+    status.style.color = input.checkValidity() ? '' : 'var(--status-error)';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>42 · Lookbook grid — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  main { padding-top: var(--sp-11); padding-bottom: var(--sp-9); }
+  .intro { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--grid-gap); margin-bottom: var(--sp-10); }
+  .intro h1 { grid-column: 1 / 8; }
+  .intro p { grid-column: 9 / 13; align-self: end; color: var(--text-secondary); }
+  .look { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--sp-9) var(--grid-gap); }
+  figure { margin: 0; }
+  figcaption { display: flex; justify-content: space-between; gap: var(--sp-4); margin-top: var(--sp-3); font: var(--type-spec); }
+  figcaption span:first-child { color: var(--text-muted); }
+  .a { grid-column: 1 / 8; } .b { grid-column: 9 / 13; align-self: end; }
+  .c { grid-column: 2 / 6; } .d { grid-column: 7 / 13; margin-top: var(--sp-10); }
+  .e { grid-column: 1 / 13; }
+  .f { grid-column: 3 / 7; } .g { grid-column: 8 / 12; margin-top: var(--sp-9); }
+  figure:hover .dn-image__fill { transform: scale(var(--hover-image-scale)); }
+  @media (max-width: 860px) {
+    .intro h1, .intro p { grid-column: 1 / -1; }
+    .look > figure { grid-column: 1 / -1 !important; margin-top: 0 !important; }
+  }
+</style>
+</head>
+<body>
+<main class="dn-container">
+  <div class="intro">
+    <h1 class="dn-hero-type">Look book, Collection 04.</h1>
+    <p>Seven looks photographed in the atelier in window light. Each piece is named with its cloth and the year of its pattern.</p>
+  </div>
+  <section class="look" aria-label="Looks">
+    <figure class="a"><div class="dn-image r-45"><div class="dn-image__fill"></div><p class="dn-image__cap">Look 01 · full length, walking away · 4:5</p></div>
+      <figcaption><span>Look 01</span><span>Bias tee in bone · EU 38</span></figcaption></figure>
+    <figure class="b"><div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Look 02 · seated, hands in lap · 3:4</p></div>
+      <figcaption><span>Look 02</span><span>Long-sleeve bias tee in ink</span></figcaption></figure>
+    <figure class="c"><div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Look 03 · shoulder to hem, cloth turning · 3:4</p></div>
+      <figcaption><span>Look 03</span><span>Draped shell in limestone</span></figcaption></figure>
+    <figure class="d"><div class="dn-image r-45"><div class="dn-image__fill"></div><p class="dn-image__cap">Look 04 · by the atelier window, profile · 4:5</p></div>
+      <figcaption><span>Look 04</span><span>Bias tee in oxblood · pleat skirt</span></figcaption></figure>
+    <figure class="e"><div class="dn-image r-219 dn-image--dark"><div class="dn-image__fill"></div><p class="dn-image__cap">Look 05 · three figures on a limestone stair, wide · 21:9</p></div>
+      <figcaption><span>Look 05</span><span>The bias tee in all four colours</span></figcaption></figure>
+    <figure class="f"><div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Look 06 · back, arms raised · 3:4</p></div>
+      <figcaption><span>Look 06</span><span>Bias tee in limestone · crepe trouser</span></figcaption></figure>
+    <figure class="g"><div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Look 07 · hem and ankle, stepping · 3:4</p></div>
+      <figcaption><span>Look 07</span><span>Archive tee, 1972 cut</span></figcaption></figure>
+  </section>
+</main>
+</body>
+</html>

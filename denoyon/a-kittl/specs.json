@@ -1,0 +1,1286 @@
+{
+  "inks": {
+    "ink": {
+      "hex": "#0C0B0A",
+      "token": "--ink-900",
+      "ref": "Pantone Black 6 C"
+    },
+    "cream": {
+      "hex": "#F2EBDF",
+      "token": "--cream",
+      "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+    },
+    "brass": {
+      "hex": "#B18A46",
+      "token": "--brass",
+      "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+    },
+    "oxblood": {
+      "hex": "#5E1B22",
+      "token": "--ox-600",
+      "ref": "Custom mix to #5E1B22 — confirm with drawdown"
+    }
+  },
+  "garments": {
+    "bone": {
+      "hex": "#FAF6EF",
+      "token": "--bone",
+      "name": "Bone"
+    },
+    "limestone": {
+      "hex": "#E6DFD3",
+      "token": "--limestone",
+      "name": "Limestone"
+    },
+    "ink": {
+      "hex": "#0C0B0A",
+      "token": "--ink-900",
+      "name": "Ink"
+    },
+    "oxblood": {
+      "hex": "#5E1B22",
+      "token": "--ox-600",
+      "name": "Oxblood"
+    }
+  },
+  "prints": [
+    {
+      "design": 1,
+      "file": "prints/01-wordmark-monument.svg",
+      "title": "Wordmark monument",
+      "group": "Back print",
+      "artboard_mm": [
+        280,
+        70
+      ],
+      "placement": "Centre back, top edge 90 mm below collar seam",
+      "method": "Screen, 2 spot (ink + brass metallic) · DTG alt.",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        },
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/01-wordmark-monument.ink.svg",
+        "separations/01-wordmark-monument.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "The mark at architectural scale. Nothing else on the back."
+    },
+    {
+      "design": 2,
+      "file": "prints/02-twelve-lines.svg",
+      "title": "Twelve lines",
+      "group": "Back print",
+      "artboard_mm": [
+        260,
+        320
+      ],
+      "placement": "Centre back, top edge 110 mm below collar seam",
+      "method": "Screen, 2 spot · lines 0.5 mm, no halftone",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        },
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/02-twelve-lines.ink.svg",
+        "separations/02-twelve-lines.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Edition of twelve drawn as twelve lines of cloth; the last is brass."
+    },
+    {
+      "design": 3,
+      "file": "prints/03-eligius-colophon.svg",
+      "title": "Eligius of Noyon",
+      "group": "Back print",
+      "artboard_mm": [
+        240,
+        170
+      ],
+      "placement": "Centre back, top edge 100 mm below collar seam",
+      "method": "Screen, 2 spot · ink garment needs cream (not white) flash underbase under brass",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/03-eligius-colophon.ink.svg",
+        "separations/03-eligius-colophon.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "The name’s origin, set as a museum colophon."
+    },
+    {
+      "design": 3,
+      "file": "prints/03-eligius-colophon-on-dark.svg",
+      "title": "Eligius of Noyon",
+      "group": "Back print",
+      "artboard_mm": [
+        240,
+        170
+      ],
+      "placement": "Centre back, top edge 100 mm below collar seam",
+      "method": "Screen, 2 spot · ink garment needs cream (not white) flash underbase under brass",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/03-eligius-colophon-on-dark.cream.svg",
+        "separations/03-eligius-colophon-on-dark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "The name’s origin, set as a museum colophon."
+    },
+    {
+      "design": 4,
+      "file": "prints/04-pattern-book.svg",
+      "title": "From the pattern book",
+      "group": "Back print",
+      "artboard_mm": [
+        240,
+        300
+      ],
+      "placement": "Centre back, top edge 100 mm below collar seam",
+      "method": "Screen, 2 spot · mono numerals ≥ 7 mm cap",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        },
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/04-pattern-book.ink.svg",
+        "separations/04-pattern-book.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Thirty-two archive years; the cut used is underlined in brass."
+    },
+    {
+      "design": 5,
+      "file": "prints/05-bias-grainline.svg",
+      "title": "Cut on the bias",
+      "group": "Back print",
+      "artboard_mm": [
+        280,
+        280
+      ],
+      "placement": "Centre back, top edge 120 mm below collar seam",
+      "method": "Screen, 2 spot",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        },
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/05-bias-grainline.ink.svg",
+        "separations/05-bias-grainline.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Pattern-maker’s grainline at 45°, the brand’s whole construction in one mark."
+    },
+    {
+      "design": 6,
+      "file": "prints/06-care-label.svg",
+      "title": "Care label, enlarged",
+      "group": "Back print",
+      "artboard_mm": [
+        200,
+        270
+      ],
+      "placement": "Centre back, top edge 90 mm below collar seam",
+      "method": "Screen, 2 spot · frame is 2 mm ebony trim",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        },
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/06-care-label.ink.svg",
+        "separations/06-care-label.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "The woven care label blown up to back-print scale; facts only."
+    },
+    {
+      "design": 7,
+      "file": "prints/07-atelier-coordinates.svg",
+      "title": "Atelier coordinates",
+      "group": "Back print",
+      "artboard_mm": [
+        240,
+        150
+      ],
+      "placement": "Centre back, top edge 110 mm below collar seam",
+      "method": "Screen, 2 spot on ink · cream underbase printed as the cream plate, brass flashed over it",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/07-atelier-coordinates.cream.svg",
+        "separations/07-atelier-coordinates.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Where the pieces are cut. Tonal, two inks, no white."
+    },
+    {
+      "design": 8,
+      "file": "prints/08-edition-registry.svg",
+      "title": "Edition registry",
+      "group": "Back print",
+      "artboard_mm": [
+        200,
+        290
+      ],
+      "placement": "Centre back, top edge 100 mm below collar seam",
+      "method": "Screen, 2 spot on dark · cream is the underbase plate",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/08-edition-registry.cream.svg",
+        "separations/08-edition-registry.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Twelve numbered rules; the wearer’s number is the brass one (variable per piece)."
+    },
+    {
+      "design": 9,
+      "file": "prints/09-pocket-stacked.svg",
+      "title": "Stacked pocket mark",
+      "group": "Front chest",
+      "artboard_mm": [
+        70,
+        40
+      ],
+      "placement": "Left chest, centre 95 mm from centre front, 70 mm below shoulder seam",
+      "method": "Screen, 2 spot · DTG alt.",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        },
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/09-pocket-stacked.ink.svg",
+        "separations/09-pocket-stacked.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "The stacked lockup at minimum-plus size (≥ 72 px rule applies on screen; 50 mm wide here)."
+    },
+    {
+      "design": 9,
+      "file": "prints/09-pocket-stacked-on-dark.svg",
+      "title": "Stacked pocket mark",
+      "group": "Front chest",
+      "artboard_mm": [
+        70,
+        40
+      ],
+      "placement": "Left chest, centre 95 mm from centre front, 70 mm below shoulder seam",
+      "method": "Screen, 2 spot · DTG alt.",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/09-pocket-stacked-on-dark.cream.svg",
+        "separations/09-pocket-stacked-on-dark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "The stacked lockup at minimum-plus size (≥ 72 px rule applies on screen; 50 mm wide here)."
+    },
+    {
+      "design": 10,
+      "file": "prints/10-edition-mark.svg",
+      "title": "Edition mark",
+      "group": "Front chest",
+      "artboard_mm": [
+        70,
+        26
+      ],
+      "placement": "Left chest pocket position, 80 mm below shoulder seam",
+      "method": "Screen, 1–2 spot · numeral plate is variable",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/10-edition-mark.ink.svg",
+        "separations/10-edition-mark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Edition number as the only chest graphic. Numeral swapped per piece."
+    },
+    {
+      "design": 10,
+      "file": "prints/10-edition-mark-on-dark.svg",
+      "title": "Edition mark",
+      "group": "Front chest",
+      "artboard_mm": [
+        70,
+        26
+      ],
+      "placement": "Left chest pocket position, 80 mm below shoulder seam",
+      "method": "Screen, 1–2 spot · numeral plate is variable",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/10-edition-mark-on-dark.cream.svg",
+        "separations/10-edition-mark-on-dark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Edition number as the only chest graphic. Numeral swapped per piece."
+    },
+    {
+      "design": 11,
+      "file": "prints/11-waving-luxury.svg",
+      "title": "waving luxury",
+      "group": "Front chest",
+      "artboard_mm": [
+        120,
+        30
+      ],
+      "placement": "Centre front, top edge 85 mm below collar seam",
+      "method": "Screen, 2 spot",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        },
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/11-waving-luxury.ink.svg",
+        "separations/11-waving-luxury.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "The brand idea in italic serif, lowercase as a phrase, not a slogan."
+    },
+    {
+      "design": 12,
+      "file": "prints/12-square-plate.svg",
+      "title": "Square plate",
+      "group": "Front chest",
+      "artboard_mm": [
+        56,
+        56
+      ],
+      "placement": "Left chest, 75 mm below shoulder seam",
+      "method": "Screen, 2 spot",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        },
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/12-square-plate.ink.svg",
+        "separations/12-square-plate.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "A stone plate with an ebony frame and a brass seam. Square, never round."
+    },
+    {
+      "design": 12,
+      "file": "prints/12-square-plate-on-dark.svg",
+      "title": "Square plate",
+      "group": "Front chest",
+      "artboard_mm": [
+        56,
+        56
+      ],
+      "placement": "Left chest, 75 mm below shoulder seam",
+      "method": "Screen, 2 spot",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/12-square-plate-on-dark.cream.svg",
+        "separations/12-square-plate-on-dark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "A stone plate with an ebony frame and a brass seam. Square, never round."
+    },
+    {
+      "design": 13,
+      "file": "prints/13-sleeve-run.svg",
+      "title": "Sleeve run",
+      "group": "Sleeve",
+      "artboard_mm": [
+        14,
+        260
+      ],
+      "placement": "Left sleeve (long-sleeve), running shoulder → cuff, centred on outer seam line",
+      "method": "Screen, 2 spot · sleeve platen",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/13-sleeve-run.ink.svg",
+        "separations/13-sleeve-run.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Type runs down the arm, then continues as one brass line to the cuff."
+    },
+    {
+      "design": 13,
+      "file": "prints/13-sleeve-run-on-dark.svg",
+      "title": "Sleeve run",
+      "group": "Sleeve",
+      "artboard_mm": [
+        14,
+        260
+      ],
+      "placement": "Left sleeve (long-sleeve), running shoulder → cuff, centred on outer seam line",
+      "method": "Screen, 2 spot · sleeve platen",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/13-sleeve-run-on-dark.cream.svg",
+        "separations/13-sleeve-run-on-dark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Type runs down the arm, then continues as one brass line to the cuff."
+    },
+    {
+      "design": 14,
+      "file": "prints/14-back-neck-yoke.svg",
+      "title": "Hood & back-neck mark",
+      "group": "Hood",
+      "artboard_mm": [
+        80,
+        20
+      ],
+      "placement": "Hoodie: centre of hood panel seam-side, 60 mm from hood edge · Tee: back neck, 25 mm below collar",
+      "method": "Screen, 2 spot · small-format platen",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/14-back-neck-yoke.ink.svg",
+        "separations/14-back-neck-yoke.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Seen only when the hood is down or the hair is up."
+    },
+    {
+      "design": 14,
+      "file": "prints/14-back-neck-yoke-on-dark.svg",
+      "title": "Hood & back-neck mark",
+      "group": "Hood",
+      "artboard_mm": [
+        80,
+        20
+      ],
+      "placement": "Hoodie: centre of hood panel seam-side, 60 mm from hood edge · Tee: back neck, 25 mm below collar",
+      "method": "Screen, 2 spot · small-format platen",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/14-back-neck-yoke-on-dark.cream.svg",
+        "separations/14-back-neck-yoke-on-dark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Seen only when the hood is down or the hair is up."
+    },
+    {
+      "design": 15,
+      "file": "prints/15-hem-inlay.svg",
+      "title": "Hem inlay",
+      "group": "Hem",
+      "artboard_mm": [
+        150,
+        8
+      ],
+      "placement": "Front left hem, baseline 18 mm above hem stitch, left edge 30 mm from side seam",
+      "method": "Screen, 2 spot",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        },
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/15-hem-inlay.ink.svg",
+        "separations/15-hem-inlay.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "A brass seam in the stone — Dirand’s inlay, set at the hem."
+    },
+    {
+      "design": 15,
+      "file": "prints/15-hem-inlay-on-dark.svg",
+      "title": "Hem inlay",
+      "group": "Hem",
+      "artboard_mm": [
+        150,
+        8
+      ],
+      "placement": "Front left hem, baseline 18 mm above hem stitch, left edge 30 mm from side seam",
+      "method": "Screen, 2 spot",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/15-hem-inlay-on-dark.cream.svg",
+        "separations/15-hem-inlay-on-dark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "A brass seam in the stone — Dirand’s inlay, set at the hem."
+    },
+    {
+      "design": 16,
+      "file": "prints/16-neck-label.svg",
+      "title": "Printed neck label",
+      "group": "Label",
+      "artboard_mm": [
+        50,
+        44
+      ],
+      "placement": "Inside back neck, top edge 18 mm below collar seam",
+      "method": "Tagless screen transfer, 1 spot (ink on light, cream on dark) · 80% soft-hand",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        },
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        }
+      ],
+      "separations": [
+        "separations/16-neck-label.ink.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "One ink so it never shows through the cloth. Size and number are variable fields."
+    },
+    {
+      "design": 16,
+      "file": "prints/16-neck-label-on-dark.svg",
+      "title": "Printed neck label",
+      "group": "Label",
+      "artboard_mm": [
+        50,
+        44
+      ],
+      "placement": "Inside back neck, top edge 18 mm below collar seam",
+      "method": "Tagless screen transfer, 1 spot (ink on light, cream on dark) · 80% soft-hand",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        },
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        }
+      ],
+      "separations": [
+        "separations/16-neck-label-on-dark.cream.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "One ink so it never shows through the cloth. Size and number are variable fields."
+    },
+    {
+      "design": 17,
+      "file": "prints/17-hangtag.svg",
+      "title": "Hangtag, front and back",
+      "group": "Hangtag",
+      "artboard_mm": [
+        120,
+        95
+      ],
+      "placement": "55 × 95 mm on 600 gsm cotton board, cream",
+      "method": "Letterpress 1 spot (ink) + brass hot foil · dieline on its own layer",
+      "garments": [
+        {
+          "id": "stock-cream"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/17-hangtag.ink.svg",
+        "separations/17-hangtag.brass.svg",
+        "separations/17-hangtag.dieline.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Board, not plastic. Price in mono with a space after the currency."
+    },
+    {
+      "design": 18,
+      "file": "prints/18-packaging-stickers.svg",
+      "title": "Tissue seal and box band",
+      "group": "Sticker",
+      "artboard_mm": [
+        176,
+        50
+      ],
+      "placement": "Seal 50 × 50 mm closes the tissue · band 110 × 26 mm wraps the box lid",
+      "method": "Uncoated cream label stock · 1 spot + brass foil · kiss-cut dieline",
+      "garments": [
+        {
+          "id": "stock-cream"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/18-packaging-stickers.ink.svg",
+        "separations/18-packaging-stickers.brass.svg",
+        "separations/18-packaging-stickers.dieline.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Square seal, never round. The band repeats the wordmark-and-seam idea horizontally."
+    },
+    {
+      "design": 19,
+      "file": "prints/19-capsule-poster.svg",
+      "title": "Collection 04 poster",
+      "group": "Poster",
+      "artboard_mm": [
+        420,
+        594
+      ],
+      "placement": "A2, 420 × 594 mm, uncoated bone 300 gsm",
+      "method": "Offset or screen, 2 spot (ink + brass metallic)",
+      "garments": [
+        {
+          "id": "stock-bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/19-capsule-poster.ink.svg",
+        "separations/19-capsule-poster.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Typographic poster — no photography exists, so the wave carries the image."
+    },
+    {
+      "design": 20,
+      "file": "prints/20-archive-poster.svg",
+      "title": "Archive — 1974 cut retired",
+      "group": "Poster",
+      "artboard_mm": [
+        420,
+        594
+      ],
+      "placement": "A2, 420 × 594 mm, oxblood-dyed 300 gsm stock (or printed flood)",
+      "method": "Screen, 2 spot on dyed stock (cream + brass metallic)",
+      "garments": [
+        {
+          "id": "stock-oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/20-archive-poster.cream.svg",
+        "separations/20-archive-poster.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "note": "Scarcity stated as fact after the event, never before it."
+    }
+  ]
+}

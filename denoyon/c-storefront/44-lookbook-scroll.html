@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>44 · Lookbook horizontal rail — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  section { padding: var(--sp-9) 0; overflow: hidden; }
+  .top { display: flex; justify-content: space-between; align-items: end; gap: var(--sp-5); margin-bottom: var(--sp-7); flex-wrap: wrap; }
+  .controls { display: flex; align-items: center; gap: var(--sp-4); font: var(--type-spec); }
+  .controls button { width: var(--control-h); height: var(--control-h); display: grid; place-items: center; border: var(--border-strong); background: none; cursor: pointer; color: var(--text-primary); transition: var(--transition-control); }
+  .controls button:hover:not(:disabled) { background: var(--ink-900); color: var(--bone); border-color: var(--ink-900); }
+  .controls button:disabled { color: var(--state-disabled-fg); border-color: var(--line-hairline); cursor: not-allowed; }
+  /* No auto-advance. The client scrolls. */
+  .rail { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(280px, 30%); gap: var(--grid-gap); overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: var(--gutter-lg); padding: 0 var(--gutter-lg) var(--sp-4); scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+  .rail figure { margin: 0; scroll-snap-align: start; }
+  .rail figcaption { margin-top: var(--sp-3); display: grid; gap: var(--sp-1); }
+  .rail .n { font: var(--type-spec); color: var(--text-muted); }
+  .rail .t { font-family: var(--font-display); font-weight: var(--fw-light); font-size: var(--fs-h4); }
+  .progress { height: 1px; background: var(--line-hairline); margin: var(--sp-5) var(--gutter-lg) 0; position: relative; }
+  .progress i { position: absolute; left: 0; top: 0; height: 1px; background: var(--metal-hairline); width: 0; transition: width var(--dur-fast) var(--ease-standard); }
+  @media (max-width: 720px) { .rail { grid-auto-columns: 78%; padding: 0 var(--sp-4) var(--sp-4); scroll-padding-left: var(--sp-4); } .progress { margin: var(--sp-5) var(--sp-4) 0; } }
+</style>
+</head>
+<body>
+<section aria-labelledby="t">
+  <div class="dn-container top">
+    <div><div class="dn-eyebrow">Look book</div><h2 id="t" style="margin-top:var(--sp-3)">Twelve looks, one tee.</h2></div>
+    <div class="controls"><span id="count">01 / 12</span>
+      <button type="button" id="prev" aria-label="Previous"><svg class="dn-icon" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+      <button type="button" id="next" aria-label="Next"><svg class="dn-icon" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+    </div>
+  </div>
+  <div class="rail" id="rail" tabindex="0" aria-label="Looks, scroll horizontally"></div>
+  <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+</section>
+<script>
+  const LOOKS = ['Bone, tucked', 'Bone, loose', 'Limestone, under wool gilet', 'Limestone, with crepe trouser', 'Ink, with pleat skirt', 'Ink, sleeves pushed',
+    'Oxblood, alone', 'Oxblood, under the silk coat', 'Bone, cape over shoulders', 'Ink, archive trench', 'Limestone, scarf at the neck', 'All four, folded'];
+  const rail = document.getElementById('rail');
+  rail.innerHTML = LOOKS.map((l, i) => `<figure><div class="dn-image r-34${i % 4 === 2 ? ' dn-image--dark' : ''}"><div class="dn-image__fill"></div>
+    <p class="dn-image__cap">Look ${String(i + 1).padStart(2, '0')} · ${l.toLowerCase()} · 3:4</p></div>
+    <figcaption><span class="n">No. ${String(i + 1).padStart(2, '0')}</span><span class="t">Bias tee · ${l}</span></figcaption></figure>`).join('');
+  const step = () => rail.querySelector('figure').getBoundingClientRect().width + 24;
+  const update = () => {
+    const max = rail.scrollWidth - rail.clientWidth;
+    const i = Math.min(LOOKS.length - 1, Math.round(rail.scrollLeft / step()));
+    document.getElementById('count').textContent = `${String(i + 1).padStart(2, '0')} / ${LOOKS.length}`;
+    document.getElementById('bar').style.width = `${max ? (rail.scrollLeft / max) * 100 : 100}%`;
+    document.getElementById('prev').disabled = rail.scrollLeft <= 2;
+    document.getElementById('next').disabled = rail.scrollLeft >= max - 2;
+  };
+  document.getElementById('prev').onclick = () => rail.scrollBy({ left: -step(), behavior: 'smooth' });
+  document.getElementById('next').onclick = () => rail.scrollBy({ left: step(), behavior: 'smooth' });
+  rail.addEventListener('scroll', update, { passive: true });
+  update();
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>45 · Size guide modal — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  main { padding-top: var(--sp-9); padding-bottom: var(--sp-9); }
+  .dn-dialog__head h2 { font-size: var(--fs-h3); }
+  .tools { display: flex; justify-content: space-between; align-items: center; gap: var(--sp-4); margin-bottom: var(--sp-5); flex-wrap: wrap; }
+  .table-wrap { overflow-x: auto; }
+  .table-wrap .dn-table { min-width: 560px; }
+  .dn-table th, .dn-table td { white-space: nowrap; }
+  .dn-table td:first-child { font-weight: var(--fw-medium); }
+  .how { display: grid; grid-template-columns: 180px 1fr; gap: var(--sp-6); margin-top: var(--sp-7); align-items: start; }
+  .how svg { width: 100%; height: auto; }
+  .how svg .garment { fill: none; stroke: var(--ink-900); stroke-width: 1; }
+  .how svg .m { stroke: var(--brass); stroke-width: 1; }
+  .how svg text { font: 500 9px var(--font-mono); fill: var(--ink-900); }
+  .how ol { margin: 0; padding-left: var(--sp-5); display: grid; gap: var(--sp-3); color: var(--text-secondary); }
+  .how ol b { font-weight: var(--fw-medium); color: var(--text-primary); }
+  .note { font: var(--type-spec); color: var(--text-muted); margin-top: var(--sp-6); }
+  @media (max-width: 600px) { .how { grid-template-columns: 1fr; } .how svg { max-width: 200px; } .dn-dialog__body { padding: var(--sp-5) var(--sp-4); } }
+</style>
+</head>
+<body>
+<main class="dn-container">
+  <button class="dn-btn dn-btn--secondary" type="button" id="open">Size guide</button>
+</main>
+
+<dialog class="dn-dialog" id="guide" aria-labelledby="gt">
+  <div class="dn-dialog__head">
+    <h2 id="gt">Size guide · Bias tee</h2>
+    <button class="dn-close" type="button" id="close" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+  </div>
+  <div class="dn-dialog__body">
+    <div class="tools">
+      <p class="dn-secondary">Garment measurements, laid flat. Cut on the bias, so the tee falls closer at the hip than the chest measure suggests.</p>
+      <div class="dn-seg" role="group" aria-label="Units">
+        <button type="button" data-u="cm" aria-pressed="true">cm</button><button type="button" data-u="in" aria-pressed="false">in</button>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="dn-table" id="table">
+        <thead><tr><th>Size</th><th>A · Chest</th><th>B · Length</th><th>C · Shoulder</th><th>D · Hem</th><th>FR / IT / UK</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="how">
+      <svg viewBox="0 -14 180 214" aria-hidden="true">
+        <path class="garment" d="M60 10 Q90 26 120 10 L168 34 L154 68 L132 58 L136 190 L44 190 L48 58 L26 68 L12 34 Z"/>
+        <line class="m" x1="48" y1="74" x2="132" y2="74"/><text x="84" y="70">A</text>
+        <line class="m" x1="100" y1="20" x2="100" y2="190"/><text x="104" y="120">B</text>
+        <line class="m" x1="60" y1="2" x2="120" y2="2"/><text x="86" y="-4">C</text>
+        <line class="m" x1="44" y1="182" x2="136" y2="182"/><text x="84" y="178">D</text>
+      </svg>
+      <ol>
+        <li><b>Chest.</b> Pit to pit, laid flat, doubled.</li>
+        <li><b>Length.</b> Highest shoulder point to hem, down the centre back.</li>
+        <li><b>Shoulder.</b> Seam to seam across the back.</li>
+        <li><b>Hem.</b> Side to side at the hem, doubled. The bias adds 2 cm of drape.</li>
+      </ol>
+    </div>
+    <p class="note">Between sizes, take the smaller. Alterations to hem length are complimentary.</p>
+  </div>
+</dialog>
+
+<script>
+  const ROWS = [ // cm
+    ['EU 34', 88, 62, 36, 92, '36 / 38 / 6'], ['EU 36', 92, 63, 37, 96, '38 / 40 / 8'], ['EU 38', 96, 64, 38, 100, '40 / 42 / 10'],
+    ['EU 40', 100, 65, 39, 104, '42 / 44 / 12'], ['EU 42', 104, 66, 40, 108, '44 / 46 / 14'],
+  ];
+  const tbody = document.querySelector('#table tbody');
+  const render = (u) => {
+    const f = (v) => u === 'cm' ? `${v}` : (v / 2.54).toFixed(1);
+    tbody.innerHTML = ROWS.map((r) => `<tr${r[0] === 'EU 38' ? ' class="is-hl"' : ''}><td>${r[0]}</td>${r.slice(1, 5).map((v) => `<td>${f(v)}</td>`).join('')}<td>${r[5]}</td></tr>`).join('');
+  };
+  document.querySelectorAll('.dn-seg button').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('.dn-seg button').forEach((x) => x.setAttribute('aria-pressed', x === b));
+    render(b.dataset.u);
+  }));
+  render('cm');
+  const dlg = document.getElementById('guide');
+  document.getElementById('open').onclick = () => dlg.showModal();
+  document.getElementById('close').onclick = () => dlg.close();
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  dlg.showModal();
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>41 · Compact product rows — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  main { padding-top: var(--sp-9); padding-bottom: var(--sp-9); max-width: 880px; }
+  h2 { margin: var(--sp-3) 0 var(--sp-6); }
+  .list { list-style: none; margin: 0; padding: 0; border-top: var(--border-strong); }
+  .item { display: grid; grid-template-columns: 96px 1fr auto; gap: var(--sp-5); align-items: center; padding: var(--sp-4) 0; border-bottom: var(--border-hairline); position: relative; }
+  .item .dn-image { width: 96px; }
+  .item .dn-image__cap { display: none; }
+  .item:hover .dn-image__fill { transform: scale(var(--hover-image-scale)); }
+  .item__name { font-family: var(--font-display); font-weight: var(--fw-light); font-size: var(--fs-h4); border: 0; padding: 0; }
+  .item__name::after { content: ""; position: absolute; inset: 0; } /* whole row clickable */
+  .item:hover .item__name { color: var(--gold-700); }
+  .item__facts { font: var(--type-spec); color: var(--text-muted); margin-top: var(--sp-1); }
+  .item .dn-swatches { margin-top: var(--sp-3); position: relative; z-index: 1; }
+  .item .dn-swatch span { width: 14px; height: 14px; }
+  .item__right { text-align: right; display: grid; gap: var(--sp-2); justify-items: end; }
+  .item__right .dn-btn { position: relative; z-index: 1; }
+  @media (max-width: 560px) { .item { grid-template-columns: 72px 1fr; } .item .dn-image { width: 72px; } .item__right { grid-column: 2; justify-items: start; text-align: left; } }
+</style>
+</head>
+<body>
+<main class="dn-container">
+  <div class="dn-eyebrow">Worn with</div>
+  <h2>Pieces cut from the same book.</h2>
+  <ul class="list">
+    <li class="item">
+      <div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Skirt flat</p></div>
+      <div>
+        <a class="item__name" href="#">Waving pleat skirt</a>
+        <div class="item__facts">Wool crepe · 1968 pattern · Twelve made</div>
+        <fieldset class="dn-swatches" aria-label="Colour">
+          <label class="dn-swatch" title="Ink"><input type="radio" name="c1" checked aria-label="Ink"><span class="sw-ink"></span></label>
+          <label class="dn-swatch" title="Limestone"><input type="radio" name="c1" aria-label="Limestone"><span class="sw-limestone"></span></label>
+        </fieldset>
+      </div>
+      <div class="item__right"><span class="dn-price">€ 620</span><button class="dn-btn dn-btn--secondary" type="button">Add to bag</button></div>
+    </li>
+    <li class="item">
+      <div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Trouser flat</p></div>
+      <div>
+        <a class="item__name" href="#">Tailored crepe trouser</a>
+        <div class="item__facts">Crepe · 1971 pattern · Made to order</div>
+        <fieldset class="dn-swatches" aria-label="Colour">
+          <label class="dn-swatch" title="Bone"><input type="radio" name="c2" checked aria-label="Bone"><span class="sw-bone"></span></label>
+          <label class="dn-swatch" title="Ink"><input type="radio" name="c2" aria-label="Ink"><span class="sw-ink"></span></label>
+          <label class="dn-swatch" title="Oxblood"><input type="radio" name="c2" aria-label="Oxblood"><span class="sw-oxblood"></span></label>
+        </fieldset>
+      </div>
+      <div class="item__right"><span class="dn-price">€ 540</span><button class="dn-btn dn-btn--secondary" type="button">Add to bag</button></div>
+    </li>
+    <li class="item">
+      <div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Scarf folded</p></div>
+      <div>
+        <a class="item__name" href="#">Hand-finished cashmere scarf</a>
+        <div class="item__facts">Cashmere · Scottish mill · One size</div>
+        <fieldset class="dn-swatches" aria-label="Colour">
+          <label class="dn-swatch" title="Limestone"><input type="radio" name="c3" checked aria-label="Limestone"><span class="sw-limestone"></span></label>
+        </fieldset>
+      </div>
+      <div class="item__right"><span class="dn-price">€ 340</span><button class="dn-btn dn-btn--secondary" type="button">Add to bag</button></div>
+    </li>
+  </ul>
+</main>
+</body>
+</html>

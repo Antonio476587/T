@@ -1,0 +1,27 @@
+{
+  "workspace": { "id": "cmuhhuecy323b0jay5phydpiv", "name": "Felix's Team" },
+  "upload_folder": { "id": "cmui0q6rv52u50jculaqbmg58", "name": "DE NOYON — Prints 01–20" },
+  "method": "kittl-upload-image (presigned PUT of png-300dpi/*.png) → kittl-save-image-to-library. No AI generation used; no tokens spent.",
+  "uploads": [
+    { "design": 1,  "file": "png-300dpi/01-wordmark-monument.png",   "uploadId": "cmui0q7cb4ohg0jbg9rdpgdy9", "name": "DN 01 · Wordmark monument (back)" },
+    { "design": 2,  "file": "png-300dpi/02-twelve-lines.png",        "uploadId": "cmui0qt1o4oy60jaycxnwak6w", "name": "DN 02 · Twelve lines (back)" },
+    { "design": 3,  "file": "png-300dpi/03-eligius-colophon.png",    "uploadId": "cmui0qtdx4o650jaecaqy1tia", "name": "DN 03 · Eligius of Noyon (back)" },
+    { "design": 4,  "file": "png-300dpi/04-pattern-book.png",        "uploadId": "cmui0qtpl4p2r0jby1md017s9", "name": "DN 04 · From the pattern book (back)" },
+    { "design": 5,  "file": "png-300dpi/05-bias-grainline.png",      "uploadId": "cmui0qu2d4oro0jbs13fy1j1p", "name": "DN 05 · Cut on the bias (back)" },
+    { "design": 6,  "file": "png-300dpi/06-care-label.png",          "uploadId": "cmui0que14p2t0jby7hux3o6y", "name": "DN 06 · Care label, enlarged (back)" },
+    { "design": 7,  "file": "png-300dpi/07-atelier-coordinates.png", "uploadId": "cmui0skor4p7b0jby4g9y24em", "name": "DN 07 · Atelier coordinates (back, ink tee)" },
+    { "design": 8,  "file": "png-300dpi/08-edition-registry.png",    "uploadId": "cmui0sl0z4oa20jaeaw04ab7s", "name": "DN 08 · Edition registry (back, ink tee)" },
+    { "design": 9,  "file": "png-300dpi/09-pocket-stacked.png",      "uploadId": "cmui0slgt4omz0jbghj6dbzf8", "name": "DN 09 · Stacked pocket mark (chest)" },
+    { "design": 10, "file": "png-300dpi/10-edition-mark.png",        "uploadId": "cmui0slti4out0jcud9ls05uv", "name": "DN 10 · Edition mark (chest)" },
+    { "design": 11, "file": "png-300dpi/11-waving-luxury.png",       "uploadId": "cmui0sm644p1w0jay3hxhd00v", "name": "DN 11 · waving luxury (chest)" },
+    { "design": 12, "file": "png-300dpi/12-square-plate.png",        "uploadId": "cmui0smj24p7e0jbyfc4v4a55", "name": "DN 12 · Square plate (chest)" },
+    { "design": 13, "file": "png-300dpi/13-sleeve-run.png",          "uploadId": "cmui0smuq4on10jbgdhzw52qa", "name": "DN 13 · Sleeve run" },
+    { "design": 14, "file": "png-300dpi/14-back-neck-yoke.png",      "uploadId": "cmui0us384ozs0jcu7mz8fkjw", "name": "DN 14 · Hood & back-neck mark" },
+    { "design": 15, "file": "png-300dpi/15-hem-inlay.png",           "uploadId": "cmui0usf04ozv0jcu5cfadw10", "name": "DN 15 · Hem inlay" },
+    { "design": 16, "file": "png-300dpi/16-neck-label.png",          "uploadId": "cmui0usr44orh0jbg6adxfxfl", "name": "DN 16 · Printed neck label" },
+    { "design": 17, "file": "png-300dpi/17-hangtag.png",             "uploadId": "cmui0ut334p110jbs3ar1aofo", "name": "DN 17 · Hangtag, front and back" },
+    { "design": 18, "file": "png-300dpi/18-packaging-stickers.png",  "uploadId": "cmui0ute84of00jae0gr1abks", "name": "DN 18 · Tissue seal and box band" },
+    { "design": 19, "file": "png-300dpi/19-capsule-poster.png",      "uploadId": "cmui0utu44pbt0jbydwvgc31m", "name": "DN 19 · Collection 04 poster (A2)" },
+    { "design": 20, "file": "png-300dpi/20-archive-poster.png",      "uploadId": "cmui0uucz4p000jcu82wv7wa2", "name": "DN 20 · Archive poster (A2)" }
+  ]
+}

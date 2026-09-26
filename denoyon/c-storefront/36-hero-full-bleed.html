@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>36 · Hero, full bleed — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  .hero { position: relative; height: 660px; min-height: 70vh; color: var(--text-on-dark); }
+  .hero .dn-image { position: absolute; inset: 0; }
+  .hero .dn-image__cap { left: auto; right: var(--gutter-lg); bottom: var(--sp-6); text-align: right; max-width: 280px; }
+  .hero__scrim { position: absolute; inset: 0; background: var(--scrim-bottom); }
+  .hero__copy { position: absolute; left: 0; right: 0; bottom: var(--sp-9); }
+  .hero__copy .dn-eyebrow { color: var(--text-on-dark-muted); }
+  .hero__copy h1 { margin: var(--sp-4) 0 var(--sp-5); max-width: 10ch; }
+  .hero__copy p { max-width: 42ch; color: var(--text-on-dark-muted); margin-bottom: var(--sp-6); }
+  .hero__copy .dn-link-cta { color: var(--text-on-dark); }
+  .hero__copy .dn-link-cta:hover { color: var(--brass-light); }
+  .facts { display: flex; gap: var(--sp-6); margin-top: var(--sp-7); font: var(--type-spec); color: var(--text-on-dark-muted); flex-wrap: wrap; }
+  @media (max-width: 720px) { .hero { height: 88vh; } .hero .dn-image__cap { display: none; } }
+</style>
+</head>
+<body>
+<header class="dn-header dn-header--over">
+  <div class="dn-container dn-header__inner">
+    <nav aria-label="Primary"><a href="#">Collection 04</a><a href="#">Archive</a><a href="#">Atelier</a></nav>
+    <a class="dn-wordmark" href="#" aria-label="DE NOYON — home">De Noyon</a>
+    <div class="dn-header__utils"><button type="button">Search</button><button type="button">Bag<span class="dn-pip">1</span></button></div>
+  </div>
+</header>
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="dn-image dn-image--dark"><div class="dn-image__fill"></div>
+    <p class="dn-image__cap">Bias tee in motion · full length, back three-quarter · window light, 35 mm grain</p>
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__copy dn-container">
+    <div class="dn-eyebrow">Collection 04</div>
+    <h1 id="hero-title" class="dn-hero-type">Cut on the bias.</h1>
+    <p>Eleven pieces from the 1974 pattern book, cut so the cloth falls in a single wave. Twelve of each.</p>
+    <a class="dn-link-cta" href="#">Shop the collection</a>
+    <div class="facts"><span>Opens 02.10.2026 · 10h00 Paris</span><span>Silk-cotton jersey · Como</span></div>
+  </div>
+</section>
+</body>
+</html>

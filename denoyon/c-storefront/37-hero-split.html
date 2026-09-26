@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>37 · Hero, split — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  .split { display: grid; grid-template-columns: 5fr 7fr; min-height: calc(100vh - 78px); }
+  .split__text { background: var(--surface-plaster); padding: var(--sp-10) var(--gutter-lg) var(--sp-9); display: flex; flex-direction: column; justify-content: space-between; gap: var(--sp-8); box-shadow: var(--inlay-brass); }
+  .split__text h1 { margin: var(--sp-4) 0 var(--sp-6); }
+  .split__text p { max-width: 38ch; color: var(--text-secondary); }
+  .spec { display: grid; grid-template-columns: auto 1fr; gap: var(--sp-3) var(--sp-6); font: var(--type-spec); margin: 0; }
+  .spec dt { color: var(--text-muted); text-transform: uppercase; letter-spacing: var(--tr-label); }
+  .spec dd { margin: 0; }
+  .actions { display: flex; gap: var(--sp-5); align-items: center; flex-wrap: wrap; margin-top: var(--sp-7); }
+  .split .dn-image { height: 100%; }
+  @media (max-width: 900px) { .split { grid-template-columns: 1fr; } .split .dn-image { aspect-ratio: 4 / 5; height: auto; order: -1; } .split__text { padding: var(--sp-8) var(--sp-4); } }
+</style>
+</head>
+<body>
+<header class="dn-header">
+  <div class="dn-container dn-header__inner">
+    <nav aria-label="Primary"><a href="#">Collection 04</a><a href="#">Archive</a><a href="#">Atelier</a></nav>
+    <a class="dn-wordmark" href="#" aria-label="DE NOYON — home">De Noyon</a>
+    <div class="dn-header__utils"><button type="button">Search</button><button type="button">Bag</button></div>
+  </div>
+</header>
+
+<section class="split" aria-labelledby="t">
+  <div class="split__text">
+    <div>
+      <div class="dn-eyebrow">New · Collection 04</div>
+      <h1 id="t" class="dn-hero-type">The bias tee.</h1>
+      <p>A t-shirt cut at 45° to the grain, so the jersey falls from the shoulder in one line instead of hanging straight. Hand-finished at the hem.</p>
+      <div class="actions">
+        <a class="dn-btn dn-btn--lg" href="#">Select a size</a>
+        <a class="dn-link-cta" href="#">Book a fitting</a>
+      </div>
+    </div>
+    <dl class="spec">
+      <dt>Cloth</dt><dd>Silk-cotton jersey, milled in Como</dd>
+      <dt>Pattern</dt><dd>1974, from the atelier archive</dd>
+      <dt>Edition</dt><dd>Twelve made · numbered on the facing</dd>
+      <dt>Price</dt><dd>€ 280</dd>
+    </dl>
+  </div>
+  <div class="dn-image"><div class="dn-image__fill"></div>
+    <p class="dn-image__cap">Tee on the body, mid-stride · crop shoulder to hip, cloth moving · 4:5</p>
+  </div>
+</section>
+</body>
+</html>

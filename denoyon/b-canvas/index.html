@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DE NOYON — Canvas designs 21–35</title>
+<link rel="stylesheet" href="../design-system/styles.css">
+<style>
+  @font-face { font-family: "Cormorant Garamond"; font-weight: 300; src: url(../fonts/CormorantGaramond-Light.ttf); }
+  @font-face { font-family: "Cormorant Garamond"; font-weight: 300; font-style: italic; src: url(../fonts/CormorantGaramond-LightItalic.ttf); }
+  @font-face { font-family: "Jost"; font-weight: 300; src: url(../fonts/Jost-Light.ttf); }
+  @font-face { font-family: "Jost"; font-weight: 500; src: url(../fonts/Jost-Medium.ttf); }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 400; src: url(../fonts/IBMPlexMono-Regular.ttf); }
+  .wrap { max-width: var(--container); margin: 0 auto; padding: var(--sp-9) var(--gutter-lg); }
+  header { margin-bottom: var(--sp-8); }
+  header h1 { font-size: var(--fs-display); margin: var(--sp-3) 0 var(--sp-4); }
+  header p { max-width: var(--container-text); color: var(--text-secondary); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: var(--sp-8) var(--grid-gap); }
+  figure { margin: 0; }
+  .stage { background: var(--surface-raised); border: var(--border-hairline); display: grid; place-items: center; aspect-ratio: 1; padding: var(--sp-5); }
+  .stage.checker { background-color: var(--limestone); background-image: linear-gradient(45deg, var(--sand-100) 25%, transparent 25%, transparent 75%, var(--sand-100) 75%), linear-gradient(45deg, var(--sand-100) 25%, transparent 25%, transparent 75%, var(--sand-100) 75%); background-size: 24px 24px; background-position: 0 0, 12px 12px; }
+  canvas { max-width: 100%; max-height: 100%; width: auto; height: auto; display: block; }
+  figcaption { display: flex; justify-content: space-between; gap: var(--sp-4); margin-top: var(--sp-3); }
+  figcaption b { font: var(--type-eyebrow); letter-spacing: var(--tr-label); text-transform: uppercase; }
+  figcaption span { font: var(--type-spec); color: var(--text-muted); }
+  details { margin-top: var(--sp-3); }
+  summary { font: var(--type-spec); color: var(--text-secondary); cursor: pointer; }
+  textarea { width: 100%; min-height: 150px; font: var(--type-spec); border: var(--border-hairline); border-radius: 0; background: var(--surface-card); padding: var(--sp-3); margin-top: var(--sp-2); }
+  textarea:focus { outline: none; border-color: var(--focus-ring); }
+  .err { color: var(--status-error); font: var(--type-spec); }
+  @media (max-width: 520px) { .wrap { padding: var(--sp-8) var(--sp-4); } .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="dn-eyebrow">Category B · Designs 21–35</div>
+    <h1>Canvas designs.</h1>
+    <p>Each frame is drawn live with the Canvas API from brand tokens. Open “Data” under any frame, edit the JSON, and the frame redraws.</p>
+  </header>
+  <div class="grid" id="grid"></div>
+</div>
+<script src="designs.js"></script>
+<script>
+(async () => {
+  await Promise.all([
+    document.fonts.load('300 40px "Cormorant Garamond"'), document.fonts.load('italic 300 40px "Cormorant Garamond"'),
+    document.fonts.load('300 40px "Jost"'), document.fonts.load('500 40px "Jost"'), document.fonts.load('400 40px "IBM Plex Mono"'),
+  ]);
+  const grid = document.getElementById('grid');
+  const { designs } = window.DN_CANVAS;
+  const canvases = [];
+  for (const d of designs) {
+    const fig = document.createElement('figure');
+    fig.innerHTML = `<div class="stage${d.transparent ? ' checker' : ''}"></div>
+      <figcaption><b>${d.n} · ${d.title}</b><span>${d.w} × ${d.h}</span></figcaption>
+      <details><summary>Data</summary><textarea spellcheck="false"></textarea><div class="err"></div></details>`;
+    const c = document.createElement('canvas');
+    c.width = d.w; c.height = d.h;
+    fig.querySelector('.stage').appendChild(c);
+    const ta = fig.querySelector('textarea');
+    ta.value = JSON.stringify(d.data, null, 2);
+    const draw = (data) => { const ctx = c.getContext('2d'); ctx.clearRect(0, 0, d.w, d.h); d.render(ctx, data); };
+    ta.addEventListener('input', () => {
+      try { draw(JSON.parse(ta.value)); fig.querySelector('.err').textContent = ''; }
+      catch (e) { fig.querySelector('.err').textContent = 'Invalid JSON.'; }
+    });
+    draw(d.data);
+    grid.appendChild(fig);
+    canvases.push({ d, c });
+  }
+  window.DN_EXPORT = () => canvases.map(({ d, c }) => ({ file: d.file, data: c.toDataURL('image/png') }));
+  window.DN_READY = true;
+})();
+</script>
+</body>
+</html>

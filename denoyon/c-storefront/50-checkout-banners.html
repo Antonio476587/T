@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>50 · Checkout banners — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  /* Service banners, not discount banners: the house runs no codes or countdowns. */
+  .strip { background: var(--ink-900); color: var(--text-on-dark); font: var(--type-spec); }
+  .strip .dn-container { display: flex; justify-content: center; gap: var(--sp-7); height: 40px; align-items: center; flex-wrap: wrap; }
+  .strip span + span::before { content: "·"; margin-right: var(--sp-7); color: var(--text-on-dark-muted); }
+  .head { height: 78px; display: grid; place-items: center; border-bottom: var(--border-hairline); }
+  .head .dn-wordmark { border: 0; box-shadow: var(--inlay-brass); padding-bottom: 4px; }
+  main { padding-top: var(--sp-8); padding-bottom: var(--sp-9); display: grid; grid-template-columns: 7fr 5fr; gap: var(--sp-8); align-items: start; }
+  .steps { display: flex; gap: var(--sp-5); font: var(--type-eyebrow); letter-spacing: var(--tr-label); text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--sp-7); }
+  .steps [aria-current] { color: var(--text-primary); box-shadow: inset 0 -1px 0 var(--metal-hairline); padding-bottom: var(--sp-2); }
+  .banner { display: grid; grid-template-columns: auto 1fr auto; gap: var(--sp-4); align-items: start; padding: var(--sp-4) var(--sp-5); border: var(--border-hairline); background: var(--surface-card); margin-bottom: var(--sp-3); }
+  .banner svg { width: 18px; height: 18px; stroke: currentColor; stroke-width: 1.5; fill: none; margin-top: 2px; }
+  .banner b { display: block; font: var(--type-eyebrow); letter-spacing: var(--tr-label); text-transform: uppercase; margin-bottom: 2px; }
+  .banner p { font: var(--type-spec); color: var(--text-secondary); }
+  .banner--sage { border-left: 0; box-shadow: inset 0 -1px 0 var(--sage-600); }
+  .banner--sage svg, .banner--sage b { color: var(--sage-600); }
+  .banner--oxblood { background: var(--surface-page); }
+  .banner--oxblood svg, .banner--oxblood b { color: var(--ox-600); }
+  .banner .dn-close { width: 24px; height: 24px; }
+  form.fields { display: grid; gap: var(--sp-4); margin-top: var(--sp-7); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-4); }
+  .summary { position: sticky; top: 100px; background: var(--surface-raised); border: var(--border-hairline); padding: var(--sp-6); }
+  .summary .dn-row { font: var(--type-spec); padding: var(--sp-2) 0; }
+  .summary .total { border-top: var(--border-hairline); margin-top: var(--sp-3); padding-top: var(--sp-4); font-size: var(--fs-body); }
+  .summary .li { display: grid; grid-template-columns: 64px 1fr auto; gap: var(--sp-4); padding-bottom: var(--sp-4); border-bottom: var(--border-hairline); margin-bottom: var(--sp-3); }
+  .summary .li .dn-image__cap { display: none; }
+  .summary .li span { font: var(--type-spec); }
+  .summary .li .n { font-family: var(--font-display); font-weight: var(--fw-light); font-size: var(--fs-body-lg); display: block; }
+  .client { margin-top: var(--sp-5); }
+  .client summary { font: var(--type-spec); color: var(--text-secondary); cursor: pointer; list-style: none; border-bottom: 1px solid var(--line-strong); display: inline-block; }
+  .client summary:hover { color: var(--text-accent); border-bottom-color: var(--line-accent); }
+  .client .row { display: grid; grid-template-columns: 1fr auto; margin-top: var(--sp-3); }
+  .client .dn-input { border-right: 0; }
+  .client .msg { font: var(--type-spec); margin-top: var(--sp-2); min-height: 1.5em; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } .summary { position: static; order: -1; } .strip span + span::before { display: none; } .strip .dn-container { height: auto; padding: var(--sp-2) var(--sp-4); gap: var(--sp-1) var(--sp-4); } }
+</style>
+</head>
+<body>
+<div class="strip" role="note"><div class="dn-container"><span>Complimentary dispatch within the EU</span><span>Returns within 30 days</span><span>Hem altered in the atelier</span></div></div>
+<div class="head"><a class="dn-wordmark" href="#" aria-label="DE NOYON — home">De Noyon</a></div>
+
+<main class="dn-container">
+  <section aria-labelledby="ct">
+    <nav class="steps" aria-label="Checkout steps"><span>Bag</span><span aria-current="step">Delivery</span><span>Payment</span></nav>
+
+    <div class="banner banner--sage" id="b1">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+      <div><b>Dispatched from Paris on Thursday</b><p>Order before 14h00 Wednesday. Delivered by hand in two to three working days, signed for.</p></div>
+      <button class="dn-close" type="button" aria-label="Dismiss" data-x="b1"><svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+    <div class="banner" id="b2">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+      <div><b>Gift wrapping is complimentary</b><p>Cream tissue, square seal, a card written by hand. Chosen in the bag.</p></div>
+      <button class="dn-close" type="button" aria-label="Dismiss" data-x="b2"><svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+    <div class="banner banner--oxblood" id="b3">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+      <div><b>One archive piece in the bag</b><p>Archive tee, 1972 cut. Final piece. It cannot be returned or exchanged.</p></div>
+      <span></span>
+    </div>
+
+    <h1 id="ct" style="font-size:var(--fs-h2);margin-top:var(--sp-7)">Delivery.</h1>
+    <form class="fields" onsubmit="event.preventDefault()">
+      <div class="dn-field"><label class="dn-label" for="em">Email</label><input class="dn-input" id="em" type="email" autocomplete="email"></div>
+      <div class="two">
+        <div class="dn-field"><label class="dn-label" for="fn">Name</label><input class="dn-input" id="fn" autocomplete="name"></div>
+        <div class="dn-field"><label class="dn-label" for="ph">Telephone <span class="dn-muted" style="letter-spacing:0">(for the courier)</span></label><input class="dn-input" id="ph" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="dn-field"><label class="dn-label" for="ad">Address</label><input class="dn-input" id="ad" autocomplete="street-address"></div>
+      <button class="dn-btn dn-btn--lg" type="submit" style="justify-self:start;margin-top:var(--sp-3)">Continue to payment</button>
+    </form>
+  </section>
+
+  <aside class="summary" aria-label="Order summary">
+    <div class="dn-label" style="margin-bottom:var(--sp-5)">Order · 2 pieces</div>
+    <div class="li"><div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Tee</p></div>
+      <div><span class="n">Bias tee in silk-cotton jersey</span><span class="dn-muted">Oxblood · EU 38 · No. 04</span></div><span>€ 280</span></div>
+    <div class="li"><div class="dn-image r-34 dn-image--dark"><div class="dn-image__fill"></div><p class="dn-image__cap">Tee</p></div>
+      <div><span class="n">Archive tee, 1972 cut</span><span class="dn-muted">Ink · EU 38 · Final piece</span></div><span><s class="dn-muted">€ 320</s> € 220</span></div>
+    <div class="dn-row"><span>Subtotal</span><span>€ 500</span></div>
+    <div class="dn-row"><span>Dispatch</span><span>Complimentary</span></div>
+    <div class="dn-row" id="giftRow" hidden><span>Gift card</span><span id="giftAmt"></span></div>
+    <div class="dn-row total"><span>Total</span><span id="tot">€ 500</span></div>
+    <details class="client">
+      <summary>Gift card</summary>
+      <form class="row" id="gc"><input class="dn-input" id="code" aria-label="Gift card number" placeholder="DN-0000-0000" autocomplete="off"><button class="dn-btn" type="submit">Apply</button></form>
+      <p class="msg" role="status" id="gcMsg"></p>
+    </details>
+  </aside>
+</main>
+<script>
+  document.querySelectorAll('[data-x]').forEach((b) => b.addEventListener('click', () => document.getElementById(b.dataset.x).remove()));
+  // Gift cards only: a stored balance a client was given, not a discount code.
+  document.getElementById('gc').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const v = document.getElementById('code').value.trim().toUpperCase();
+    const msg = document.getElementById('gcMsg');
+    if (!/^DN-\d{4}-\d{4}$/.test(v)) { msg.textContent = 'Enter a valid gift card number.'; msg.style.color = 'var(--status-error)'; return; }
+    msg.textContent = 'Gift card applied. € 100 balance.'; msg.style.color = 'var(--status-success)';
+    document.getElementById('giftRow').hidden = false;
+    document.getElementById('giftAmt').textContent = '− € 100';
+    document.getElementById('tot').textContent = '€ 400';
+  });
+</script>
+</body>
+</html>

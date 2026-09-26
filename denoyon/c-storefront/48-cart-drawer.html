@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>48 · Bag drawer — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  main { padding-top: var(--sp-9); padding-bottom: var(--sp-9); }
+  .line { display: grid; grid-template-columns: 88px 1fr; gap: var(--sp-4); padding-bottom: var(--sp-5); margin-bottom: var(--sp-5); border-bottom: var(--border-hairline); }
+  .line .dn-image__cap { display: none; }
+  .line__name { font-family: var(--font-display); font-weight: var(--fw-light); font-size: var(--fs-h4); line-height: var(--lh-heading); }
+  .line__facts { font: var(--type-spec); color: var(--text-muted); margin: var(--sp-1) 0 var(--sp-3); }
+  .qty { display: inline-flex; border: var(--border-strong); height: var(--control-h-sm); }
+  .qty button { width: 34px; background: none; border: 0; cursor: pointer; display: grid; place-items: center; color: var(--text-primary); }
+  .qty button:hover:not(:disabled) { color: var(--text-accent); }
+  .qty button:disabled { color: var(--state-disabled-fg); cursor: not-allowed; }
+  .qty output { min-width: 28px; display: grid; place-items: center; font: var(--type-spec); }
+  .qty svg { width: 14px; height: 14px; stroke: currentColor; stroke-width: 1.5; fill: none; }
+  .remove { background: none; border: 0; padding: 0; font: var(--type-spec); color: var(--text-muted); cursor: pointer; border-bottom: 1px solid var(--line-hairline); }
+  .remove:hover { color: var(--text-accent); border-bottom-color: var(--line-accent); }
+  .addon { display: grid; grid-template-columns: 1fr auto; gap: var(--sp-3); align-items: center; padding: var(--sp-4); background: var(--surface-raised); border: var(--border-hairline); }
+  .addon p { font: var(--type-spec); color: var(--text-secondary); }
+  .empty { text-align: center; padding: var(--sp-9) 0; }
+  .empty h3 { margin-bottom: var(--sp-4); }
+  .sum { display: grid; gap: var(--sp-2); font: var(--type-spec); }
+  .sum .total { font-size: var(--fs-body); padding-top: var(--sp-3); border-top: var(--border-hairline); }
+  .fact { font: var(--type-spec); color: var(--text-muted); text-align: center; }
+</style>
+</head>
+<body>
+<header class="dn-header">
+  <div class="dn-container dn-header__inner">
+    <nav aria-label="Primary"><a href="#">Collection 04</a><a href="#">Archive</a></nav>
+    <a class="dn-wordmark" href="#" aria-label="DE NOYON — home">De Noyon</a>
+    <div class="dn-header__utils"><button type="button" id="openBag" aria-controls="bag" aria-expanded="false">Bag<span class="dn-pip" id="pip">2</span></button></div>
+  </div>
+</header>
+<main class="dn-container"><p class="dn-demo-note">Select “Bag” in the header to open the drawer.</p></main>
+
+<div class="dn-scrim" id="scrim"></div>
+<aside class="dn-drawer" id="bag" aria-labelledby="bagTitle" aria-hidden="true" tabindex="-1">
+  <div class="dn-drawer__head">
+    <span class="dn-label" id="bagTitle" style="color:var(--text-primary)">Bag · <span id="count">2</span></span>
+    <button class="dn-close" type="button" id="closeBag" aria-label="Close bag"><svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+  </div>
+  <div class="dn-drawer__body" id="lines"></div>
+  <div class="dn-drawer__foot" id="foot">
+    <div class="addon">
+      <p>Cedar hanger, hand-sanded · keeps the bias from stretching on the rail.</p>
+      <button class="dn-btn dn-btn--secondary" type="button" id="addon">Add · € 40</button>
+    </div>
+    <div class="sum">
+      <div class="dn-row"><span>Subtotal</span><span id="sub"></span></div>
+      <div class="dn-row"><span>Dispatch</span><span>Complimentary</span></div>
+      <div class="dn-row total"><span>Total</span><span id="total"></span></div>
+    </div>
+    <a class="dn-btn dn-btn--lg dn-btn--block" href="50-checkout-banners.html">Continue to payment</a>
+    <p class="fact">Returns within 30 days · collected from your door</p>
+  </div>
+</aside>
+
+<script>
+  const bag = [
+    { id: 1, name: 'Bias tee in silk-cotton jersey', facts: 'Bone · EU 38 · No. 04 of 12', price: 280, qty: 1, max: 1 },
+    { id: 2, name: 'Waving pleat skirt', facts: 'Ink · EU 38', price: 620, qty: 1, max: 2 },
+  ];
+  const eur = (n) => '€ ' + n.toLocaleString('en-GB');
+  const minus = '<svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg>';
+  const plus = '<svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></svg>';
+  function render() {
+    const n = bag.reduce((a, l) => a + l.qty, 0);
+    document.getElementById('count').textContent = n;
+    document.getElementById('pip').textContent = n;
+    document.getElementById('pip').hidden = !n;
+    document.getElementById('foot').hidden = !n;
+    const lines = document.getElementById('lines');
+    if (!n) {
+      lines.innerHTML = '<div class="empty"><h3>The bag is empty.</h3><a class="dn-link-cta" href="#">Shop the collection</a></div>';
+      return;
+    }
+    lines.innerHTML = bag.map((l) => `<div class="line">
+      <div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">${l.name}</p></div>
+      <div>
+        <div class="dn-row"><span class="line__name">${l.name}</span><span class="dn-price">${eur(l.price * l.qty)}</span></div>
+        <div class="line__facts">${l.facts}</div>
+        <div class="dn-row">
+          <span class="qty"><button type="button" data-id="${l.id}" data-d="-1" aria-label="Fewer" ${l.qty <= 1 ? 'disabled' : ''}>${minus}</button><output>${l.qty}</output><button type="button" data-id="${l.id}" data-d="1" aria-label="More" ${l.qty >= l.max ? 'disabled' : ''}>${plus}</button></span>
+          <button class="remove" type="button" data-rm="${l.id}">Remove</button>
+        </div>
+      </div></div>`).join('');
+    const sub = bag.reduce((a, l) => a + l.price * l.qty, 0);
+    document.getElementById('sub').textContent = eur(sub);
+    document.getElementById('total').textContent = eur(sub);
+  }
+  document.getElementById('lines').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.rm) bag.splice(bag.findIndex((l) => l.id == b.dataset.rm), 1);
+    if (b.dataset.d) { const l = bag.find((x) => x.id == b.dataset.id); l.qty += +b.dataset.d; }
+    render();
+  });
+  document.getElementById('addon').addEventListener('click', (e) => {
+    if (bag.some((l) => l.id === 3)) return;
+    bag.push({ id: 3, name: 'Cedar hanger', facts: 'Hand-sanded · France', price: 40, qty: 1, max: 3 });
+    e.target.disabled = true; e.target.textContent = 'Added';
+    render();
+  });
+  const drawer = document.getElementById('bag'), scrim = document.getElementById('scrim'), opener = document.getElementById('openBag');
+  const open = () => { drawer.classList.add('is-open'); scrim.classList.add('is-open'); drawer.setAttribute('aria-hidden', 'false'); opener.setAttribute('aria-expanded', 'true'); drawer.focus(); };
+  const close = () => { drawer.classList.remove('is-open'); scrim.classList.remove('is-open'); drawer.setAttribute('aria-hidden', 'true'); opener.setAttribute('aria-expanded', 'false'); opener.focus(); };
+  opener.onclick = open; scrim.onclick = close; document.getElementById('closeBag').onclick = close;
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('is-open')) close(); });
+  render(); open();
+</script>
+</body>
+</html>

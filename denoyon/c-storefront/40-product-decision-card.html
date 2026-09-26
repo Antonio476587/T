@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>40 · Product decision card — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  main { padding-top: var(--sp-9); padding-bottom: var(--sp-9); display: grid; grid-template-columns: 7fr 5fr; gap: var(--sp-8); align-items: start; }
+  .buy { position: sticky; top: 100px; background: var(--surface-card); border: var(--border-hairline); padding: var(--sp-7) var(--sp-6); }
+  .buy h1 { font-size: var(--fs-h1); margin: var(--sp-3) 0 var(--sp-4); }
+  .buy .row { display: flex; justify-content: space-between; align-items: baseline; }
+  .buy .dn-price { font-size: var(--fs-body-lg); }
+  .buy p { color: var(--text-secondary); margin: var(--sp-5) 0; }
+  .block { margin-top: var(--sp-6); }
+  .block .dn-row { margin-bottom: var(--sp-3); }
+  .colour-name { font: var(--type-spec); color: var(--text-muted); }
+  .dn-swatches span { width: 28px; height: 28px; }
+  .why { margin: var(--sp-6) 0 0; padding: 0; list-style: none; font: var(--type-spec); }
+  .why li { display: grid; grid-template-columns: 96px 1fr; gap: var(--sp-4); padding: var(--sp-3) 0; border-top: var(--border-hairline); }
+  .why li span:first-child { color: var(--text-muted); text-transform: uppercase; letter-spacing: var(--tr-label); }
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: var(--grid-gap); }
+  .gallery .dn-image:first-child { grid-column: 1 / -1; }
+  #add[disabled] { cursor: not-allowed; }
+  .toast { position: fixed; left: 50%; bottom: var(--sp-6); transform: translate(-50%, 16px); opacity: 0; background: var(--ink-900); color: var(--cream); padding: var(--sp-4) var(--sp-6); font: var(--type-spec); transition: var(--transition-reveal); box-shadow: var(--inlay-brass); }
+  .toast.is-in { opacity: 1; transform: translate(-50%, 0); }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } .buy { position: static; } }
+</style>
+</head>
+<body>
+<main class="dn-container">
+  <div class="gallery">
+    <div class="dn-image r-45"><div class="dn-image__fill"></div><p class="dn-image__cap">On the body, back · cloth falling from shoulder blade to hem</p></div>
+    <div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Hem detail · hand-rolled finish, macro</p></div>
+    <div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Facing · edition number stitched, macro</p></div>
+  </div>
+
+  <form class="buy" id="buy" aria-labelledby="name">
+    <div class="row"><span class="dn-badge dn-badge--gold">No. 04 of 12</span><span class="dn-mono dn-muted">DN-C04-011</span></div>
+    <h1 id="name">Bias tee in silk-cotton jersey</h1>
+    <div class="row"><span class="dn-price">€ 280</span><span class="dn-mono dn-muted">Complimentary dispatch</span></div>
+    <p>Cut at 45° to the grain, so the jersey falls from the shoulder in one line. From a 1974 pattern. Twelve made.</p>
+
+    <div class="block">
+      <div class="dn-row"><span class="dn-label">Colour</span><span class="colour-name" id="cname">Bone</span></div>
+      <fieldset class="dn-swatches" aria-label="Colour">
+        <label class="dn-swatch" title="Bone"><input type="radio" name="colour" value="Bone" checked><span class="sw-bone"></span></label>
+        <label class="dn-swatch" title="Limestone"><input type="radio" name="colour" value="Limestone"><span class="sw-limestone"></span></label>
+        <label class="dn-swatch" title="Ink"><input type="radio" name="colour" value="Ink"><span class="sw-ink"></span></label>
+        <label class="dn-swatch" title="Oxblood"><input type="radio" name="colour" value="Oxblood"><span class="sw-oxblood"></span></label>
+      </fieldset>
+    </div>
+
+    <div class="block">
+      <div class="dn-row"><span class="dn-label">Size</span><a href="45-size-guide-modal.html" class="dn-mono">Size guide</a></div>
+      <fieldset class="dn-sizes" aria-label="Size">
+        <label class="dn-size"><input type="radio" name="size" value="EU 34"><span>34</span></label>
+        <label class="dn-size"><input type="radio" name="size" value="EU 36"><span>36</span></label>
+        <label class="dn-size"><input type="radio" name="size" value="EU 38" disabled><span>38</span></label>
+        <label class="dn-size"><input type="radio" name="size" value="EU 40"><span>40</span></label>
+        <label class="dn-size"><input type="radio" name="size" value="EU 42"><span>42</span></label>
+      </fieldset>
+    </div>
+
+    <div class="block"><button class="dn-btn dn-btn--lg dn-btn--block" id="add" type="submit" disabled>Select a size</button></div>
+
+    <ul class="why" aria-label="Construction">
+      <li><span>Cloth</span><span>Silk-cotton jersey, 160 g/m², milled in Como</span></li>
+      <li><span>Cut</span><span>Bias, 1974 pattern book · one side seam</span></li>
+      <li><span>Finish</span><span>Hand-rolled hem · 40 minutes per piece</span></li>
+      <li><span>Returns</span><span>30 days · complimentary collection</span></li>
+    </ul>
+  </form>
+</main>
+<div class="toast" role="status" id="toast"></div>
+<script>
+  const form = document.getElementById('buy');
+  const add = document.getElementById('add');
+  form.addEventListener('change', (e) => {
+    if (e.target.name === 'colour') document.getElementById('cname').textContent = e.target.value;
+    if (e.target.name === 'size') { add.disabled = false; add.textContent = 'Add to bag'; }
+  });
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const size = form.size.value, colour = form.colour.value;
+    const t = document.getElementById('toast');
+    t.textContent = `Added. Bias tee · ${colour} · ${size}.`;
+    t.classList.add('is-in');
+    setTimeout(() => t.classList.remove('is-in'), 2800);
+  });
+</script>
+</body>
+</html>

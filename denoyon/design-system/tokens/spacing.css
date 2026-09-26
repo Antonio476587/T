@@ -1,0 +1,13 @@
+:root{
+--sp-0:0px; /* @kind spacing */--sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;
+--sp-7:48px;--sp-8:64px;--sp-9:96px;--sp-10:128px;--sp-11:180px;
+
+--gutter:24px;--gutter-lg:40px;
+--container:1360px;--container-narrow:720px;--container-text:62ch; /* @kind spacing */
+--grid-cols:12; /* @kind other */
+--grid-gap:24px;
+
+--section-y:var(--sp-9);--section-y-lg:var(--sp-11);
+--control-h-sm:34px;--control-h:44px;--control-h-lg:54px;
+--control-px:20px;--control-px-lg:32px;
+}

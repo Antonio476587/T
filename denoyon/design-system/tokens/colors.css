@@ -1,0 +1,46 @@
+:root{
+/* base — ink */
+--ink-900:#0C0B0A;--ink-800:#171614;--ink-700:#221F1B;--ink-600:#33302B;--ink-500:#4A453E;
+/* base — warm neutrals */
+--sand-400:#8A8177;--sand-300:#B4AAA0;--sand-200:#D8CFC3;--sand-100:#EFE7DB;--sand-050:#F7F2EA;
+/* base — cream / paper */
+--cream:#F2EBDF;--bone:#FAF6EF;--white:#FFFFFF;
+/* base — materials (Dirand palette: plaster, limestone, ebony, black-veined marble, brass) */
+--plaster:#F0EAE0;--limestone:#E6DFD3;--limestone-deep:#D2C9BB;
+--ebony:#141210;--marble-black:#1A1917;--marble-vein:rgba(242,235,223,.22);
+--brass:#B18A46;--brass-light:#CDAE72;--brass-deep:#8A6A2F;
+/* base — gold (primary accent) */
+--gold-700:#8A6A2F;--gold-600:#A87F3B;--gold-500:#B18A46;--gold-400:#C9A868;--gold-300:#E0C994;
+/* base — oxblood (secondary accent) */
+--ox-700:#43141A;--ox-600:#5E1B22;--ox-500:#7A2A31;
+/* base — sage (rare tertiary, vintage label green) */
+--sage-600:#4E5A4B;--sage-400:#7C8A76;
+
+/* semantic — text */
+--text-primary:var(--ink-900);--text-secondary:var(--ink-500);--text-muted:var(--sand-400);
+--text-on-dark:var(--cream);--text-on-dark-muted:var(--sand-300);--text-accent:var(--gold-600);
+--text-inverse:var(--bone);
+/* semantic — surfaces */
+--surface-page:var(--bone);--surface-card:var(--white);--surface-raised:var(--sand-050);
+--surface-inverse:var(--ink-900);--surface-inverse-2:var(--ink-800);--surface-accent:var(--gold-500);
+--surface-oxblood:var(--ox-600);--surface-scrim:rgba(12,11,10,.62);
+--surface-plaster:var(--plaster);--surface-limestone:var(--limestone);--surface-ebony:var(--ebony);
+/* semantic — metal. The one accent is read as brass, not gold leaf: a line, never a field. */
+--metal-hairline:var(--brass);--metal-hairline-light:var(--brass-light);--metal-hairline-deep:var(--brass-deep);
+/* semantic — lines */
+--line-hairline:rgba(12,11,10,.12);--line-strong:rgba(12,11,10,.28);
+--line-on-dark:rgba(242,235,223,.18);--line-accent:var(--gold-500);
+/* semantic — state */
+--state-hover-dark:var(--ink-700);--state-hover-accent:var(--gold-600);
+--state-disabled-fg:var(--sand-300);--state-disabled-bg:var(--sand-100);
+--focus-ring:var(--gold-500);
+/* semantic — status (kept quiet, brand-tinted) */
+--status-success:var(--sage-600);--status-warning:var(--gold-600);--status-error:var(--ox-600);
+--status-info:var(--ink-600);
+}
+[data-theme="noir"]{
+--surface-page:var(--ink-900);--surface-card:var(--ink-800);--surface-raised:var(--ink-700);
+--text-primary:var(--cream);--text-secondary:var(--sand-300);--text-muted:var(--sand-400);
+--line-hairline:rgba(242,235,223,.14);--line-strong:rgba(242,235,223,.32);
+--surface-inverse:var(--cream);--text-inverse:var(--ink-900);
+}

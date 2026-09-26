@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>43 · Editorial story grid — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  article { padding: var(--sp-11) 0 var(--sp-9); }
+  .head { max-width: 900px; margin: 0 auto var(--sp-10); text-align: center; }
+  .head h1 { margin: var(--sp-4) 0 var(--sp-5); }
+  .head .dn-mono { color: var(--text-muted); }
+  .row { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--grid-gap); align-items: center; margin-bottom: var(--sp-9); }
+  .row .txt { grid-column: 2 / 6; }
+  .row .img { grid-column: 7 / 13; }
+  .row.flip .txt { grid-column: 8 / 12; order: 2; }
+  .row.flip .img { grid-column: 1 / 7; }
+  .txt h2 { margin-bottom: var(--sp-4); }
+  .txt p { color: var(--text-secondary); }
+  .txt p + p { margin-top: var(--sp-4); }
+  blockquote { margin: var(--sp-10) auto; max-width: 960px; text-align: center; font-family: var(--font-display); font-style: italic; font-weight: var(--fw-light); font-size: var(--fs-display); line-height: var(--lh-display); letter-spacing: var(--tr-display); }
+  blockquote footer { font: var(--type-spec); font-style: normal; color: var(--text-muted); margin-top: var(--sp-5); }
+  blockquote::after { content: ""; display: block; width: 64px; height: 1px; background: var(--metal-hairline); margin: var(--sp-6) auto 0; }
+  .archive { background: var(--surface-plaster); padding: var(--sp-9) 0; box-shadow: var(--inlay-brass); }
+  .archive .row { margin: 0; }
+  .archive .img { filter: grayscale(1); }
+  @media (max-width: 860px) { .row .txt, .row .img, .row.flip .txt, .row.flip .img { grid-column: 1 / -1; order: 0; } }
+</style>
+</head>
+<body>
+<article>
+  <header class="head dn-container">
+    <div class="dn-eyebrow">Atelier · Story 03</div>
+    <h1 class="dn-hero-type">The 1974 book.</h1>
+    <p class="dn-mono">Paris, 8e · 6 min</p>
+  </header>
+
+  <div class="dn-container">
+    <div class="row">
+      <div class="txt">
+        <h2>A pattern found in a Lyon attic.</h2>
+        <p>Thirty-one pattern books, 1948 to 1979, bought from the estate of a couturier who cut for private clients. The 1974 book holds a single t-shirt pattern, drafted on the bias.</p>
+        <p>It was never produced. The atelier cut it for the first time in 2026.</p>
+      </div>
+      <div class="img"><div class="dn-image r-43"><div class="dn-image__fill"></div><p class="dn-image__cap">Pattern book open on the cutting table · overhead · 4:3</p></div></div>
+    </div>
+
+    <blockquote>“The cloth decides where it falls. The cutter only decides where it starts.”
+      <footer>Head cutter, the atelier</footer></blockquote>
+
+    <div class="row flip">
+      <div class="txt">
+        <h2>Why the bias.</h2>
+        <p>Cut at 45° to the grain, jersey drapes instead of hanging. It uses a third more cloth, and every edge has to be finished by hand.</p>
+      </div>
+      <div class="img"><div class="dn-image r-45"><div class="dn-image__fill"></div><p class="dn-image__cap">Cutter’s hands, shears along the grainline · 4:5</p></div></div>
+    </div>
+  </div>
+
+  <section class="archive">
+    <div class="dn-container row">
+      <div class="txt">
+        <div class="dn-eyebrow" style="margin-bottom:var(--sp-3)">From the archive</div>
+        <h2>The original draft, 1974.</h2>
+        <p class="dn-mono">Pencil on manila · 62 × 91 cm</p>
+      </div>
+      <div class="img"><div class="dn-image r-43"><div class="dn-image__fill"></div><p class="dn-image__cap">Archive draft, black and white · flat, raking light · 4:3</p></div></div>
+    </div>
+  </section>
+</article>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>49 · Bag drawer, edition reserved — DE NOYON</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  main { padding-top: var(--sp-9); padding-bottom: var(--sp-9); }
+  /* The one gold field in this view: the reservation notice. */
+  .reserved { background: var(--surface-accent); color: var(--ink-900); padding: var(--sp-4) var(--sp-5); font: var(--type-spec); display: grid; gap: var(--sp-1); margin-bottom: var(--sp-6); }
+  .reserved b { font: var(--type-eyebrow); letter-spacing: var(--tr-label); text-transform: uppercase; }
+  .piece { display: grid; grid-template-columns: 120px 1fr; gap: var(--sp-5); }
+  .piece .dn-image__cap { font-size: var(--fs-micro); left: var(--sp-2); right: var(--sp-2); bottom: var(--sp-2); }
+  .piece .dn-image__cap::before { font-size: 9px; }
+  .piece h3 { font-size: var(--fs-h3); margin-bottom: var(--sp-2); }
+  .spec { margin: var(--sp-4) 0 0; display: grid; grid-template-columns: auto 1fr; gap: var(--sp-2) var(--sp-4); font: var(--type-spec); }
+  .spec dt { color: var(--text-muted); text-transform: uppercase; letter-spacing: var(--tr-label); }
+  .spec dd { margin: 0; }
+  .options { margin-top: var(--sp-7); display: grid; gap: var(--sp-4); }
+  .opt { display: flex; justify-content: space-between; align-items: center; gap: var(--sp-4); padding: var(--sp-4) 0; border-top: var(--border-hairline); }
+  .opt p { font: var(--type-spec); color: var(--text-muted); margin-top: 2px; }
+  .switch { position: relative; width: 40px; height: 22px; flex: none; }
+  .switch input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
+  .switch span { position: absolute; inset: 0; border-radius: var(--radius-pill); border: var(--border-strong); background: var(--surface-card); transition: var(--transition-control); }
+  .switch span::after { content: ""; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: var(--radius-pill); background: var(--ink-900); transition: transform var(--dur-fast) var(--ease-standard), background-color var(--dur-fast) var(--ease-standard); }
+  .switch input:checked + span { background: var(--ink-900); border-color: var(--ink-900); }
+  .switch input:checked + span::after { transform: translateX(18px); background: var(--bone); }
+  .switch input:focus-visible + span { outline: 1px solid var(--focus-ring); outline-offset: 3px; }
+  .note { display: none; margin-top: var(--sp-3); }
+  .note.is-on { display: grid; }
+  textarea.dn-input { height: 88px; padding: var(--sp-3) var(--sp-4); resize: vertical; }
+</style>
+</head>
+<body>
+<main class="dn-container"><button class="dn-btn dn-btn--secondary" id="openBag" type="button" aria-controls="bag" aria-expanded="false">Open bag</button></main>
+<div class="dn-scrim" id="scrim"></div>
+<aside class="dn-drawer" id="bag" aria-labelledby="bt" aria-hidden="true" tabindex="-1">
+  <div class="dn-drawer__head">
+    <span class="dn-label" id="bt" style="color:var(--text-primary)">Bag · 1</span>
+    <button class="dn-close" type="button" id="closeBag" aria-label="Close bag"><svg viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+  </div>
+  <div class="dn-drawer__body">
+    <div class="reserved" role="status"><b>No. 04 is held for you</b><span>Held while the bag is open. Numbers are assigned in order of payment.</span></div>
+    <div class="piece">
+      <div class="dn-image r-34"><div class="dn-image__fill"></div><p class="dn-image__cap">Tee folded, facing up</p></div>
+      <div>
+        <h3>Bias tee in silk-cotton jersey</h3>
+        <span class="dn-price">€ 280</span>
+        <dl class="spec"><dt>Colour</dt><dd>Oxblood</dd><dt>Size</dt><dd>EU 38</dd><dt>Edition</dt><dd>No. 04 of 12</dd></dl>
+      </div>
+    </div>
+    <div class="options">
+      <div>
+        <div class="opt"><div><span class="dn-label" style="color:var(--text-primary)">Wrap as a gift</span><p>Cream tissue, square seal. No price inside.</p></div>
+          <label class="switch"><input type="checkbox" id="gift" aria-label="Wrap as a gift"><span></span></label></div>
+        <div class="note dn-field" id="note"><label class="dn-label" for="msg">Card, hand-written in the atelier</label><textarea class="dn-input" id="msg" maxlength="180" placeholder="—"></textarea><span class="dn-help" id="chars">180 characters.</span></div>
+      </div>
+      <div class="opt"><div><span class="dn-label" style="color:var(--text-primary)">Alter the hem</span><p>Marked from your measurements before dispatch. Complimentary.</p></div>
+        <label class="switch"><input type="checkbox" aria-label="Alter the hem"><span></span></label></div>
+    </div>
+  </div>
+  <div class="dn-drawer__foot">
+    <div class="dn-row dn-mono"><span>Total</span><span>€ 280</span></div>
+    <a class="dn-btn dn-btn--lg dn-btn--block" href="50-checkout-banners.html">Continue to payment</a>
+  </div>
+</aside>
+<script>
+  const gift = document.getElementById('gift'), note = document.getElementById('note'), msg = document.getElementById('msg');
+  gift.addEventListener('change', () => note.classList.toggle('is-on', gift.checked));
+  msg.addEventListener('input', () => { document.getElementById('chars').textContent = `${180 - msg.value.length} characters.`; });
+  const drawer = document.getElementById('bag'), scrim = document.getElementById('scrim'), opener = document.getElementById('openBag');
+  const open = () => { drawer.classList.add('is-open'); scrim.classList.add('is-open'); drawer.setAttribute('aria-hidden', 'false'); opener.setAttribute('aria-expanded', 'true'); drawer.focus(); };
+  const close = () => { drawer.classList.remove('is-open'); scrim.classList.remove('is-open'); drawer.setAttribute('aria-hidden', 'true'); opener.setAttribute('aria-expanded', 'false'); opener.focus(); };
+  opener.onclick = open; scrim.onclick = close; document.getElementById('closeBag').onclick = close;
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && drawer.classList.contains('is-open')) close(); });
+  open();
+</script>
+</body>
+</html>
