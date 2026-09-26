@@ -45,1296 +45,6 @@
   },
   "prints": [
     {
-      "design": 1,
-      "id": "01",
-      "file": "prints/01-wordmark-monument.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Wordmark monument",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        70
-      ],
-      "placement": "Centre back, top edge 90 mm below collar seam",
-      "method": "Screen, 2 spot (ink + brass metallic) · DTG alt.",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/01-wordmark-monument.ink.svg",
-        "separations/01-wordmark-monument.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The mark at architectural scale. Nothing else on the back.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 110
-          }
-        ]
-      }
-    },
-    {
-      "design": 2,
-      "id": "02",
-      "file": "prints/02-twelve-lines.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Twelve lines",
-      "group": "Back print",
-      "artboard_mm": [
-        260,
-        320
-      ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot · lines 0.5 mm, no halftone",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/02-twelve-lines.ink.svg",
-        "separations/02-twelve-lines.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Edition of twelve drawn as twelve lines of cloth; the last is brass.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 125
-          }
-        ]
-      }
-    },
-    {
-      "design": 3,
-      "id": "03",
-      "file": "prints/03-eligius-colophon.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Eligius of Noyon",
-      "group": "Back print",
-      "artboard_mm": [
-        250,
-        122
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot · on ink the cream plate is the underbase, brass flashed last",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/03-eligius-colophon.ink.svg",
-        "separations/03-eligius-colophon.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The name’s origin as the whole message. One name, one brass line.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 125
-          }
-        ]
-      }
-    },
-    {
-      "design": 3,
-      "id": "03",
-      "file": "prints/03-eligius-colophon-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Eligius of Noyon",
-      "group": "Back print",
-      "artboard_mm": [
-        250,
-        122
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot · on ink the cream plate is the underbase, brass flashed last",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/03-eligius-colophon-on-dark.cream.svg",
-        "separations/03-eligius-colophon-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The name’s origin as the whole message. One name, one brass line.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 125
-          }
-        ]
-      }
-    },
-    {
-      "design": 4,
-      "id": "04",
-      "file": "prints/04-pattern-book.svg",
-      "part": null,
-      "variant": "light",
-      "title": "From the pattern book",
-      "group": "Back print",
-      "artboard_mm": [
-        240,
-        300
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot · mono numerals ≥ 7 mm cap",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/04-pattern-book.ink.svg",
-        "separations/04-pattern-book.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Thirty-two archive years; the cut used is underlined in brass.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 115
-          }
-        ]
-      }
-    },
-    {
-      "design": 5,
-      "id": "05",
-      "file": "prints/05-bias-grainline.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Cut on the bias",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        280
-      ],
-      "placement": "Centre back, top edge 120 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/05-bias-grainline.ink.svg",
-        "separations/05-bias-grainline.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Pattern-maker’s grainline at 45°, the brand’s whole construction in one mark.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 125
-          }
-        ]
-      }
-    },
-    {
-      "design": 6,
-      "id": "06",
-      "file": "prints/06-care-label.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Label, enlarged",
-      "group": "Back print",
-      "artboard_mm": [
-        200,
-        250
-      ],
-      "placement": "Centre back, top edge 90 mm below collar seam",
-      "method": "Screen, 2 spot · the 2 mm frame is the label edge",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/06-care-label.ink.svg",
-        "separations/06-care-label.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The woven label at back-print scale: the mark, the edition number, the city. Nothing invented.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 110
-          }
-        ]
-      }
-    },
-    {
-      "design": 7,
-      "id": "07",
-      "file": "prints/07-atelier-coordinates.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Paris, 8e.",
-      "group": "Back print",
-      "artboard_mm": [
-        270,
-        100
-      ],
-      "placement": "Centre back, top edge 120 mm below collar seam",
-      "method": "Screen, 2 spot on ink · cream is the underbase plate, brass flashed over it",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/07-atelier-coordinates.cream.svg",
-        "separations/07-atelier-coordinates.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "One atelier, stated as an address. The city is the hero.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 140
-          }
-        ]
-      }
-    },
-    {
-      "design": 8,
-      "id": "08",
-      "file": "prints/08-edition-registry.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Edition registry",
-      "group": "Back print",
-      "artboard_mm": [
-        200,
-        290
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot on dark · cream is the underbase plate",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/08-edition-registry.cream.svg",
-        "separations/08-edition-registry.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Twelve numbered rules; the wearer’s number is the brass one (variable per piece).",
-      "mock": {
-        "g": "oxblood",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 115
-          }
-        ]
-      }
-    },
-    {
-      "design": 9,
-      "id": "09",
-      "file": "prints/09-pocket-stacked.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Stacked pocket mark",
-      "group": "Front chest",
-      "artboard_mm": [
-        70,
-        40
-      ],
-      "placement": "Left chest, centre 95 mm from centre front, 70 mm below shoulder seam",
-      "method": "Screen, 2 spot · DTG alt.",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/09-pocket-stacked.ink.svg",
-        "separations/09-pocket-stacked.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The stacked lockup at minimum-plus size (≥ 72 px rule applies on screen; 50 mm wide here).",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 95
-          }
-        ]
-      }
-    },
-    {
-      "design": 9,
-      "id": "09",
-      "file": "prints/09-pocket-stacked-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Stacked pocket mark",
-      "group": "Front chest",
-      "artboard_mm": [
-        70,
-        40
-      ],
-      "placement": "Left chest, centre 95 mm from centre front, 70 mm below shoulder seam",
-      "method": "Screen, 2 spot · DTG alt.",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/09-pocket-stacked-on-dark.cream.svg",
-        "separations/09-pocket-stacked-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The stacked lockup at minimum-plus size (≥ 72 px rule applies on screen; 50 mm wide here).",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 95
-          }
-        ]
-      }
-    },
-    {
-      "design": 10,
-      "id": "10",
-      "file": "prints/10-edition-mark.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Edition mark",
-      "group": "Front chest",
-      "artboard_mm": [
-        70,
-        26
-      ],
-      "placement": "Left chest pocket position, 80 mm below shoulder seam",
-      "method": "Screen, 1–2 spot · numeral plate is variable",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/10-edition-mark.ink.svg",
-        "separations/10-edition-mark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Edition number as the only chest graphic. Numeral swapped per piece.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 100
-          }
-        ]
-      }
-    },
-    {
-      "design": 10,
-      "id": "10",
-      "file": "prints/10-edition-mark-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Edition mark",
-      "group": "Front chest",
-      "artboard_mm": [
-        70,
-        26
-      ],
-      "placement": "Left chest pocket position, 80 mm below shoulder seam",
-      "method": "Screen, 1–2 spot · numeral plate is variable",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/10-edition-mark-on-dark.cream.svg",
-        "separations/10-edition-mark-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Edition number as the only chest graphic. Numeral swapped per piece.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 100
-          }
-        ]
-      }
-    },
-    {
-      "design": 11,
-      "id": "11",
-      "file": "prints/11-waving-luxury.svg",
-      "part": null,
-      "variant": "light",
-      "title": "waving luxury",
-      "group": "Front chest",
-      "artboard_mm": [
-        120,
-        30
-      ],
-      "placement": "Centre front, top edge 85 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/11-waving-luxury.ink.svg",
-        "separations/11-waving-luxury.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The brand idea in italic serif, lowercase as a phrase, not a slogan.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 165
-          }
-        ]
-      }
-    },
-    {
-      "design": 12,
-      "id": "12",
-      "file": "prints/12-square-plate.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Square plate",
-      "group": "Front chest",
-      "artboard_mm": [
-        56,
-        56
-      ],
-      "placement": "Left chest, 75 mm below shoulder seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/12-square-plate.ink.svg",
-        "separations/12-square-plate.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "A stone plate with an ebony frame and a brass seam. Square, never round.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 90
-          }
-        ]
-      }
-    },
-    {
-      "design": 12,
-      "id": "12",
-      "file": "prints/12-square-plate-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Square plate",
-      "group": "Front chest",
-      "artboard_mm": [
-        56,
-        56
-      ],
-      "placement": "Left chest, 75 mm below shoulder seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/12-square-plate-on-dark.cream.svg",
-        "separations/12-square-plate-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "A stone plate with an ebony frame and a brass seam. Square, never round.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 90
-          }
-        ]
-      }
-    },
-    {
-      "design": 13,
-      "id": "13",
-      "file": "prints/13-sleeve-run.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Sleeve run",
-      "group": "Sleeve",
-      "artboard_mm": [
-        14,
-        260
-      ],
-      "placement": "Left sleeve (long-sleeve), running shoulder → cuff, centred on outer seam line",
-      "method": "Screen, 2 spot · sleeve platen",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/13-sleeve-run.ink.svg",
-        "separations/13-sleeve-run.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Type runs down the arm, then continues as one brass line to the cuff.",
-      "mock": {
-        "g": "bone",
-        "long": true,
-        "place": [
-          {
-            "view": "front",
-            "sleeveRun": true
-          }
-        ]
-      }
-    },
-    {
-      "design": 13,
-      "id": "13",
-      "file": "prints/13-sleeve-run-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Sleeve run",
-      "group": "Sleeve",
-      "artboard_mm": [
-        14,
-        260
-      ],
-      "placement": "Left sleeve (long-sleeve), running shoulder → cuff, centred on outer seam line",
-      "method": "Screen, 2 spot · sleeve platen",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/13-sleeve-run-on-dark.cream.svg",
-        "separations/13-sleeve-run-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Type runs down the arm, then continues as one brass line to the cuff.",
-      "mock": {
-        "g": "bone",
-        "long": true,
-        "place": [
-          {
-            "view": "front",
-            "sleeveRun": true
-          }
-        ]
-      }
-    },
-    {
-      "design": 14,
-      "id": "14",
-      "file": "prints/14-back-neck-yoke.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Hood & back-neck mark",
-      "group": "Hood",
-      "artboard_mm": [
-        80,
-        20
-      ],
-      "placement": "Hoodie: centre of hood panel seam-side, 60 mm from hood edge · Tee: back neck, 25 mm below collar",
-      "method": "Screen, 2 spot · small-format platen",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/14-back-neck-yoke.ink.svg",
-        "separations/14-back-neck-yoke.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Seen only when the hood is down or the hair is up.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 45
-          }
-        ]
-      }
-    },
-    {
-      "design": 14,
-      "id": "14",
-      "file": "prints/14-back-neck-yoke-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Hood & back-neck mark",
-      "group": "Hood",
-      "artboard_mm": [
-        80,
-        20
-      ],
-      "placement": "Hoodie: centre of hood panel seam-side, 60 mm from hood edge · Tee: back neck, 25 mm below collar",
-      "method": "Screen, 2 spot · small-format platen",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/14-back-neck-yoke-on-dark.cream.svg",
-        "separations/14-back-neck-yoke-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Seen only when the hood is down or the hair is up.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 45
-          }
-        ]
-      }
-    },
-    {
-      "design": 15,
-      "id": "15",
-      "file": "prints/15-hem-inlay.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Hem inlay",
-      "group": "Hem",
-      "artboard_mm": [
-        150,
-        8
-      ],
-      "placement": "Front left hem, baseline 18 mm above hem stitch, left edge 30 mm from side seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/15-hem-inlay.ink.svg",
-        "separations/15-hem-inlay.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "A brass seam in the stone — Dirand’s inlay, set at the hem.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 150,
-            "y": 664
-          }
-        ]
-      }
-    },
-    {
-      "design": 15,
-      "id": "15",
-      "file": "prints/15-hem-inlay-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Hem inlay",
-      "group": "Hem",
-      "artboard_mm": [
-        150,
-        8
-      ],
-      "placement": "Front left hem, baseline 18 mm above hem stitch, left edge 30 mm from side seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/15-hem-inlay-on-dark.cream.svg",
-        "separations/15-hem-inlay-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "A brass seam in the stone — Dirand’s inlay, set at the hem.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 150,
-            "y": 664
-          }
-        ]
-      }
-    },
-    {
       "design": "X1",
       "id": "x1",
       "file": "prints/x1-neck-label.svg",
@@ -1376,6 +86,8 @@
       "min_line_mm": 0.4,
       "text": "outlined",
       "note": "One ink so it never shows through the cloth. Size and number are variable fields.",
+      "pending": false,
+      "distressed": false,
       "mock": null
     },
     {
@@ -1420,6 +132,8 @@
       "min_line_mm": 0.4,
       "text": "outlined",
       "note": "One ink so it never shows through the cloth. Size and number are variable fields.",
+      "pending": false,
+      "distressed": false,
       "mock": null
     },
     {
@@ -1463,6 +177,8 @@
       "min_line_mm": 0.4,
       "text": "outlined",
       "note": "Board, not plastic. Price in mono with a space after the currency.",
+      "pending": false,
+      "distressed": false,
       "mock": null
     },
     {
@@ -1506,6 +222,8 @@
       "min_line_mm": 0.4,
       "text": "outlined",
       "note": "Square seal, never round. The band repeats the wordmark-and-seam idea horizontally.",
+      "pending": false,
+      "distressed": false,
       "mock": null
     },
     {
@@ -1548,6 +266,8 @@
       "min_line_mm": 0.4,
       "text": "outlined",
       "note": "Typographic poster — no photography exists, so the wave carries the image.",
+      "pending": false,
+      "distressed": false,
       "mock": null
     },
     {
@@ -1590,34 +310,884 @@
       "min_line_mm": 0.4,
       "text": "outlined",
       "note": "Scarcity stated as fact after the event, never before it.",
+      "pending": false,
+      "distressed": false,
       "mock": null
+    },
+    {
+      "design": 1,
+      "id": "01",
+      "file": "prints/01-waving-luxury-stack.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Waving luxury",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        330
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/01-waving-luxury-stack.ink.svg",
+        "separations/01-waving-luxury-stack.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 2,
+      "id": "02",
+      "file": "prints/02-twelve-times-twelve.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Twelve, twelve times",
+      "group": "Back print",
+      "artboard_mm": [
+        250,
+        400
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/02-twelve-times-twelve.cream.svg",
+        "separations/02-twelve-times-twelve.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 3,
+      "id": "03",
+      "file": "prints/03-de-no-yon.svg",
+      "part": null,
+      "variant": "light",
+      "title": "DE / NO / YON",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        390
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/03-de-no-yon.cream.svg",
+        "separations/03-de-no-yon.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "oxblood",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 4,
+      "id": "04",
+      "file": "prints/04-atelier-paris-crest.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Atelier, Paris crest",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        330
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "oxblood",
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "ref": "Custom mix to #5E1B22 — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/04-atelier-paris-crest.oxblood.svg",
+        "separations/04-atelier-paris-crest.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 5,
+      "id": "05",
+      "file": "prints/05-bias-script-over-block.svg",
+      "part": null,
+      "variant": "light",
+      "title": "cut on the BIAS",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        300
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/05-bias-script-over-block.cream.svg",
+        "separations/05-bias-script-over-block.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 6,
+      "id": "06",
+      "file": "prints/06-bias-flag-warp.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Cut on the bias, waving",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        300
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/06-bias-flag-warp.ink.svg",
+        "separations/06-bias-flag-warp.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "limestone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 7,
+      "id": "07",
+      "file": "prints/07-four-sided-frame.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Four-sided frame",
+      "group": "Back print",
+      "artboard_mm": [
+        290,
+        290
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "oxblood",
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "ref": "Custom mix to #5E1B22 — confirm with drawdown"
+        },
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/07-four-sided-frame.ink.svg",
+        "separations/07-four-sided-frame.oxblood.svg",
+        "separations/07-four-sided-frame.cream.svg",
+        "separations/07-four-sided-frame.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 8,
+      "id": "08",
+      "file": "prints/08-one-atelier-stars.svg",
+      "part": null,
+      "variant": "light",
+      "title": "One atelier",
+      "group": "Back print",
+      "artboard_mm": [
+        280,
+        280
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/08-one-atelier-stars.cream.svg",
+        "separations/08-one-atelier-stars.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 9,
+      "id": "09",
+      "file": "prints/09-when-they-are-gone.svg",
+      "part": null,
+      "variant": "light",
+      "title": "When they are gone",
+      "group": "Back print",
+      "artboard_mm": [
+        280,
+        380
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/09-when-they-are-gone.cream.svg",
+        "separations/09-when-they-are-gone.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 10,
+      "id": "10",
+      "file": "prints/10-1948-to-1979.svg",
+      "part": null,
+      "variant": "light",
+      "title": "1948 to 1979",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        330
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/10-1948-to-1979.ink.svg",
+        "separations/10-1948-to-1979.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "limestone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 11,
+      "id": "11",
+      "file": "prints/11-paris-grid.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Paris grid",
+      "group": "Back print",
+      "artboard_mm": [
+        280,
+        390
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/11-paris-grid.ink.svg",
+        "separations/11-paris-grid.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 12,
+      "id": "12",
+      "file": "prints/12-edition-seal.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Edition seal",
+      "group": "Back print",
+      "artboard_mm": [
+        280,
+        280
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/12-edition-seal.cream.svg",
+        "separations/12-edition-seal.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "oxblood",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 13,
+      "id": "13",
+      "file": "prints/13-forty-five-bold.svg",
+      "part": null,
+      "variant": "light",
+      "title": "45°",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        300
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/13-forty-five-bold.ink.svg",
+        "separations/13-forty-five-bold.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 14,
+      "id": "14",
+      "file": "prints/14-varsity-waving-luxury.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Varsity, waving luxury",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        320
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/14-varsity-waving-luxury.cream.svg",
+        "separations/14-varsity-waving-luxury.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 15,
+      "id": "15",
+      "file": "prints/15-1974-cut-pieces.svg",
+      "part": null,
+      "variant": "light",
+      "title": "The 1974 cut",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        390
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/15-1974-cut-pieces.ink.svg",
+        "separations/15-1974-cut-pieces.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "limestone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
     },
     {
       "design": 16,
       "id": "16",
-      "file": "prints/16-pattern-draft.svg",
+      "file": "prints/16-no-04-of-12.svg",
       "part": null,
       "variant": "light",
-      "title": "The pattern, drafted",
+      "title": "No. 04 of 12",
       "group": "Back print",
       "artboard_mm": [
         300,
-        380
+        330
       ],
-      "placement": "Centre back, top edge 95 mm below collar seam",
-      "method": "Screen, 2 spot · outlines 0.6 mm, seam lines 0.4 mm dashed",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#FAF6EF",
           "token": "--bone",
           "name": "Bone",
           "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
         }
       ],
       "inks": [
@@ -1628,6 +1198,12 @@
           "ref": "Pantone Black 6 C"
         },
         {
+          "id": "oxblood",
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "ref": "Custom mix to #5E1B22 — confirm with drawdown"
+        },
+        {
           "id": "brass",
           "hex": "#B18A46",
           "token": "--brass",
@@ -1635,19 +1211,22 @@
         }
       ],
       "separations": [
-        "separations/16-pattern-draft.ink.svg",
-        "separations/16-pattern-draft.brass.svg"
+        "separations/16-no-04-of-12.ink.svg",
+        "separations/16-no-04-of-12.oxblood.svg",
+        "separations/16-no-04-of-12.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The garment’s own pattern is the graphic. Every grainline sits at 45°: that is the bias.",
+      "pending": false,
+      "distressed": true,
       "mock": {
         "g": "bone",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 115
+            "y": 105
           }
         ]
       }
@@ -1655,89 +1234,23 @@
     {
       "design": 17,
       "id": "17",
-      "file": "prints/17-twelve-numeral.svg",
+      "file": "prints/17-paris-reflection.svg",
       "part": null,
       "variant": "light",
-      "title": "12",
+      "title": "Paris, reflected",
       "group": "Back print",
       "artboard_mm": [
-        280,
-        330
+        300,
+        260
       ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot · solid numeral, no halftone",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/17-twelve-numeral.ink.svg",
-        "separations/17-twelve-numeral.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The edition size at full scale. Scale is the whole idea.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 120
-          }
-        ]
-      }
-    },
-    {
-      "design": 17,
-      "id": "17",
-      "file": "prints/17-twelve-numeral-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "12",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        330
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot · solid numeral, no halftone",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#0C0B0A",
           "token": "--ink-900",
           "name": "Ink",
           "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
         }
       ],
       "inks": [
@@ -1755,19 +1268,21 @@
         }
       ],
       "separations": [
-        "separations/17-twelve-numeral-on-dark.cream.svg",
-        "separations/17-twelve-numeral-on-dark.brass.svg"
+        "separations/17-paris-reflection.cream.svg",
+        "separations/17-paris-reflection.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The edition size at full scale. Scale is the whole idea.",
+      "pending": false,
+      "distressed": true,
       "mock": {
-        "g": "limestone",
+        "g": "ink",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 120
+            "y": 105
           }
         ]
       }
@@ -1775,17 +1290,73 @@
     {
       "design": 18,
       "id": "18",
-      "file": "prints/18-wave-field.svg",
+      "file": "prints/18-heavy-wave.svg",
       "part": null,
       "variant": "light",
-      "title": "Wave field",
+      "title": "Heavy wave",
       "group": "Back print",
       "artboard_mm": [
         300,
-        400
+        345
       ],
-      "placement": "Centre back, top edge 90 mm below collar seam",
-      "method": "Screen, 2 spot · 36 lines at 0.4 mm, 1.4 mm apart minimum",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/18-heavy-wave.cream.svg",
+        "separations/18-heavy-wave.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "oxblood",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 19,
+      "id": "19",
+      "file": "prints/19-no-wholesale-bulge.svg",
+      "part": null,
+      "variant": "light",
+      "title": "No wholesale",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        300
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#FAF6EF",
@@ -1809,193 +1380,21 @@
         }
       ],
       "separations": [
-        "separations/18-wave-field.ink.svg",
-        "separations/18-wave-field.brass.svg"
+        "separations/19-no-wholesale-bulge.ink.svg",
+        "separations/19-no-wholesale-bulge.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "Thirty-six lines of cloth falling as one wave. The last line is brass.",
+      "pending": false,
+      "distressed": true,
       "mock": {
-        "g": "ink",
+        "g": "bone",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 110
-          }
-        ]
-      }
-    },
-    {
-      "design": 18,
-      "id": "18",
-      "file": "prints/18-wave-field-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Wave field",
-      "group": "Back print",
-      "artboard_mm": [
-        300,
-        400
-      ],
-      "placement": "Centre back, top edge 90 mm below collar seam",
-      "method": "Screen, 2 spot · 36 lines at 0.4 mm, 1.4 mm apart minimum",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/18-wave-field-on-dark.cream.svg",
-        "separations/18-wave-field-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Thirty-six lines of cloth falling as one wave. The last line is brass.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 110
-          }
-        ]
-      }
-    },
-    {
-      "design": 19,
-      "id": "19",
-      "file": "prints/19-wordmark-full-width.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Wordmark, full width",
-      "group": "Back print",
-      "artboard_mm": [
-        300,
-        92
-      ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/19-wordmark-full-width.ink.svg",
-        "separations/19-wordmark-full-width.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The mark at the width of the back, left-aligned, the brass rule under it at full length.",
-      "mock": {
-        "g": "oxblood",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 19,
-      "id": "19",
-      "file": "prints/19-wordmark-full-width-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Wordmark, full width",
-      "group": "Back print",
-      "artboard_mm": [
-        300,
-        92
-      ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/19-wordmark-full-width-on-dark.cream.svg",
-        "separations/19-wordmark-full-width-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The mark at the width of the back, left-aligned, the brass rule under it at full length.",
-      "mock": {
-        "g": "oxblood",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 130
+            "y": 105
           }
         ]
       }
@@ -2003,143 +1402,23 @@
     {
       "design": 20,
       "id": "20",
-      "file": "prints/20-hallmarks.svg",
+      "file": "prints/20-eligius-crest.svg",
       "part": null,
       "variant": "light",
-      "title": "Hallmarks",
+      "title": "Eligius crest",
       "group": "Back print",
       "artboard_mm": [
-        290,
-        88
+        300,
+        320
       ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot · punch frames 1.2 mm",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/20-hallmarks.ink.svg",
-        "separations/20-hallmarks.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Assay punches, the goldsmith’s signature. The edition punch is struck in brass.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 21,
-      "id": "21",
-      "file": "prints/21-spine.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Pattern book spine",
-      "group": "Back print",
-      "artboard_mm": [
-        60,
-        420
-      ],
-      "placement": "Centre back, running down the spine, top 90 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/21-spine.ink.svg",
-        "separations/21-spine.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Thirty-one years of patterns set down the spine like the back of a book.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 110
-          }
-        ]
-      }
-    },
-    {
-      "design": 21,
-      "id": "21",
-      "file": "prints/21-spine-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Pattern book spine",
-      "group": "Back print",
-      "artboard_mm": [
-        60,
-        420
-      ],
-      "placement": "Centre back, running down the spine, top 90 mm below collar seam",
-      "method": "Screen, 2 spot",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#0C0B0A",
           "token": "--ink-900",
           "name": "Ink",
           "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
         }
       ],
       "inks": [
@@ -2154,22 +1433,87 @@
           "hex": "#B18A46",
           "token": "--brass",
           "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        },
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
         }
       ],
       "separations": [
-        "separations/21-spine-on-dark.cream.svg",
-        "separations/21-spine-on-dark.brass.svg"
+        "separations/20-eligius-crest.cream.svg",
+        "separations/20-eligius-crest.brass.svg",
+        "separations/20-eligius-crest.ink.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "Thirty-one years of patterns set down the spine like the back of a book.",
+      "pending": false,
+      "distressed": true,
       "mock": {
-        "g": "bone",
+        "g": "ink",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 110
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 21,
+      "id": "21",
+      "file": "prints/21-structure-cloth-brass.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Structure, cloth, one brass line",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        330
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/21-structure-cloth-brass.ink.svg",
+        "separations/21-structure-cloth-brass.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "limestone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
           }
         ]
       }
@@ -2177,77 +1521,17 @@
     {
       "design": 22,
       "id": "22",
-      "file": "prints/22-bias-grid.svg",
+      "file": "prints/22-left-out-quote.svg",
       "part": null,
       "variant": "light",
-      "title": "Warp, weft, bias",
-      "group": "Back print",
-      "artboard_mm": [
-        270,
-        290
-      ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot · grid 0.35 mm at 13 mm pitch",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/22-bias-grid.ink.svg",
-        "separations/22-bias-grid.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "A swatch of cloth drawn as a diagram: the true bias runs corner to corner in brass.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 125
-          }
-        ]
-      }
-    },
-    {
-      "design": 23,
-      "id": "23",
-      "file": "prints/23-pattern-retired.svg",
-      "part": null,
-      "variant": "light",
-      "title": "When they are gone",
+      "title": "What is left out",
       "group": "Back print",
       "artboard_mm": [
         280,
-        200
+        300
       ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#FAF6EF",
@@ -2271,19 +1555,21 @@
         }
       ],
       "separations": [
-        "separations/23-pattern-retired.ink.svg",
-        "separations/23-pattern-retired.brass.svg"
+        "separations/22-left-out-quote.ink.svg",
+        "separations/22-left-out-quote.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The house rule on scarcity, stated once, at the size of the back.",
+      "pending": false,
+      "distressed": true,
       "mock": {
         "g": "bone",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 130
+            "y": 105
           }
         ]
       }
@@ -2291,29 +1577,23 @@
     {
       "design": 23,
       "id": "23",
-      "file": "prints/23-pattern-retired-on-dark.svg",
+      "file": "prints/23-spine-wordmark.svg",
       "part": null,
-      "variant": "dark",
-      "title": "When they are gone",
+      "variant": "light",
+      "title": "Spine wordmark",
       "group": "Back print",
       "artboard_mm": [
-        280,
-        200
+        120,
+        420
       ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#0C0B0A",
           "token": "--ink-900",
           "name": "Ink",
           "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
         }
       ],
       "inks": [
@@ -2331,19 +1611,21 @@
         }
       ],
       "separations": [
-        "separations/23-pattern-retired-on-dark.cream.svg",
-        "separations/23-pattern-retired-on-dark.brass.svg"
+        "separations/23-spine-wordmark.cream.svg",
+        "separations/23-spine-wordmark.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The house rule on scarcity, stated once, at the size of the back.",
+      "pending": false,
+      "distressed": true,
       "mock": {
-        "g": "bone",
+        "g": "ink",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 130
+            "y": 105
           }
         ]
       }
@@ -2351,17 +1633,17 @@
     {
       "design": 24,
       "id": "24",
-      "file": "prints/24-gold-by-proportion.svg",
+      "file": "prints/24-collection-shield.svg",
       "part": null,
       "variant": "light",
-      "title": "Gold, by proportion",
+      "title": "Collection 04 shield",
       "group": "Back print",
       "artboard_mm": [
-        280,
-        150
+        240,
+        300
       ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot on ink · cream underbase plate",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#FAF6EF",
@@ -2372,65 +1654,11 @@
       ],
       "inks": [
         {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/24-gold-by-proportion.ink.svg",
-        "separations/24-gold-by-proportion.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Eligius made thrones by proportion, not jewels. The brand thesis in three words.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 24,
-      "id": "24",
-      "file": "prints/24-gold-by-proportion-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Gold, by proportion",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        150
-      ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot on ink · cream underbase plate",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
+          "id": "oxblood",
           "hex": "#5E1B22",
           "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
+          "ref": "Custom mix to #5E1B22 — confirm with drawdown"
+        },
         {
           "id": "cream",
           "hex": "#F2EBDF",
@@ -2445,19 +1673,22 @@
         }
       ],
       "separations": [
-        "separations/24-gold-by-proportion-on-dark.cream.svg",
-        "separations/24-gold-by-proportion-on-dark.brass.svg"
+        "separations/24-collection-shield.oxblood.svg",
+        "separations/24-collection-shield.cream.svg",
+        "separations/24-collection-shield.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "Eligius made thrones by proportion, not jewels. The brand thesis in three words.",
+      "pending": false,
+      "distressed": true,
       "mock": {
-        "g": "ink",
+        "g": "bone",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 130
+            "y": 105
           }
         ]
       }
@@ -2465,17 +1696,17 @@
     {
       "design": 25,
       "id": "25",
-      "file": "prints/25-one-atelier.svg",
+      "file": "prints/25-bias-diagonal-field.svg",
       "part": null,
       "variant": "light",
-      "title": "One atelier.",
+      "title": "Bias field",
       "group": "Back print",
       "artboard_mm": [
-        270,
-        120
+        300,
+        400
       ],
-      "placement": "Centre back, top edge 120 mm below collar seam",
-      "method": "Screen, 2 spot",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#E6DFD3",
@@ -2499,79 +1730,21 @@
         }
       ],
       "separations": [
-        "separations/25-one-atelier.ink.svg",
-        "separations/25-one-atelier.brass.svg"
+        "separations/25-bias-diagonal-field.ink.svg",
+        "separations/25-bias-diagonal-field.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "Direct to client, one storefront, one atelier.",
+      "pending": false,
+      "distressed": true,
       "mock": {
         "g": "limestone",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 140
-          }
-        ]
-      }
-    },
-    {
-      "design": 25,
-      "id": "25",
-      "file": "prints/25-one-atelier-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "One atelier.",
-      "group": "Back print",
-      "artboard_mm": [
-        270,
-        120
-      ],
-      "placement": "Centre back, top edge 120 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/25-one-atelier-on-dark.cream.svg",
-        "separations/25-one-atelier-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Direct to client, one storefront, one atelier.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 140
+            "y": 105
           }
         ]
       }
@@ -2579,23 +1752,23 @@
     {
       "design": 26,
       "id": "26",
-      "file": "prints/26-archive.svg",
+      "file": "prints/26-collection-list-bold.svg",
       "part": null,
       "variant": "light",
-      "title": "Archive.",
+      "title": "Collection 04 list",
       "group": "Back print",
       "artboard_mm": [
-        280,
-        110
+        300,
+        390
       ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot on oxblood · cream underbase plate",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
         }
       ],
       "inks": [
@@ -2613,19 +1786,21 @@
         }
       ],
       "separations": [
-        "separations/26-archive.cream.svg",
-        "separations/26-archive.brass.svg"
+        "separations/26-collection-list-bold.cream.svg",
+        "separations/26-collection-list-bold.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "Oxblood means archive in this system. The word and the colour say the same thing.",
+      "pending": false,
+      "distressed": true,
       "mock": {
-        "g": "oxblood",
+        "g": "ink",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 130
+            "y": 105
           }
         ]
       }
@@ -2633,29 +1808,23 @@
     {
       "design": 27,
       "id": "27",
-      "file": "prints/27-tailors-tape.svg",
+      "file": "prints/27-materials.svg",
       "part": null,
       "variant": "light",
-      "title": "Tailor’s tape",
+      "title": "Materials",
       "group": "Back print",
       "artboard_mm": [
-        70,
-        410
+        300,
+        390
       ],
-      "placement": "Centre back, top edge 90 mm below collar seam",
-      "method": "Screen, 2 spot · ticks 0.35 mm",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#FAF6EF",
           "token": "--bone",
           "name": "Bone",
           "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
         }
       ],
       "inks": [
@@ -2673,19 +1842,21 @@
         }
       ],
       "separations": [
-        "separations/27-tailors-tape.ink.svg",
-        "separations/27-tailors-tape.brass.svg"
+        "separations/27-materials.ink.svg",
+        "separations/27-materials.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "A cutter’s tape down the back, with one brass mark at twelve.",
+      "pending": false,
+      "distressed": true,
       "mock": {
         "g": "bone",
+        "long": false,
         "place": [
           {
             "view": "back",
-            "x": -60,
-            "y": 110
+            "x": 0,
+            "y": 105
           }
         ]
       }
@@ -2693,29 +1864,135 @@
     {
       "design": 28,
       "id": "28",
-      "file": "prints/28-wave-cropped.svg",
+      "file": "prints/28-noyon-and-paris.svg",
       "part": null,
       "variant": "light",
-      "title": "Wave, cropped",
+      "title": "Noyon & Paris",
       "group": "Back print",
       "artboard_mm": [
         300,
-        400
+        345
       ],
-      "placement": "Centre back, top edge 90 mm below collar seam; the wave bleeds off the print area",
-      "method": "Screen, 2 spot · lines 0.7 mm",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/28-noyon-and-paris.cream.svg",
+        "separations/28-noyon-and-paris.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "oxblood",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 29,
+      "id": "29",
+      "file": "prints/29-postmark.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Postmark, Paris 8e",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        220
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/29-postmark.ink.svg",
+        "separations/29-postmark.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 30,
+      "id": "30",
+      "file": "prints/30-single-wave-slant.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Falls in a single wave",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        330
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#E6DFD3",
           "token": "--limestone",
           "name": "Limestone",
           "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
         }
       ],
       "inks": [
@@ -2733,247 +2010,21 @@
         }
       ],
       "separations": [
-        "separations/28-wave-cropped.ink.svg",
-        "separations/28-wave-cropped.brass.svg"
+        "separations/30-single-wave-slant.ink.svg",
+        "separations/30-single-wave-slant.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The twelve lines at a scale the back cannot hold. The crop is the idea.",
+      "pending": false,
+      "distressed": true,
       "mock": {
         "g": "limestone",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 110
-          }
-        ]
-      }
-    },
-    {
-      "design": 29,
-      "id": "29",
-      "file": "prints/29-twelve-grid.svg",
-      "part": null,
-      "variant": "light",
-      "title": "The twelve",
-      "group": "Back print",
-      "artboard_mm": [
-        270,
-        363
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/29-twelve-grid.ink.svg",
-        "separations/29-twelve-grid.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Twelve squares, one per piece. The wearer’s is framed in brass (variable).",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 120
-          }
-        ]
-      }
-    },
-    {
-      "design": 29,
-      "id": "29",
-      "file": "prints/29-twelve-grid-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "The twelve",
-      "group": "Back print",
-      "artboard_mm": [
-        270,
-        363
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/29-twelve-grid-on-dark.cream.svg",
-        "separations/29-twelve-grid-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Twelve squares, one per piece. The wearer’s is framed in brass (variable).",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 120
-          }
-        ]
-      }
-    },
-    {
-      "design": 30,
-      "id": "30",
-      "file": "prints/30-bias-diagonal.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Cut on the bias, diagonal",
-      "group": "Back print",
-      "artboard_mm": [
-        300,
-        400
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/30-bias-diagonal.ink.svg",
-        "separations/30-bias-diagonal.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The sentence runs the diagonal of the print area, the way the cut runs the cloth.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 115
-          }
-        ]
-      }
-    },
-    {
-      "design": 30,
-      "id": "30",
-      "file": "prints/30-bias-diagonal-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Cut on the bias, diagonal",
-      "group": "Back print",
-      "artboard_mm": [
-        300,
-        400
-      ],
-      "placement": "Centre back, top edge 100 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/30-bias-diagonal-on-dark.cream.svg",
-        "separations/30-bias-diagonal-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The sentence runs the diagonal of the print area, the way the cut runs the cloth.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 115
+            "y": 105
           }
         ]
       }
@@ -2981,89 +2032,23 @@
     {
       "design": 31,
       "id": "31",
-      "file": "prints/31-waving-luxury-oversized.svg",
+      "file": "prints/31-chest-arch.svg",
       "part": null,
       "variant": "light",
-      "title": "waving luxury, oversized",
+      "title": "Arched chest",
       "group": "Front print",
       "artboard_mm": [
-        280,
-        190
+        260,
+        110
       ],
-      "placement": "Centre front, top edge 70 mm below collar seam",
-      "method": "Screen, 2 spot on dark · cream underbase plate",
-      "garments": [
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        },
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/31-waving-luxury-oversized.cream.svg",
-        "separations/31-waving-luxury-oversized.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The two words at chest-wide scale, offset like cloth folding over.",
-      "mock": {
-        "g": "oxblood",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 150
-          }
-        ]
-      }
-    },
-    {
-      "design": 32,
-      "id": "32",
-      "file": "prints/32-selvedge.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Selvedge",
-      "group": "Back print",
-      "artboard_mm": [
-        300,
-        24
-      ],
-      "placement": "Across the shoulder blades, top edge 70 mm below collar seam",
-      "method": "Screen, 2 spot · pin holes 1 mm",
+      "placement": "Centre front or left chest (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#FAF6EF",
           "token": "--bone",
           "name": "Bone",
           "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
         }
       ],
       "inks": [
@@ -3081,19 +2066,21 @@
         }
       ],
       "separations": [
-        "separations/32-selvedge.ink.svg",
-        "separations/32-selvedge.brass.svg"
+        "separations/31-chest-arch.ink.svg",
+        "separations/31-chest-arch.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The finished edge of the cloth, printed where a yoke would sit.",
+      "pending": false,
+      "distressed": false,
       "mock": {
         "g": "bone",
+        "long": false,
         "place": [
           {
-            "view": "back",
+            "view": "front",
             "x": 0,
-            "y": 90
+            "y": 150
           }
         ]
       }
@@ -3101,29 +2088,23 @@
     {
       "design": 32,
       "id": "32",
-      "file": "prints/32-selvedge-on-dark.svg",
+      "file": "prints/32-chest-wordmark-heavy.svg",
       "part": null,
-      "variant": "dark",
-      "title": "Selvedge",
-      "group": "Back print",
+      "variant": "light",
+      "title": "Chest wordmark, heavy",
+      "group": "Front print",
       "artboard_mm": [
-        300,
-        24
+        280,
+        70
       ],
-      "placement": "Across the shoulder blades, top edge 70 mm below collar seam",
-      "method": "Screen, 2 spot · pin holes 1 mm",
+      "placement": "Centre front or left chest (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#0C0B0A",
           "token": "--ink-900",
           "name": "Ink",
           "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
         }
       ],
       "inks": [
@@ -3141,19 +2122,21 @@
         }
       ],
       "separations": [
-        "separations/32-selvedge-on-dark.cream.svg",
-        "separations/32-selvedge-on-dark.brass.svg"
+        "separations/32-chest-wordmark-heavy.cream.svg",
+        "separations/32-chest-wordmark-heavy.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The finished edge of the cloth, printed where a yoke would sit.",
+      "pending": false,
+      "distressed": true,
       "mock": {
-        "g": "bone",
+        "g": "ink",
+        "long": false,
         "place": [
           {
-            "view": "back",
+            "view": "front",
             "x": 0,
-            "y": 90
+            "y": 150
           }
         ]
       }
@@ -3161,990 +2144,50 @@
     {
       "design": 33,
       "id": "33",
-      "file": "prints/33-cutting-marker.svg",
+      "file": "prints/33-pocket-script.svg",
       "part": null,
       "variant": "light",
-      "title": "Cutting marker",
-      "group": "Back print",
+      "title": "Paris, pocket",
+      "group": "Front print",
       "artboard_mm": [
-        290,
-        400
+        90,
+        50
       ],
-      "placement": "Centre back, top edge 95 mm below collar seam",
-      "method": "Screen, 2 spot · cloth edge 0.4 mm dashed",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/33-cutting-marker.ink.svg",
-        "separations/33-cutting-marker.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The cutting layout: every piece turned 45° to the warp, marked in brass.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 115
-          }
-        ]
-      }
-    },
-    {
-      "design": 34,
-      "id": "34",
-      "file": "prints/34-number-04.svg",
-      "part": null,
-      "variant": "light",
-      "title": "No. 04",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        130
-      ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot · numeral plate is variable per piece",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/34-number-04.ink.svg",
-        "separations/34-number-04.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "Each back carries its own number. Printed per piece, 01 to 12.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 34,
-      "id": "34",
-      "file": "prints/34-number-04-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "No. 04",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        130
-      ],
-      "placement": "Centre back, top edge 110 mm below collar seam",
-      "method": "Screen, 2 spot · numeral plate is variable per piece",
+      "placement": "Centre front or left chest (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#0C0B0A",
           "token": "--ink-900",
           "name": "Ink",
           "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
         }
       ],
       "inks": [
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        },
         {
           "id": "cream",
           "hex": "#F2EBDF",
           "token": "--cream",
           "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
         }
       ],
       "separations": [
-        "separations/34-number-04-on-dark.cream.svg",
-        "separations/34-number-04-on-dark.brass.svg"
+        "separations/33-pocket-script.brass.svg",
+        "separations/33-pocket-script.cream.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "Each back carries its own number. Printed per piece, 01 to 12.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 35,
-      "id": "35",
-      "file": "prints/35-chest-wordmark.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Chest wordmark",
-      "group": "Front print",
-      "artboard_mm": [
-        250,
-        30
-      ],
-      "placement": "Centre front, top edge 75 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/35-chest-wordmark.ink.svg",
-        "separations/35-chest-wordmark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The logo across the chest at the width of the print area, nothing else.",
+      "pending": false,
+      "distressed": false,
       "mock": {
         "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 155
-          }
-        ]
-      }
-    },
-    {
-      "design": 35,
-      "id": "35",
-      "file": "prints/35-chest-wordmark-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Chest wordmark",
-      "group": "Front print",
-      "artboard_mm": [
-        250,
-        30
-      ],
-      "placement": "Centre front, top edge 75 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/35-chest-wordmark-on-dark.cream.svg",
-        "separations/35-chest-wordmark-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The logo across the chest at the width of the print area, nothing else.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 155
-          }
-        ]
-      }
-    },
-    {
-      "design": 36,
-      "id": "36",
-      "file": "prints/36-twelve-made-wave.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Twelve made, with wave",
-      "group": "Front print",
-      "artboard_mm": [
-        200,
-        150
-      ],
-      "placement": "Centre front, top edge 80 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/36-twelve-made-wave.ink.svg",
-        "separations/36-twelve-made-wave.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The wave with its caption, set right to balance the fall of the lines.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 160
-          }
-        ]
-      }
-    },
-    {
-      "design": 37,
-      "id": "37",
-      "file": "prints/37-cut-on-the-bias-front.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Cut on the bias, front",
-      "group": "Front print",
-      "artboard_mm": [
-        230,
-        110
-      ],
-      "placement": "Centre front, top edge 80 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/37-cut-on-the-bias-front.ink.svg",
-        "separations/37-cut-on-the-bias-front.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The construction, stated. Two lines, left-aligned.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 160
-          }
-        ]
-      }
-    },
-    {
-      "design": 37,
-      "id": "37",
-      "file": "prints/37-cut-on-the-bias-front-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Cut on the bias, front",
-      "group": "Front print",
-      "artboard_mm": [
-        230,
-        110
-      ],
-      "placement": "Centre front, top edge 80 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/37-cut-on-the-bias-front-on-dark.cream.svg",
-        "separations/37-cut-on-the-bias-front-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The construction, stated. Two lines, left-aligned.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 160
-          }
-        ]
-      }
-    },
-    {
-      "design": 38,
-      "id": "38",
-      "file": "prints/38-hallmark-strip.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Hallmark strip",
-      "group": "Front print",
-      "artboard_mm": [
-        96,
-        18
-      ],
-      "placement": "Left chest, centre 95 mm from centre front, 90 mm below shoulder seam",
-      "method": "Screen, 2 spot · frames 0.7 mm",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/38-hallmark-strip.ink.svg",
-        "separations/38-hallmark-strip.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The five punches at chest size, read like a maker’s mark.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 100
-          }
-        ]
-      }
-    },
-    {
-      "design": 38,
-      "id": "38",
-      "file": "prints/38-hallmark-strip-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Hallmark strip",
-      "group": "Front print",
-      "artboard_mm": [
-        96,
-        18
-      ],
-      "placement": "Left chest, centre 95 mm from centre front, 90 mm below shoulder seam",
-      "method": "Screen, 2 spot · frames 0.7 mm",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/38-hallmark-strip-on-dark.cream.svg",
-        "separations/38-hallmark-strip-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The five punches at chest size, read like a maker’s mark.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 100
-          }
-        ]
-      }
-    },
-    {
-      "design": 39,
-      "id": "39",
-      "file": "prints/39-side-wordmark.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Side wordmark",
-      "group": "Front print",
-      "artboard_mm": [
-        30,
-        420
-      ],
-      "placement": "Front, wearer’s right side, running from 160 mm below the shoulder to the hem",
-      "method": "Screen, 2 spot · side platen",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/39-side-wordmark.ink.svg",
-        "separations/39-side-wordmark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The mark runs down the side seam and hands over to one brass line at the hem.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": -205,
-            "y": 230
-          }
-        ]
-      }
-    },
-    {
-      "design": 39,
-      "id": "39",
-      "file": "prints/39-side-wordmark-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Side wordmark",
-      "group": "Front print",
-      "artboard_mm": [
-        30,
-        420
-      ],
-      "placement": "Front, wearer’s right side, running from 160 mm below the shoulder to the hem",
-      "method": "Screen, 2 spot · side platen",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/39-side-wordmark-on-dark.cream.svg",
-        "separations/39-side-wordmark-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The mark runs down the side seam and hands over to one brass line at the hem.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": -205,
-            "y": 230
-          }
-        ]
-      }
-    },
-    {
-      "design": 40,
-      "id": "40",
-      "file": "prints/40-nineteen-seventy-four.svg",
-      "part": null,
-      "variant": "light",
-      "title": "1974",
-      "group": "Front print",
-      "artboard_mm": [
-        230,
-        104
-      ],
-      "placement": "Centre front, top edge 80 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        },
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/40-nineteen-seventy-four.ink.svg",
-        "separations/40-nineteen-seventy-four.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The year of the pattern, set as the only thing on the chest.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 160
-          }
-        ]
-      }
-    },
-    {
-      "design": 40,
-      "id": "40",
-      "file": "prints/40-nineteen-seventy-four-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "1974",
-      "group": "Front print",
-      "artboard_mm": [
-        230,
-        104
-      ],
-      "placement": "Centre front, top edge 80 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/40-nineteen-seventy-four-on-dark.cream.svg",
-        "separations/40-nineteen-seventy-four-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The year of the pattern, set as the only thing on the chest.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 160
-          }
-        ]
-      }
-    },
-    {
-      "design": 41,
-      "id": "41",
-      "file": "prints/41-forty-five-degrees.svg",
-      "part": null,
-      "variant": "light",
-      "title": "45°",
-      "group": "Front print",
-      "artboard_mm": [
-        200,
-        130
-      ],
-      "placement": "Centre front, top edge 80 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/41-forty-five-degrees.ink.svg",
-        "separations/41-forty-five-degrees.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The angle of the cut as a number, crossed by the line it describes.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 160
-          }
-        ]
-      }
-    },
-    {
-      "design": 41,
-      "id": "41",
-      "file": "prints/41-forty-five-degrees-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "45°",
-      "group": "Front print",
-      "artboard_mm": [
-        200,
-        130
-      ],
-      "placement": "Centre front, top edge 80 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/41-forty-five-degrees-on-dark.cream.svg",
-        "separations/41-forty-five-degrees-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The angle of the cut as a number, crossed by the line it describes.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 160
-          }
-        ]
-      }
-    },
-    {
-      "design": 42,
-      "id": "42",
-      "file": "prints/42-pocket-wave.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Pocket wave",
-      "group": "Front print",
-      "artboard_mm": [
-        60,
-        60
-      ],
-      "placement": "Left chest, centre 95 mm from centre front, 80 mm below shoulder seam",
-      "method": "Screen, 2 spot · lines 0.3 mm (DTG not advised)",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/42-pocket-wave.ink.svg",
-        "separations/42-pocket-wave.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The twelve lines at pocket scale, no words.",
-      "mock": {
-        "g": "bone",
+        "long": false,
         "place": [
           {
             "view": "front",
@@ -4155,26 +2198,20 @@
       }
     },
     {
-      "design": 42,
-      "id": "42",
-      "file": "prints/42-pocket-wave-on-dark.svg",
+      "design": 34,
+      "id": "34",
+      "file": "prints/34-twelve-made-script.svg",
       "part": null,
-      "variant": "dark",
-      "title": "Pocket wave",
+      "variant": "light",
+      "title": "Twelve made, script",
       "group": "Front print",
       "artboard_mm": [
-        60,
-        60
+        260,
+        110
       ],
-      "placement": "Left chest, centre 95 mm from centre front, 80 mm below shoulder seam",
-      "method": "Screen, 2 spot · lines 0.3 mm (DTG not advised)",
+      "placement": "Centre front or left chest (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
         {
           "hex": "#5E1B22",
           "token": "--ox-600",
@@ -4197,74 +2234,16 @@
         }
       ],
       "separations": [
-        "separations/42-pocket-wave-on-dark.cream.svg",
-        "separations/42-pocket-wave-on-dark.brass.svg"
+        "separations/34-twelve-made-script.cream.svg",
+        "separations/34-twelve-made-script.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The twelve lines at pocket scale, no words.",
+      "pending": false,
+      "distressed": false,
       "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 95,
-            "y": 95
-          }
-        ]
-      }
-    },
-    {
-      "design": 43,
-      "id": "43",
-      "file": "prints/43-grainline-front.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Grainline",
-      "group": "Front print",
-      "artboard_mm": [
-        300,
-        400
-      ],
-      "placement": "Front, full print area, top edge 70 mm below collar seam",
-      "method": "Screen, 1 spot (brass) + ink label",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/43-grainline-front.ink.svg",
-        "separations/43-grainline-front.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "One brass line, hem to shoulder, marked as a pattern grainline. The thesis, literally.",
-      "mock": {
-        "g": "bone",
+        "g": "oxblood",
+        "long": false,
         "place": [
           {
             "view": "front",
@@ -4275,26 +2254,664 @@
       }
     },
     {
-      "design": 44,
-      "id": "44",
-      "file": "prints/44-sleeve-tape.svg",
+      "design": 35,
+      "id": "35",
+      "file": "prints/35-box-logo.svg",
       "part": null,
       "variant": "light",
-      "title": "Sleeve tape",
+      "title": "Box logo",
+      "group": "Front print",
+      "artboard_mm": [
+        200,
+        56
+      ],
+      "placement": "Centre front or left chest (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        },
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        }
+      ],
+      "separations": [
+        "separations/35-box-logo.brass.svg",
+        "separations/35-box-logo.ink.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "front",
+            "x": 0,
+            "y": 150
+          }
+        ]
+      }
+    },
+    {
+      "design": 36,
+      "id": "36",
+      "file": "prints/36-chest-1974.svg",
+      "part": null,
+      "variant": "light",
+      "title": "1974, chest",
+      "group": "Front print",
+      "artboard_mm": [
+        240,
+        110
+      ],
+      "placement": "Centre front or left chest (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#E6DFD3",
+          "token": "--limestone",
+          "name": "Limestone",
+          "id": "limestone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/36-chest-1974.ink.svg",
+        "separations/36-chest-1974.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "limestone",
+        "long": false,
+        "place": [
+          {
+            "view": "front",
+            "x": 0,
+            "y": 155
+          }
+        ]
+      }
+    },
+    {
+      "design": 37,
+      "id": "37",
+      "file": "prints/37-split-cut-on-the-bias-front.svg",
+      "part": "front",
+      "variant": "light",
+      "title": "Cut on / the bias",
+      "group": "Front & back",
+      "artboard_mm": [
+        220,
+        80
+      ],
+      "placement": "Front and back (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        }
+      ],
+      "separations": [
+        "separations/37-split-cut-on-the-bias-front.cream.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "front",
+            "part": "front",
+            "x": 0,
+            "y": 160
+          },
+          {
+            "view": "back",
+            "part": "back",
+            "x": 0,
+            "y": 110
+          }
+        ]
+      }
+    },
+    {
+      "design": 37,
+      "id": "37",
+      "file": "prints/37-split-cut-on-the-bias-back.svg",
+      "part": "back",
+      "variant": "light",
+      "title": "Cut on / the bias",
+      "group": "Front & back",
+      "artboard_mm": [
+        300,
+        330
+      ],
+      "placement": "Front and back (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/37-split-cut-on-the-bias-back.cream.svg",
+        "separations/37-split-cut-on-the-bias-back.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "front",
+            "part": "front",
+            "x": 0,
+            "y": 160
+          },
+          {
+            "view": "back",
+            "part": "back",
+            "x": 0,
+            "y": 110
+          }
+        ]
+      }
+    },
+    {
+      "design": 38,
+      "id": "38",
+      "file": "prints/38-split-number-front.svg",
+      "part": "front",
+      "variant": "light",
+      "title": "No. 04 / of twelve",
+      "group": "Front & back",
+      "artboard_mm": [
+        80,
+        40
+      ],
+      "placement": "Front and back (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/38-split-number-front.ink.svg",
+        "separations/38-split-number-front.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "front",
+            "part": "front",
+            "x": 95,
+            "y": 95
+          },
+          {
+            "view": "back",
+            "part": "back",
+            "x": 0,
+            "y": 110
+          }
+        ]
+      }
+    },
+    {
+      "design": 38,
+      "id": "38",
+      "file": "prints/38-split-number-back.svg",
+      "part": "back",
+      "variant": "light",
+      "title": "No. 04 / of twelve",
+      "group": "Front & back",
+      "artboard_mm": [
+        300,
+        330
+      ],
+      "placement": "Front and back (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/38-split-number-back.ink.svg",
+        "separations/38-split-number-back.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "front",
+            "part": "front",
+            "x": 95,
+            "y": 95
+          },
+          {
+            "view": "back",
+            "part": "back",
+            "x": 0,
+            "y": 110
+          }
+        ]
+      }
+    },
+    {
+      "design": 39,
+      "id": "39",
+      "file": "prints/39-sleeve-waving-luxury-sleeve.svg",
+      "part": "sleeve",
+      "variant": "light",
+      "title": "Sleeve, waving luxury",
       "group": "Sleeve",
       "artboard_mm": [
-        76,
+        24,
+        380
+      ],
+      "placement": "Long sleeve and back neck (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        }
+      ],
+      "separations": [
+        "separations/39-sleeve-waving-luxury-sleeve.cream.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "ink",
+        "long": true,
+        "place": [
+          {
+            "view": "front",
+            "part": "sleeve",
+            "sleeveRun": true
+          },
+          {
+            "view": "back",
+            "part": "back",
+            "x": 0,
+            "y": 45
+          }
+        ]
+      }
+    },
+    {
+      "design": 39,
+      "id": "39",
+      "file": "prints/39-sleeve-waving-luxury-back.svg",
+      "part": "back",
+      "variant": "light",
+      "title": "Sleeve, waving luxury",
+      "group": "Sleeve",
+      "artboard_mm": [
+        90,
         22
       ],
-      "placement": "Left sleeve, parallel to the sleeve hem, 25 mm above it",
-      "method": "Screen, 2 spot · sleeve platen",
+      "placement": "Long sleeve and back neck (see mockup)",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/39-sleeve-waving-luxury-back.cream.svg",
+        "separations/39-sleeve-waving-luxury-back.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": false,
+      "mock": {
+        "g": "ink",
+        "long": true,
+        "place": [
+          {
+            "view": "front",
+            "part": "sleeve",
+            "sleeveRun": true
+          },
+          {
+            "view": "back",
+            "part": "back",
+            "x": 0,
+            "y": 45
+          }
+        ]
+      }
+    },
+    {
+      "design": 40,
+      "id": "40",
+      "file": "prints/40-twelve-numerals.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Twelve numerals",
+      "group": "Back print",
+      "artboard_mm": [
+        282,
+        380
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#5E1B22",
+          "token": "--ox-600",
+          "name": "Oxblood",
+          "id": "oxblood"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/40-twelve-numerals.cream.svg",
+        "separations/40-twelve-numerals.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": false,
+      "distressed": true,
+      "mock": {
+        "g": "oxblood",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 41,
+      "id": "41",
+      "file": "prints/41-bust-waving-luxury.svg",
+      "part": null,
+      "variant": "light",
+      "title": "The bust, waving luxury",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        400
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/41-bust-waving-luxury.cream.svg",
+        "separations/41-bust-waving-luxury.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Classical marble bust of a woman, silk cloth draped over one shoulder falling in a single wave",
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 42,
+      "id": "42",
+      "file": "prints/42-eligius-portrait.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Eligius, patron of goldsmiths",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        400
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#FAF6EF",
           "token": "--bone",
           "name": "Bone",
           "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
         },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/42-eligius-portrait.ink.svg",
+        "separations/42-eligius-portrait.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Saint Eligius, medieval bishop and goldsmith, portrait bust holding a small hammer",
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 43,
+      "id": "43",
+      "file": "prints/43-shears.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Shears",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        400
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
         {
           "hex": "#E6DFD3",
           "token": "--limestone",
@@ -4317,18 +2934,79 @@
         }
       ],
       "separations": [
-        "separations/44-sleeve-tape.ink.svg",
-        "separations/44-sleeve-tape.brass.svg"
+        "separations/43-shears.ink.svg",
+        "separations/43-shears.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "Seven centimetres of tape on the sleeve, brass at the fourth. No. 04.",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Open tailor’s shears, large, at 45 degrees",
       "mock": {
-        "g": "bone",
+        "g": "limestone",
+        "long": false,
         "place": [
           {
-            "view": "front",
-            "sleeve": true
+            "view": "back",
+            "x": 0,
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 44,
+      "id": "44",
+      "file": "prints/44-dress-form.svg",
+      "part": null,
+      "variant": "light",
+      "title": "The form",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        400
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/44-dress-form.ink.svg",
+        "separations/44-dress-form.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Dressmaker’s form with a length of cloth draped on the bias",
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
           }
         ]
       }
@@ -4336,78 +3014,18 @@
     {
       "design": 45,
       "id": "45",
-      "file": "prints/45-back-yoke.svg",
+      "file": "prints/45-hand-and-needle.svg",
       "part": null,
       "variant": "light",
-      "title": "Back yoke",
+      "title": "Finished by hand",
       "group": "Back print",
       "artboard_mm": [
         300,
-        14
+        400
       ],
-      "placement": "Back yoke, top edge 45 mm below collar seam",
-      "method": "Screen, 2 spot",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/45-back-yoke.ink.svg",
-        "separations/45-back-yoke.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The mark at the yoke, then the brass seam running to the shoulder.",
-      "mock": {
-        "g": "limestone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 60
-          }
-        ]
-      }
-    },
-    {
-      "design": 45,
-      "id": "45",
-      "file": "prints/45-back-yoke-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Back yoke",
-      "group": "Back print",
-      "artboard_mm": [
-        300,
-        14
-      ],
-      "placement": "Back yoke, top edge 45 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
         {
           "hex": "#5E1B22",
           "token": "--ox-600",
@@ -4430,19 +3048,22 @@
         }
       ],
       "separations": [
-        "separations/45-back-yoke-on-dark.cream.svg",
-        "separations/45-back-yoke-on-dark.brass.svg"
+        "separations/45-hand-and-needle.cream.svg",
+        "separations/45-hand-and-needle.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The mark at the yoke, then the brass seam running to the shoulder.",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "A hand holding a needle drawing a thread, close crop",
       "mock": {
-        "g": "limestone",
+        "g": "oxblood",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 60
+            "y": 105
           }
         ]
       }
@@ -4450,83 +3071,23 @@
     {
       "design": 46,
       "id": "46",
-      "file": "prints/46-hem-band.svg",
+      "file": "prints/46-silk-ribbon.svg",
       "part": null,
       "variant": "light",
-      "title": "Hem band",
-      "group": "Hem",
+      "title": "Silk, one wave",
+      "group": "Back print",
       "artboard_mm": [
         300,
-        12
+        400
       ],
-      "placement": "Front hem, baseline 20 mm above hem stitch, full print width",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/46-hem-band.ink.svg",
-        "separations/46-hem-band.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The edition size repeated along the hem, under a brass seam.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 660
-          }
-        ]
-      }
-    },
-    {
-      "design": 46,
-      "id": "46",
-      "file": "prints/46-hem-band-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Hem band",
-      "group": "Hem",
-      "artboard_mm": [
-        300,
-        12
-      ],
-      "placement": "Front hem, baseline 20 mm above hem stitch, full print width",
-      "method": "Screen, 2 spot",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#0C0B0A",
           "token": "--ink-900",
           "name": "Ink",
           "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
         }
       ],
       "inks": [
@@ -4544,315 +3105,79 @@
         }
       ],
       "separations": [
-        "separations/46-hem-band-on-dark.cream.svg",
-        "separations/46-hem-band-on-dark.brass.svg"
+        "separations/46-silk-ribbon.cream.svg",
+        "separations/46-silk-ribbon.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The edition size repeated along the hem, under a brass seam.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "x": 0,
-            "y": 660
-          }
-        ]
-      }
-    },
-    {
-      "design": 47,
-      "id": "47",
-      "file": "prints/47-split-wordmark-front.svg",
-      "part": "front",
-      "variant": "light",
-      "title": "DE, NOYON",
-      "group": "Front & back",
-      "artboard_mm": [
-        120,
-        50
-      ],
-      "placement": "Front: “DE” centre front 80 mm below collar · Back: “NOYON” centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        }
-      ],
-      "separations": [
-        "separations/47-split-wordmark-front.ink.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The name split by the body: read the front, turn, read the back.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "part": "front",
-            "x": -60,
-            "y": 160
-          },
-          {
-            "view": "back",
-            "part": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 47,
-      "id": "47",
-      "file": "prints/47-split-wordmark-back.svg",
-      "part": "back",
-      "variant": "light",
-      "title": "DE, NOYON",
-      "group": "Front & back",
-      "artboard_mm": [
-        300,
-        60
-      ],
-      "placement": "Front: “DE” centre front 80 mm below collar · Back: “NOYON” centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/47-split-wordmark-back.ink.svg",
-        "separations/47-split-wordmark-back.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The name split by the body: read the front, turn, read the back.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "part": "front",
-            "x": -60,
-            "y": 160
-          },
-          {
-            "view": "back",
-            "part": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 47,
-      "id": "47",
-      "file": "prints/47-split-wordmark-front-on-dark.svg",
-      "part": "front",
-      "variant": "dark",
-      "title": "DE, NOYON",
-      "group": "Front & back",
-      "artboard_mm": [
-        120,
-        50
-      ],
-      "placement": "Front: “DE” centre front 80 mm below collar · Back: “NOYON” centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        }
-      ],
-      "separations": [
-        "separations/47-split-wordmark-front-on-dark.cream.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The name split by the body: read the front, turn, read the back.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "part": "front",
-            "x": -60,
-            "y": 160
-          },
-          {
-            "view": "back",
-            "part": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 47,
-      "id": "47",
-      "file": "prints/47-split-wordmark-back-on-dark.svg",
-      "part": "back",
-      "variant": "dark",
-      "title": "DE, NOYON",
-      "group": "Front & back",
-      "artboard_mm": [
-        300,
-        60
-      ],
-      "placement": "Front: “DE” centre front 80 mm below collar · Back: “NOYON” centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/47-split-wordmark-back-on-dark.cream.svg",
-        "separations/47-split-wordmark-back-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The name split by the body: read the front, turn, read the back.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "front",
-            "part": "front",
-            "x": -60,
-            "y": 160
-          },
-          {
-            "view": "back",
-            "part": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 48,
-      "id": "48",
-      "file": "prints/48-split-sentence-front.svg",
-      "part": "front",
-      "variant": "light",
-      "title": "Cut on, the bias",
-      "group": "Front & back",
-      "artboard_mm": [
-        240,
-        80
-      ],
-      "placement": "Front: centre front 80 mm below collar · Back: centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
-      "garments": [
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        }
-      ],
-      "separations": [
-        "separations/48-split-sentence-front.ink.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The sentence starts on the chest and ends on the back.",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "A single length of silk falling in one soft wave",
       "mock": {
         "g": "ink",
+        "long": false,
         "place": [
           {
-            "view": "front",
-            "part": "front",
+            "view": "back",
             "x": 0,
-            "y": 160
-          },
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 47,
+      "id": "47",
+      "file": "prints/47-gold-throne.svg",
+      "part": null,
+      "variant": "light",
+      "title": "The throne",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        400
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "name": "Ink",
+          "id": "ink"
+        }
+      ],
+      "inks": [
+        {
+          "id": "cream",
+          "hex": "#F2EBDF",
+          "token": "--cream",
+          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/47-gold-throne.cream.svg",
+        "separations/47-gold-throne.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Merovingian gilded throne, frontal, ornate metalwork",
+      "mock": {
+        "g": "ink",
+        "long": false,
+        "place": [
           {
             "view": "back",
-            "part": "back",
             "x": 0,
-            "y": 130
+            "y": 105
           }
         ]
       }
@@ -4860,17 +3185,17 @@
     {
       "design": 48,
       "id": "48",
-      "file": "prints/48-split-sentence-back.svg",
-      "part": "back",
+      "file": "prints/48-paris-facade.svg",
+      "part": null,
       "variant": "light",
-      "title": "Cut on, the bias",
-      "group": "Front & back",
+      "title": "Paris, 8e facade",
+      "group": "Back print",
       "artboard_mm": [
-        280,
-        90
+        300,
+        400
       ],
-      "placement": "Front: centre front 80 mm below collar · Back: centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
         {
           "hex": "#E6DFD3",
@@ -4894,153 +3219,22 @@
         }
       ],
       "separations": [
-        "separations/48-split-sentence-back.ink.svg",
-        "separations/48-split-sentence-back.brass.svg"
+        "separations/48-paris-facade.ink.svg",
+        "separations/48-paris-facade.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The sentence starts on the chest and ends on the back.",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Haussmann apartment facade in Paris with wrought-iron balconies",
       "mock": {
-        "g": "ink",
+        "g": "limestone",
+        "long": false,
         "place": [
           {
-            "view": "front",
-            "part": "front",
-            "x": 0,
-            "y": 160
-          },
-          {
             "view": "back",
-            "part": "back",
             "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 48,
-      "id": "48",
-      "file": "prints/48-split-sentence-front-on-dark.svg",
-      "part": "front",
-      "variant": "dark",
-      "title": "Cut on, the bias",
-      "group": "Front & back",
-      "artboard_mm": [
-        240,
-        80
-      ],
-      "placement": "Front: centre front 80 mm below collar · Back: centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        }
-      ],
-      "separations": [
-        "separations/48-split-sentence-front-on-dark.cream.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The sentence starts on the chest and ends on the back.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "part": "front",
-            "x": 0,
-            "y": 160
-          },
-          {
-            "view": "back",
-            "part": "back",
-            "x": 0,
-            "y": 130
-          }
-        ]
-      }
-    },
-    {
-      "design": 48,
-      "id": "48",
-      "file": "prints/48-split-sentence-back-on-dark.svg",
-      "part": "back",
-      "variant": "dark",
-      "title": "Cut on, the bias",
-      "group": "Front & back",
-      "artboard_mm": [
-        280,
-        90
-      ],
-      "placement": "Front: centre front 80 mm below collar · Back: centre back 110 mm below collar",
-      "method": "Screen, 2 spot, two placements",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
-        {
-          "hex": "#5E1B22",
-          "token": "--ox-600",
-          "name": "Oxblood",
-          "id": "oxblood"
-        }
-      ],
-      "inks": [
-        {
-          "id": "cream",
-          "hex": "#F2EBDF",
-          "token": "--cream",
-          "ref": "Custom mix to #F2EBDF — confirm with drawdown"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/48-split-sentence-back-on-dark.cream.svg",
-        "separations/48-split-sentence-back-on-dark.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The sentence starts on the chest and ends on the back.",
-      "mock": {
-        "g": "ink",
-        "place": [
-          {
-            "view": "front",
-            "part": "front",
-            "x": 0,
-            "y": 160
-          },
-          {
-            "view": "back",
-            "part": "back",
-            "x": 0,
-            "y": 130
+            "y": 105
           }
         ]
       }
@@ -5048,139 +3242,18 @@
     {
       "design": 49,
       "id": "49",
-      "file": "prints/49-atelier-stamp.svg",
+      "file": "prints/49-mint-coin.svg",
       "part": null,
       "variant": "light",
-      "title": "Atelier stamp",
+      "title": "The mint coin",
       "group": "Back print",
       "artboard_mm": [
-        90,
-        90
+        300,
+        400
       ],
-      "placement": "Back, lower right, 110 mm above hem, 60 mm in from the side seam",
-      "method": "Screen, 1 spot (ink) + brass inner frame",
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
       "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        },
-        {
-          "hex": "#E6DFD3",
-          "token": "--limestone",
-          "name": "Limestone",
-          "id": "limestone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/49-atelier-stamp.ink.svg",
-        "separations/49-atelier-stamp.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The atelier’s stamp struck off-centre near the hem, the way a cutter marks cloth.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 110,
-            "y": 470,
-            "rot": -6
-          }
-        ]
-      }
-    },
-    {
-      "design": 50,
-      "id": "50",
-      "file": "prints/50-collection-04.svg",
-      "part": null,
-      "variant": "light",
-      "title": "Collection 04",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        330
-      ],
-      "placement": "Centre back, top edge 90 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#FAF6EF",
-          "token": "--bone",
-          "name": "Bone",
-          "id": "bone"
-        }
-      ],
-      "inks": [
-        {
-          "id": "ink",
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "ref": "Pantone Black 6 C"
-        },
-        {
-          "id": "brass",
-          "hex": "#B18A46",
-          "token": "--brass",
-          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
-        }
-      ],
-      "separations": [
-        "separations/50-collection-04.ink.svg",
-        "separations/50-collection-04.brass.svg"
-      ],
-      "min_line_mm": 0.4,
-      "text": "outlined",
-      "note": "The collection listed on the back, the way a tour shirt lists dates.",
-      "mock": {
-        "g": "bone",
-        "place": [
-          {
-            "view": "back",
-            "x": 0,
-            "y": 110
-          }
-        ]
-      }
-    },
-    {
-      "design": 50,
-      "id": "50",
-      "file": "prints/50-collection-04-on-dark.svg",
-      "part": null,
-      "variant": "dark",
-      "title": "Collection 04",
-      "group": "Back print",
-      "artboard_mm": [
-        280,
-        330
-      ],
-      "placement": "Centre back, top edge 90 mm below collar seam",
-      "method": "Screen, 2 spot",
-      "garments": [
-        {
-          "hex": "#0C0B0A",
-          "token": "--ink-900",
-          "name": "Ink",
-          "id": "ink"
-        },
         {
           "hex": "#5E1B22",
           "token": "--ox-600",
@@ -5203,19 +3276,79 @@
         }
       ],
       "separations": [
-        "separations/50-collection-04-on-dark.cream.svg",
-        "separations/50-collection-04-on-dark.brass.svg"
+        "separations/49-mint-coin.cream.svg",
+        "separations/49-mint-coin.brass.svg"
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "note": "The collection listed on the back, the way a tour shirt lists dates.",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Antique gold coin with a profile portrait, medieval mint",
       "mock": {
-        "g": "bone",
+        "g": "oxblood",
+        "long": false,
         "place": [
           {
             "view": "back",
             "x": 0,
-            "y": 110
+            "y": 105
+          }
+        ]
+      }
+    },
+    {
+      "design": 50,
+      "id": "50",
+      "file": "prints/50-iris-archive.svg",
+      "part": null,
+      "variant": "light",
+      "title": "Archive iris",
+      "group": "Back print",
+      "artboard_mm": [
+        300,
+        400
+      ],
+      "placement": "Centre back, top edge 85 mm below collar seam",
+      "method": "Screen print, spot colours · distressed knockout texture · DTG alternative",
+      "garments": [
+        {
+          "hex": "#FAF6EF",
+          "token": "--bone",
+          "name": "Bone",
+          "id": "bone"
+        }
+      ],
+      "inks": [
+        {
+          "id": "ink",
+          "hex": "#0C0B0A",
+          "token": "--ink-900",
+          "ref": "Pantone Black 6 C"
+        },
+        {
+          "id": "brass",
+          "hex": "#B18A46",
+          "token": "--brass",
+          "ref": "Pantone 871 C metallic (screen) · flat #B18A46 (DTG)"
+        }
+      ],
+      "separations": [
+        "separations/50-iris-archive.ink.svg",
+        "separations/50-iris-archive.brass.svg"
+      ],
+      "min_line_mm": 0.4,
+      "text": "outlined",
+      "pending": true,
+      "distressed": true,
+      "kittl_prompt": "Botanical iris flower with long stem and leaves",
+      "mock": {
+        "g": "bone",
+        "long": false,
+        "place": [
+          {
+            "view": "back",
+            "x": 0,
+            "y": 105
           }
         ]
       }

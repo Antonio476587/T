@@ -36,7 +36,7 @@ for (const [n, p] of firstOf) {
     const g = p.mock.g;
     items.push({
       key: `t${String(n).padStart(2, '0')}`, n, cat: 'T', place: placeOf(p.group), group: p.group, title: p.title,
-      spec: `${p.artboard_mm[0]} × ${p.artboard_mm[1]} mm · ${inks.size} ink${inks.size > 1 ? 's' : ''} · shown on ${g}`,
+      spec: `${p.artboard_mm[0]} × ${p.artboard_mm[1]} mm · ${inks.size} ink${inks.size > 1 ? 's' : ''} · ${g}${p.pending ? ' · Kittl engraving pending' : ''}`,
       note: p.note, src: path.join(root, 'a-kittl/mockups', slug + '.png'),
       links: [['Mockup', `a-kittl/mockups/${slug}.png`], ['Print SVG', `a-kittl/${p.file}`], ['Films', p.separations[0].replace(/^/, 'a-kittl/')]],
     });
@@ -107,7 +107,7 @@ const section = (id, short, h, p, list, cls = '') => `
       </div>
     </section>`;
 const sections =
-  section('tees', 'T-shirts', 'Fifty designs', 'Each tee shown front and back in its garment colour, the print at real size and position. Every design has print-ready SVG and one film per ink.', tees) +
+  section('tees', 'T-shirts', 'Fifty designs', 'Front and back of each tee in its garment colour, the print at real size and position. Designs 41–50 wait on their Kittl engravings.', tees) +
   section('extras', 'Extras', 'Labels, tags and posters', 'Printed with the same inks. Not counted among the fifty.', items.filter((i) => i.cat === 'X'), ' cat--quiet') +
   section('also', 'Also built', 'Social frames and storefront', 'From the first round. Kept in the repository; not part of the t-shirt set.', items.filter((i) => i.cat === 'B' || i.cat === 'C'), ' cat--quiet');
 
@@ -168,15 +168,15 @@ nav.filter button:focus-visible,a:focus-visible{outline:1px solid var(--brass);o
 const nPlace = (k) => tees.filter((t) => t.place === k).length;
 const body = `
 <div class="wrap">
-  <div class="top"><span class="wm">De Noyon</span><span class="mono">T-shirt designs · 50</span></div>
+  <div class="top"><span class="wm">De Noyon</span><span class="mono">Graphic tees · 50</span></div>
   <section class="hero">
-    <div><span class="eyebrow">Collection 04 · the bias tee</span><h1>Fifty tees, one brass line.</h1></div>
-    <p>Print-ready t-shirt graphics built from the DE NOYON system. Each design has one idea, at most two typefaces, and gold only as a line.</p>
+    <div><span class="eyebrow">Collection 04 · the bias tee</span><h1>Fifty graphic tees.</h1></div>
+    <p>Bold, full-back t-shirt graphics for DE NOYON: heavy display type, arches, seals and engravings, printed in the house colours with a worn, screen-printed finish.</p>
   </section>
   <div class="facts">
     <div><b>50</b><span>T-shirt designs</span></div>
     <div><b>4</b><span>Garments · bone, limestone, ink, oxblood</span></div>
-    <div><b>4</b><span>Spot inks · ink, cream, brass, oxblood</span></div>
+    <div><b>40 + 10</b><span>Typographic · engraving-led (Kittl)</span></div>
   </div>
   <nav class="filter" aria-label="Filter the t-shirt designs by placement">
     <button type="button" data-f="all" aria-pressed="true">All 50</button>
@@ -187,8 +187,8 @@ const body = `
   </nav>
   ${sections}
   <div class="notes">
-    <div><h4>Print constraints</h4><p>All text outlined. Thinnest line 0.4 mm. On ink and oxblood garments the cream plate is the underbase and brass prints last.</p></div>
-    <div><h4>One idea per shirt</h4><p>One hero element, a display face plus IBM Plex Mono, and brass used only as a line. The wordmark is treated as the logo.</p></div>
+    <div><h4>Print</h4><p>All text outlined, one layer per spot ink (ink, cream, brass, oxblood), in overprint order. The worn texture is a vector knockout mask, so every film carries it.</p></div>
+    <div><h4>One idea per shirt</h4><p>One hero element at full scale, one supporting line, a small signature. Display faces (Anton, Bodoni Moda, Playfair Display, Pinyon Script) are for the tees only.</p></div>
     <div><h4>Only supplied facts</h4><p>Every word comes from the design system: Paris 8e, the 1948–1979 pattern books, twelve made, Eligius of Noyon, the Collection 04 piece names.</p></div>
   </div>
 </div>
@@ -207,7 +207,7 @@ const body = `
 </script>`;
 
 const fonts = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@300;500&family=IBM+Plex+Mono:wght@400&display=swap">';
-const title = '<title>DE NOYON T-shirts</title>';
+const title = '<title>DE NOYON Graphic Tees</title>';
 fs.writeFileSync(path.join(root, 'index.html'),
   `<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n${title}\n${fonts}\n${style}\n</head>\n<body>${body}\n</body>\n</html>\n`);
 fs.writeFileSync(path.join(root, 'gallery/artifact.html'), `${title}\n${fonts}\n${style}\n${body}\n`);

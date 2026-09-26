@@ -9,7 +9,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { text, measure } from './type.mjs';
-import { addTees, MOCK_CORE } from './designs-tees.mjs';
+import { addGraphic } from './designs-graphic.mjs';
+import { warpedText, arcText, FONTS } from './type.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outPrints = path.join(root, 'a-kittl', 'prints');
@@ -450,12 +451,25 @@ add({
   note: 'Scarcity stated as fact after the event, never before it.',
 });
 
-addTees({ add, text, measure, fitSize, wordmark, wavePaths, rect, stroke, frame, eyebrow, mono, C, HAIR, RULE, f });
-for (const d of designs) if (MOCK_CORE[d.n]) d.mock = MOCK_CORE[d.n];
+// The t-shirt line is the graphic set in designs-graphic.mjs. The quiet first set
+// (1–15 here and tools/legacy/designs-tees.mjs) is kept in git history only.
+for (let i = designs.length - 1; i >= 0; i--) if (typeof designs[i].n === 'number') designs.splice(i, 1);
+addGraphic({ add, text, measure, warpedText, arcText, FONTS, rect, frame, C, f, wavePaths });
 
 // ---- Emit --------------------------------------------------------------------
 const INK_ORDER = ['cream', 'ink', 'oxblood', 'brass', 'dieline']; // print order: underbase/cream first, metallic last
 const DARK = ['ink', 'oxblood'];
+const PLACE = { 'Back print': 'Centre back, top edge 85 mm below collar seam', 'Front print': 'Centre front or left chest (see mockup)', 'Front & back': 'Front and back (see mockup)', Sleeve: 'Long sleeve and back neck (see mockup)' };
+// Distress: a vector mask that knocks small specks and scratches out of every ink.
+function grainMask(id, w, hh, seed) {
+  let s = seed;
+  const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+  let dots = '';
+  const n = Math.round(w * hh * 0.03);
+  for (let i = 0; i < n; i++) dots += `<circle cx="${f(rnd() * w)}" cy="${f(rnd() * hh)}" r="${f(0.2 + rnd() ** 3 * 1.1)}"/>`;
+  for (let i = 0; i < 16; i++) { const x = rnd() * w, y = rnd() * hh; dots += `<rect x="${f(x)}" y="${f(y)}" width="${f(8 + rnd() * 30)}" height="0.35" transform="rotate(${f(rnd() * 180)} ${f(x)} ${f(y)})"/>`; }
+  return `<mask id="${id}" maskUnits="userSpaceOnUse" x="0" y="0" width="${w}" height="${hh}"><rect width="${w}" height="${hh}" fill="#fff"/><g fill="#000">${dots}</g></mask>`;
+}
 const specs = [];
 const idOf = (n) => (typeof n === 'number' ? String(n).padStart(2, '0') : n.toLowerCase());
 
@@ -465,12 +479,17 @@ for (const d of designs) {
   for (const v of variants) {
     for (const part of parts) {
       const built = part.build(v.fg ? C[v.fg] : undefined);
-      const clip = built.clip; delete built.clip;
+      const clip = built.clip || d.clip; delete built.clip;
+      const grainOn = built.grain; delete built.grain;
+      const pending = built.pending; delete built.pending;
       const layers = {};
       for (const [k, val] of Object.entries(built)) if (val) layers[k === 'fg' ? v.fg : k] = val;
-      const inks = INK_ORDER.filter((k) => layers[k]);
-      const cp = clip ? ' clip-path="url(#artboard)"' : '';
-      const defs = clip ? `<defs><clipPath id="artboard"><rect width="${part.w}" height="${part.h}"/></clipPath></defs>\n` : '';
+      // Layers stack in the order the design returns them (the overprint order),
+      // with the dieline always last.
+      const inks = [...Object.keys(layers).filter((k) => k !== 'dieline' && INKS[k]), ...(layers.dieline ? ['dieline'] : [])];
+      const gid = `grain-${idOf(d.n)}${part.key ? '-' + part.key : ''}`;
+      const cp = (clip ? ' clip-path="url(#artboard)"' : '') + (grainOn ? ` mask="url(#${gid})"` : '');
+      const defs = clip || grainOn ? `<defs>${clip ? `<clipPath id="artboard"><rect width="${part.w}" height="${part.h}"/></clipPath>` : ''}${grainOn ? grainMask(gid, part.w, part.h, typeof d.n === 'number' ? d.n * 7 + 3 : 5) : ''}</defs>\n` : '';
       const groups = inks.map((k) =>
         `<g id="sep-${k}"${cp} data-ink="${k === 'dieline' ? 'Dieline — do not print' : `${INKS[k].hex} · ${INKS[k].ref}`}">${layers[k]}</g>`).join('\n');
       const file = `${idOf(d.n)}-${d.slug}${part.key ? '-' + part.key : ''}${v.key}`;
@@ -483,13 +502,14 @@ for (const d of designs) {
       }
       specs.push({
         design: d.n, id: idOf(d.n), file: `prints/${file}.svg`, part: part.key || null, variant: v.key ? 'dark' : 'light',
-        title: d.title, group: d.group, artboard_mm: [part.w, part.h], placement: d.placement, method: d.method,
-        garments: (v.key ? DARK : d.inkOnDark ? d.garments.filter((g) => !DARK.includes(g)) : d.garments)
+        title: d.title, group: d.group, artboard_mm: [part.w, part.h], placement: d.placement || PLACE[d.group] || d.group, method: d.method || 'Screen print, spot colours · distressed knockout texture · DTG alternative',
+        garments: (v.key ? DARK : d.inkOnDark ? d.garments.filter((g) => !DARK.includes(g)) : d.garments || [d.g])
           .map((g) => GARMENTS[g] ? { ...GARMENTS[g], id: g } : { id: g }),
         inks: inks.filter((k) => k !== 'dieline').map((k) => ({ id: k, ...INKS[k] })),
         separations: inks.map((k) => `separations/${file}.${k}.svg`),
-        min_line_mm: HAIR, text: 'outlined', note: d.note,
-        mock: d.mock || null,
+        min_line_mm: HAIR, text: 'outlined', note: d.note, pending: !!pending, distressed: !!grainOn,
+        kittl_prompt: d.kittl ? d.kittl.prompt : undefined,
+        mock: d.mock || (d.g ? { g: d.g, long: !!d.long, place: d.place || [{ view: 'back', x: 0, y: 105 }] } : null),
       });
     }
   }
