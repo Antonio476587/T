@@ -11,7 +11,10 @@ import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
 let chromium;
-try { ({ chromium } = require('playwright')); } catch { ({ chromium } = require('/opt/node22/lib/node_modules/playwright')); }
+try { ({ chromium } = require('playwright')); } catch {
+  console.error('Playwright is missing. Run: cd denoyon/tools && npm install && npm run setup');
+  process.exit(1);
+}
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const thumbs = path.join(root, 'gallery/thumbs');

@@ -75,12 +75,24 @@ The product facts and story copy are sample content to replace with real data: w
 
 ## Rebuild
 
+Needs Node 18 or newer. Run from the repository root:
+
 ```sh
-cd tools && npm install && cd ..
-node tools/build-prints.mjs          # 1–20 SVG, separations, specs.json
-node tools/render-previews.mjs       # print previews, canvas PNGs, storefront screenshots
-node tools/render-previews.mjs kittl # 300 dpi PNGs for Kittl
-node tools/build-gallery.mjs         # index.html + thumbnails
+cd denoyon/tools
+npm install          # opentype.js + Playwright
+npm run setup        # one-time: downloads the Chromium build Playwright uses
+npm run build        # everything below, in order
 ```
+
+Or one step at a time, still inside `denoyon/tools`:
+
+```sh
+npm run prints       # 1–20: SVG, separations, specs.json
+npm run previews     # print previews, canvas PNGs, storefront screenshots
+npm run kittl        # 300 dpi PNGs for Kittl
+npm run gallery      # index.html + thumbnails
+```
+
+The scripts resolve every path from their own location, so `node denoyon/tools/build-prints.mjs` also works from the repository root.
 
 Fonts in `fonts/` are Cormorant Garamond, Jost and IBM Plex Mono from Google Fonts, all under the SIL Open Font License.

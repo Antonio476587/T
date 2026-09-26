@@ -1,15 +1,18 @@
 {
-  "name": "tools",
+  "name": "denoyon-tools",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Build scripts for the DE NOYON design deliverables",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "playwright install chromium",
+    "prints": "node build-prints.mjs",
+    "previews": "node render-previews.mjs",
+    "kittl": "node render-previews.mjs kittl",
+    "gallery": "node build-gallery.mjs",
+    "build": "npm run prints && npm run previews && npm run kittl && npm run gallery"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "opentype.js": "^1.3.4"
+    "opentype.js": "^1.3.4",
+    "playwright": "1.56.1"
   }
 }
