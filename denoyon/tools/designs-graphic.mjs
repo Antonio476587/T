@@ -562,21 +562,44 @@ export function addGraphic(h) {
     { n: 50, slug: 'iris-archive', name: 'iris', title: 'Archive iris', g: 'bone',
       prompt: 'Botanical iris flower with long stem and leaves' },
   ];
+  const HEADS = {
+    41: ['WAVING', 'LUXURY'], 42: ['PATRON OF GOLDSMITHS', 'ELIGIUS'], 43: ['CUT ON', 'THE BIAS'], 44: ['COLLECTION', '04'],
+    45: ['FINISHED', 'BY HAND'], 46: ['ONE', 'WAVE'], 47: ['GOLD, BY PROPORTION', 'THE THRONE'], 48: ['PARIS', '8e'],
+    49: ['MINT-MASTER · ELIGIUS OF NOYON · ', 'DE NOYON'], 50: ['ARCHIVE', '1948 — 1979'],
+  };
+  const LAYOUT = { 42: 'arch', 47: 'arch', 50: 'arch', 49: 'ring' };
   for (const d of IMG) {
     add({ n: d.n, slug: d.slug, title: d.title, group: 'Back print', g: d.g, w: W, h: H, kittl: d,
       build() {
         const dark = ['ink', 'oxblood'].includes(d.g);
         const fgKey = dark ? 'cream' : 'ink', fg = C[fgKey];
-        const im = engraving(d.name, 20, 70, 260, 250, fg);
-        const heads = {
-          41: ['WAVING', 'LUXURY'], 42: ['ELIGIUS', 'OF NOYON'], 43: ['CUT ON', 'THE BIAS'], 44: ['COLLECTION', '04'],
-          45: ['FINISHED', 'BY HAND'], 46: ['ONE', 'WAVE'], 47: ['GOLD, BY', 'PROPORTION'], 48: ['PARIS', '8e'],
-          49: ['MINT', 'MASTER'], 50: ['ARCHIVE', '1948 — 1979'],
-        }[d.n];
-        const a = line(heads[0], 'anton', 0, 0, W, fg);
-        const b = line(heads[1], d.n === 50 ? 'bodoni900' : 'anton', 0, 330, W, C.brass, { max: 60 });
+        const [h1, h2] = HEADS[d.n];
+        const lay = LAYOUT[d.n] || 'stack';
+        let fgSvg = '', brass = '', im;
+        if (lay === 'stack') {
+          // headline, engraving, second line in brass (reference: BLESSED / GET BACK UP)
+          const a = line(h1, 'anton', 0, 0, W, fg, { max: 82, anchor: 'middle' });
+          im = engraving(d.name, 0, a.base + 10, W, 226, fg);
+          const b = line(h2, h2.length < 4 ? 'bodoni900' : 'anton', 0, a.base + 246, W, C.brass, { max: 64, anchor: 'middle' });
+          fgSvg = a.svg + im.svg;
+          brass = b.svg;
+        } else if (lay === 'arch') {
+          // arched headline over the engraving, name below on a ribbon (reference: tennis club crest)
+          fgSvg = arcText(h1, { font: 'anton', size: 30, cx: 150, cy: 250, r: 210, mid: 0, tracking: 0.06, fill: fg });
+          im = engraving(d.name, 40, 70, 220, 250, fg);
+          fgSvg += im.svg;
+          const b = line(h2, h2.length > 8 ? 'anton' : 'playfair900', 20, 334, 260, C.brass, { anchor: 'middle', max: 60 });
+          brass = b.svg + star(22, 30, 7, C.brass) + star(278, 30, 7, C.brass);
+        } else if (lay === 'ring') {
+          // text ring around the coin (reference: seals and badges)
+          im = engraving(d.name, 50, 50, 200, 200, fg);
+          fgSvg = im.svg + `<circle cx="150" cy="150" r="146" fill="none" stroke="${fg}" stroke-width="2"/>`;
+          fgSvg += arcText(h1 + h1, { font: 'anton', size: 20, cx: 150, cy: 150, r: 118, mid: 0, tracking: 0.1, fill: fg });
+          const b = line(h2, 'anton', 30, 318, 240, C.brass, { anchor: 'middle', max: 60 });
+          brass = `<circle cx="150" cy="150" r="104" fill="none" stroke="${C.brass}" stroke-width="1.6"/>` + b.svg;
+        }
         const m = mono('DE NOYON · PARIS', { size: 5, x: 150, y: 396, anchor: 'middle', fill: fg });
-        return { [fgKey]: a.svg + im.svg + m, brass: b.svg, grain: true, pending: im.pending };
+        return { [fgKey]: fgSvg + m, brass, grain: true, pending: im.pending };
       } });
   }
   return IMG;

@@ -2825,7 +2825,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Classical marble bust of a woman, silk cloth draped over one shoulder falling in a single wave",
       "mock": {
@@ -2882,7 +2882,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Saint Eligius, medieval bishop and goldsmith, portrait bust holding a small hammer",
       "mock": {
@@ -2939,7 +2939,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Open tailor’s shears, large, at 45 degrees",
       "mock": {
@@ -2996,7 +2996,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Dressmaker’s form with a length of cloth draped on the bias",
       "mock": {
@@ -3053,7 +3053,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "A hand holding a needle drawing a thread, close crop",
       "mock": {
@@ -3110,7 +3110,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "A single length of silk falling in one soft wave",
       "mock": {
@@ -3167,7 +3167,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Merovingian gilded throne, frontal, ornate metalwork",
       "mock": {
@@ -3224,7 +3224,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Haussmann apartment facade in Paris with wrought-iron balconies",
       "mock": {
@@ -3281,7 +3281,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Antique gold coin with a profile portrait, medieval mint",
       "mock": {
@@ -3338,7 +3338,7 @@
       ],
       "min_line_mm": 0.4,
       "text": "outlined",
-      "pending": true,
+      "pending": false,
       "distressed": true,
       "kittl_prompt": "Botanical iris flower with long stem and leaves",
       "mock": {

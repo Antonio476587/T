@@ -58,9 +58,14 @@ Display faces are for the tees only; the storefront keeps the system fonts. All 
 
 ## Kittl engravings (41–50)
 
-Each of 41–50 is laid out around an engraving generated with Kittl's **Engraving** style (Seedream 4, 10 tokens each). The prompt for each is in `a-kittl/specs.json` (`kittl_prompt`). The build places `art/kittl/<name>.svg`, recoloured to one ink. Until that file exists, the slot shows a dashed placeholder and the design is marked pending.
+Each of 41–50 is laid out around an engraving generated with Kittl's **Engraving** style (Seedream 4, 10 tokens each). The prompt for each is in `a-kittl/specs.json` (`kittl_prompt`). All ten are generated, downloaded to `art/kittl/<name>.svg` as one-colour vectors, and recoloured to a single ink by the build.
 
-The first engraving (the draped bust for #41) is generated and in the Kittl library. It can't be downloaded here yet because this environment's network policy blocks `cache.kittl.com`. Once that host is allowed, the files download into `art/kittl/` and the other nine are generated.
+Two need a touch-up before production:
+
+- **Coin (#49):** the rim carries garbled pseudo-lettering from the model. Mask the rim or redraw it before printing.
+- **Dress form (#44):** the engraving came with a heavy black frame. It reads as a deliberate box, but you can crop it if you want the form free-standing.
+
+The workspace's Kittl tokens are now used up (100 of 100), so any new engraving needs more tokens.
 
 ## Files
 
