@@ -8,7 +8,8 @@
     "tees": {
       "id": "cmui2lylz57950jbykcg9amb5",
       "name": "DE NOYON — T-shirts 01–50",
-      "count": 52
+      "count": 52,
+      "note": "Quiet first set; all 52 uploads moved to Superseded when the graphic set replaced it."
     },
     "extras": {
       "id": "cmui2lyyb57960jbycn844iil",
@@ -18,12 +19,16 @@
     "superseded": {
       "id": "cmui2lzcr57oi0jayo9vkyi6y",
       "name": "DE NOYON — Superseded",
-      "note": "First-round versions of designs 3, 4, 6, 7 and 8, replaced in the tees folder."
+      "note": "First-round versions of designs 3, 4, 6, 7 and 8, plus the whole quiet tee set (52 uploads)."
     },
     "empty": {
       "id": "cmui0q6rv52u50jculaqbmg58",
       "name": "DE NOYON — Prints 01–20",
       "note": "First-round folder, now empty."
+    },
+    "graphic_tees": {
+      "id": "cmujq1pzxav410jcuq1msyl50",
+      "name": "DE NOYON — Graphic tees 01–50"
     }
   },
   "tees": [
@@ -331,5 +336,151 @@
       "design": 8,
       "uploadId": "cmui0sl0z4oa20jaeaw04ab7s"
     }
+  ],
+  "graphic_tees": [
+    {
+      "file": "png-300dpi/01-waving-luxury-stack.png",
+      "uploadId": "cmujq1ts1a6m40jbye3ie934v"
+    },
+    {
+      "file": "png-300dpi/02-twelve-times-twelve.png",
+      "uploadId": "cmujq2cjya54k0jcubsyvcht7"
+    },
+    {
+      "file": "png-300dpi/03-de-no-yon.png",
+      "uploadId": "cmujq2cwza4o30jbs67oq9is3"
+    },
+    {
+      "file": "png-300dpi/04-atelier-paris-crest.png",
+      "uploadId": "cmujq2di4a4jr0jae3da0b35u"
+    },
+    {
+      "file": "png-300dpi/05-bias-script-over-block.png",
+      "uploadId": "cmujq3isaa57q0jcu55i39z9c"
+    },
+    {
+      "file": "png-300dpi/06-bias-flag-warp.png",
+      "uploadId": "cmujq3j52a4mx0jae4bxd035u"
+    },
+    {
+      "file": "png-300dpi/07-four-sided-frame.png",
+      "uploadId": "cmujq3ji6a57u0jcu37whgq05"
+    },
+    {
+      "file": "png-300dpi/08-one-atelier-stars.png",
+      "uploadId": "cmujq3k3ha4n20jae633h9t4w"
+    },
+    {
+      "file": "png-300dpi/09-when-they-are-gone.png",
+      "uploadId": "cmujq3ki3a4s00jbsddws7ons"
+    },
+    {
+      "file": "png-300dpi/10-1948-to-1979.png",
+      "uploadId": "cmujq3maca49o0jbgfgbeclnt"
+    },
+    {
+      "file": "png-300dpi/11-paris-grid.png",
+      "uploadId": "cmujq4yuba5c60jcuaay93zf5"
+    },
+    {
+      "file": "png-300dpi/12-edition-seal.png",
+      "uploadId": "cmujq4z9ua5560jay8tprfh25"
+    },
+    {
+      "file": "png-300dpi/13-forty-five-bold.png",
+      "uploadId": "cmujq4zmma5c80jcuh9u4cd8x"
+    },
+    {
+      "file": "png-300dpi/14-varsity-waving-luxury.png",
+      "uploadId": "cmujq4zzma5570jay39blfpp0"
+    },
+    {
+      "file": "png-300dpi/15-1974-cut-pieces.png",
+      "uploadId": "cmujq50cia6u40jby0dd74zx3"
+    },
+    {
+      "file": "png-300dpi/16-no-04-of-12.png",
+      "uploadId": "cmujq50pqa4e20jbg5t3ffrx0"
+    },
+    {
+      "file": "png-300dpi/17-paris-reflection.png",
+      "uploadId": "cmujq5134a6u70jbyc2zn6pxl"
+    },
+    {
+      "file": "png-300dpi/18-heavy-wave.png",
+      "uploadId": "cmujq51esa55d0jay3t7l1a2d"
+    },
+    {
+      "file": "png-300dpi/19-no-wholesale-bulge.png",
+      "uploadId": "cmujq5rpma5820jay8ct67q2x"
+    },
+    {
+      "file": "png-300dpi/20-eligius-crest.png",
+      "uploadId": "cmujq5s1ca4yn0jbsdusr523s"
+    },
+    {
+      "file": "png-300dpi/21-structure-cloth-brass.png",
+      "uploadId": "cmujq5sdoa4sx0jae5u4ug9gh"
+    },
+    {
+      "file": "png-300dpi/22-left-out-quote.png",
+      "uploadId": "cmujq5sppa4t10jaediiz5pjz"
+    },
+    {
+      "file": "png-300dpi/23-spine-wordmark.png",
+      "uploadId": "cmujq5t31a6we0jbyd70r406q"
+    },
+    {
+      "file": "png-300dpi/24-collection-shield.png",
+      "uploadId": "cmujq5tf7a4t70jaeebjg8usi"
+    },
+    {
+      "file": "png-300dpi/25-bias-diagonal-field.png",
+      "uploadId": "cmujq5trta6wh0jby1hfn9mol"
+    },
+    {
+      "file": "png-300dpi/26-collection-list-bold.png",
+      "uploadId": "cmujq5ubia6wk0jby1ho4bgq2"
+    },
+    {
+      "file": "png-300dpi/27-materials.png",
+      "uploadId": "cmujq5uoia6wm0jby4guoh99t"
+    },
+    {
+      "file": "png-300dpi/28-noyon-and-paris.png",
+      "uploadId": "cmujq5v2qa5f00jcu74b06ped"
+    }
+  ],
+  "graphic_tees_pending": [
+    "png-300dpi/29-postmark.png",
+    "png-300dpi/30-single-wave-slant.png",
+    "png-300dpi/31-chest-arch.png",
+    "png-300dpi/32-chest-wordmark-heavy.png",
+    "png-300dpi/33-pocket-script.png",
+    "png-300dpi/34-twelve-made-script.png",
+    "png-300dpi/35-box-logo.png",
+    "png-300dpi/36-chest-1974.png",
+    "png-300dpi/37-split-cut-on-the-bias-back.png",
+    "png-300dpi/37-split-cut-on-the-bias-front.png",
+    "png-300dpi/38-split-number-back.png",
+    "png-300dpi/38-split-number-front.png",
+    "png-300dpi/39-sleeve-waving-luxury-back.png",
+    "png-300dpi/39-sleeve-waving-luxury-sleeve.png",
+    "png-300dpi/40-twelve-numerals.png",
+    "png-300dpi/41-bust-waving-luxury.png",
+    "png-300dpi/42-eligius-portrait.png",
+    "png-300dpi/43-shears.png",
+    "png-300dpi/44-dress-form.png",
+    "png-300dpi/45-hand-and-needle.png",
+    "png-300dpi/46-silk-ribbon.png",
+    "png-300dpi/47-gold-throne.png",
+    "png-300dpi/48-paris-facade.png",
+    "png-300dpi/49-mint-coin.png",
+    "png-300dpi/50-iris-archive.png",
+    "png-300dpi/x1-neck-label.png",
+    "png-300dpi/x2-hangtag.png",
+    "png-300dpi/x3-packaging-stickers.png",
+    "png-300dpi/x4-capsule-poster.png",
+    "png-300dpi/x5-archive-poster.png"
   ]
 }
