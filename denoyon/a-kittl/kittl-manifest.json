@@ -3,7 +3,7 @@
     "id": "cmuhhuecy323b0jay5phydpiv",
     "name": "Felix's Team"
   },
-  "method": "kittl-upload-image (presigned PUT of png-300dpi/*.png) → kittl-save-image-to-library. No AI generation used; no Kittl tokens spent.",
+  "method": "kittl-upload-image (presigned PUT of png-300dpi/*.png) → kittl-save-image-to-library.",
   "folders": {
     "tees": {
       "id": "cmui2lylz57950jbykcg9amb5",
@@ -14,12 +14,12 @@
     "extras": {
       "id": "cmui2lyyb57960jbycn844iil",
       "name": "DE NOYON — Extras",
-      "note": "First-round neck label, hangtag, stickers and posters (X1–X5). Uploaded before invented facts were removed; re-export from png-300dpi/x*.png if needed."
+      "note": "Current X1–X5 (invented facts removed). The first-round versions are in Superseded."
     },
     "superseded": {
       "id": "cmui2lzcr57oi0jayo9vkyi6y",
       "name": "DE NOYON — Superseded",
-      "note": "First-round versions of designs 3, 4, 6, 7 and 8, plus the whole quiet tee set (52 uploads)."
+      "note": "First-round versions of designs 3, 4, 6, 7 and 8, the whole quiet tee set (52 uploads) and the first-round extras (5)."
     },
     "empty": {
       "id": "cmui0q6rv52u50jculaqbmg58",
@@ -293,28 +293,6 @@
       "uploadId": "cmui2rh1v4sv10jbg4llibfu9"
     }
   ],
-  "extras": [
-    {
-      "id": "X1",
-      "uploadId": "cmui0usr44orh0jbg6adxfxfl"
-    },
-    {
-      "id": "X2",
-      "uploadId": "cmui0ut334p110jbs3ar1aofo"
-    },
-    {
-      "id": "X3",
-      "uploadId": "cmui0ute84of00jae0gr1abks"
-    },
-    {
-      "id": "X4",
-      "uploadId": "cmui0utu44pbt0jbydwvgc31m"
-    },
-    {
-      "id": "X5",
-      "uploadId": "cmui0uucz4p000jcu82wv7wa2"
-    }
-  ],
   "superseded": [
     {
       "design": 3,
@@ -449,38 +427,150 @@
     {
       "file": "png-300dpi/28-noyon-and-paris.png",
       "uploadId": "cmujq5v2qa5f00jcu74b06ped"
+    },
+    {
+      "file": "png-300dpi/29-postmark.png",
+      "uploadId": "cmulfhwpv0bvt0ja6adpbd9c2"
+    },
+    {
+      "file": "png-300dpi/30-single-wave-slant.png",
+      "uploadId": "cmulfhx5t0bn80j8t0oez6jur"
+    },
+    {
+      "file": "png-300dpi/31-chest-arch.png",
+      "uploadId": "cmulfhxmi0btl0kdgg1txethv"
+    },
+    {
+      "file": "png-300dpi/32-chest-wordmark-heavy.png",
+      "uploadId": "cmulfhy2f0bw10ja6e5px9618"
+    },
+    {
+      "file": "png-300dpi/33-pocket-script.png",
+      "uploadId": "cmulfj5rp0c0w0jbtb1hu70ej"
+    },
+    {
+      "file": "png-300dpi/34-twelve-made-script.png",
+      "uploadId": "cmulfj6hd0byi0jbf7n7f7qfa"
+    },
+    {
+      "file": "png-300dpi/35-box-logo.png",
+      "uploadId": "cmulfj6wj0byo0jbffyqogund"
+    },
+    {
+      "file": "png-300dpi/36-chest-1974.png",
+      "uploadId": "cmulfj7ew0c0i0kdgg6kf0yy2"
+    },
+    {
+      "file": "png-300dpi/37-split-cut-on-the-bias-back.png",
+      "uploadId": "cmulfj7vf0c3n0jczfxq4guhg"
+    },
+    {
+      "file": "png-300dpi/37-split-cut-on-the-bias-front.png",
+      "uploadId": "cmulfkq3b0cao0jcz47jqf81n"
+    },
+    {
+      "file": "png-300dpi/38-split-number-back.png",
+      "uploadId": "cmulfkqfh0c720jbf8h0y5gef"
+    },
+    {
+      "file": "png-300dpi/38-split-number-front.png",
+      "uploadId": "cmulfkr530cb20jczdz3teq7q"
+    },
+    {
+      "file": "png-300dpi/39-sleeve-waving-luxury-back.png",
+      "uploadId": "cmulfkrji0cb40jczhq4y97pi"
+    },
+    {
+      "file": "png-300dpi/39-sleeve-waving-luxury-sleeve.png",
+      "uploadId": "cmulfkrwe0cb50jcz42aka922"
+    },
+    {
+      "file": "png-300dpi/40-twelve-numerals.png",
+      "uploadId": "cmulfmax50c8n0j8t46xx9xr1"
+    },
+    {
+      "file": "png-300dpi/41-bust-waving-luxury.png",
+      "uploadId": "cmulfmbjb0cj40jcz44qjgruo"
+    },
+    {
+      "file": "png-300dpi/42-eligius-portrait.png",
+      "uploadId": "cmulfmbzp0ceu0jbfcy7zf3r4"
+    },
+    {
+      "file": "png-300dpi/43-shears.png",
+      "uploadId": "cmulfmcd70c8v0j8t0qw49qn6"
+    },
+    {
+      "file": "png-300dpi/44-dress-form.png",
+      "uploadId": "cmulfmcsy0cie0jbt1rtag032"
+    },
+    {
+      "file": "png-300dpi/45-hand-and-needle.png",
+      "uploadId": "cmulfodri0ciy0j8tbtxehgja"
+    },
+    {
+      "file": "png-300dpi/46-silk-ribbon.png",
+      "uploadId": "cmulfoe990ct20jbtbl8uh90h"
+    },
+    {
+      "file": "png-300dpi/47-gold-throne.png",
+      "uploadId": "cmulfoenw0cqq0kdgcyyebvcr"
+    },
+    {
+      "file": "png-300dpi/48-paris-facade.png",
+      "uploadId": "cmulfof2s0cu80ja625gsdvka"
+    },
+    {
+      "file": "png-300dpi/49-mint-coin.png",
+      "uploadId": "cmulfogxw0cr20kdg1jfw27nk"
+    },
+    {
+      "file": "png-300dpi/50-iris-archive.png",
+      "uploadId": "cmulfohct0cqg0jbf4sl9fjov"
     }
   ],
-  "graphic_tees_pending": [
-    "png-300dpi/29-postmark.png",
-    "png-300dpi/30-single-wave-slant.png",
-    "png-300dpi/31-chest-arch.png",
-    "png-300dpi/32-chest-wordmark-heavy.png",
-    "png-300dpi/33-pocket-script.png",
-    "png-300dpi/34-twelve-made-script.png",
-    "png-300dpi/35-box-logo.png",
-    "png-300dpi/36-chest-1974.png",
-    "png-300dpi/37-split-cut-on-the-bias-back.png",
-    "png-300dpi/37-split-cut-on-the-bias-front.png",
-    "png-300dpi/38-split-number-back.png",
-    "png-300dpi/38-split-number-front.png",
-    "png-300dpi/39-sleeve-waving-luxury-back.png",
-    "png-300dpi/39-sleeve-waving-luxury-sleeve.png",
-    "png-300dpi/40-twelve-numerals.png",
-    "png-300dpi/41-bust-waving-luxury.png",
-    "png-300dpi/42-eligius-portrait.png",
-    "png-300dpi/43-shears.png",
-    "png-300dpi/44-dress-form.png",
-    "png-300dpi/45-hand-and-needle.png",
-    "png-300dpi/46-silk-ribbon.png",
-    "png-300dpi/47-gold-throne.png",
-    "png-300dpi/48-paris-facade.png",
-    "png-300dpi/49-mint-coin.png",
-    "png-300dpi/50-iris-archive.png",
-    "png-300dpi/x1-neck-label.png",
-    "png-300dpi/x2-hangtag.png",
-    "png-300dpi/x3-packaging-stickers.png",
-    "png-300dpi/x4-capsule-poster.png",
-    "png-300dpi/x5-archive-poster.png"
+  "superseded_extras": [
+    {
+      "id": "X1",
+      "uploadId": "cmui0usr44orh0jbg6adxfxfl"
+    },
+    {
+      "id": "X2",
+      "uploadId": "cmui0ut334p110jbs3ar1aofo"
+    },
+    {
+      "id": "X3",
+      "uploadId": "cmui0ute84of00jae0gr1abks"
+    },
+    {
+      "id": "X4",
+      "uploadId": "cmui0utu44pbt0jbydwvgc31m"
+    },
+    {
+      "id": "X5",
+      "uploadId": "cmui0uucz4p000jcu82wv7wa2"
+    }
+  ],
+  "extras": [
+    {
+      "file": "png-300dpi/x1-neck-label.png",
+      "uploadId": "cmulfr4gx0cy10j8t9i3pbew2"
+    },
+    {
+      "file": "png-300dpi/x2-hangtag.png",
+      "uploadId": "cmulfr4vu0d5o0kdg35om8t6z"
+    },
+    {
+      "file": "png-300dpi/x3-packaging-stickers.png",
+      "uploadId": "cmulfr5dw0cy40j8t1loh3dsj"
+    },
+    {
+      "file": "png-300dpi/x4-capsule-poster.png",
+      "uploadId": "cmulfr5sp0d5t0kdg1fteedz7"
+    },
+    {
+      "file": "png-300dpi/x5-archive-poster.png",
+      "uploadId": "cmulfr66a0d9x0jcz4s1qdk5x"
+    }
   ]
 }

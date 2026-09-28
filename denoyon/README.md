@@ -67,6 +67,8 @@ Two need a touch-up before production:
 
 The workspace's Kittl tokens are now used up (100 of 100), so any new engraving needs more tokens.
 
+All 53 tee print PNGs are in the Kittl folder "DE NOYON — Graphic tees 01–50" and the five extras are in "DE NOYON — Extras"; upload IDs are in `a-kittl/kittl-manifest.json`.
+
 ## Files
 
 | Path | What it is |
